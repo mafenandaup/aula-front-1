@@ -1,0 +1,14 @@
+#tipo {
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman'
+}
+
+.botaoinicio {
+    background-color: brown;
+    border-radius: 20%;
+    height: 40px;
+    width: 40px;
+    align-content: center;
+    color: aliceblue;
+    font-family: monospace
+}

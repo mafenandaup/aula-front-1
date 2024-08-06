@@ -5,9 +5,32 @@
 
 .botaoinicio {
     background-color: brown;
-    border-radius: 20%;
+    border-radius: 15px;
     padding: 10px 20px;
     color: aliceblue;
     cursor: pointer;
     font-family: monospace
+}
+
+#doguinho{
+    border-radius: 15px;
+}
+
+#labelinput1{
+    color: rgb(233, 104, 153);
+    font-family: monocraft;
+}
+
+#input1{
+    background-color: burlywood;
+    border-radius: 15px;
+    cursor: text;
+    font-family: monocraft;
+}
+
+.botao{
+    color: rgb(255, 255, 255);
+    background-color: rgb(137, 54, 70);
+    border-radius: 4px;
+    font-family: 'Times New Roman'
 }

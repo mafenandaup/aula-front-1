@@ -7,8 +7,9 @@
     background-color: brown;
     border-radius: 20%;
     height: 40px;
-    width: 40px;
+    width: 80px;
     align-content: center;
     color: aliceblue;
+    cursor: pointer;
     font-family: monospace
 }

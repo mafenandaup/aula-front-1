@@ -6,9 +6,7 @@
 .botaoinicio {
     background-color: brown;
     border-radius: 20%;
-    height: 40px;
-    width: 80px;
-    align-content: center;
+    padding: 10px 20px;
     color: aliceblue;
     cursor: pointer;
     font-family: monospace

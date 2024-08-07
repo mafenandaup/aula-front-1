@@ -39,5 +39,5 @@ divideBtn.onclick = function dividir(){
     } else {
         window.alert('Não é possível dividir por zero!');
     }
-    contador.textContent = contagem;
+    simbolocont.textContent = contagem;
 }

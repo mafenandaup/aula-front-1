@@ -1,8 +1,8 @@
 #simbolocont {
- display: block;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 200px;
-text-align: center;
+    display: block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200px;
+    text-align: center;
 }
 
 #Btns {
@@ -10,7 +10,7 @@ text-align: center;
 
 }
 
-.botaolegal{
+.botaolegal {
     color: black;
     font-family: 'Courier New';
     background-color: rgb(132, 160, 197);
@@ -20,7 +20,7 @@ text-align: center;
     transition: background-color 0.25s;
 }
 
-.botaobossal{
+.botaobossal {
     color: rgb(255, 255, 255);
     font-family: 'Courier New';
     background-color: rgb(255, 87, 137);
@@ -30,6 +30,10 @@ text-align: center;
 
 }
 
-.botaolegal:hover{
+.botaolegal:hover {
     background-color: rgb(48, 97, 129);
+}
+
+.botaobossal:hover {
+    background-color: rgb(175, 51, 67);
 }

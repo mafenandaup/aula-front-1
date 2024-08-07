@@ -20,6 +20,7 @@ increaseBtn.onclick = function aumentar(){
 
 exponentBtn.onclick = function expoente(){
         contagem = Math.pow(contagem, 2); 
+        /// math.pow é a função para fazer um cálculo exponencial. Nesse caso, é o n° de contagem ao quadrado
        simbolocont.textContent = contagem;
 }
 
@@ -29,9 +30,10 @@ resetBtn.onclick = function resetar(){
 }
 
 roundBtn.onclick = function aproximar(){
-    Math.round(contagem);
-    simbolocont.textContent = contagem;
-}
+        contagem = Math.trunc(contagem);
+        simbolocont.textContent = contagem;
+    }
+//floor aproxima p/numero menor, truncate elimina qualquer porção decimal, ceiling aprox. pra numero maior
 
 divideBtn.onclick = function dividir(){
     if (contagem !== 0) { 
@@ -41,3 +43,6 @@ divideBtn.onclick = function dividir(){
     }
     simbolocont.textContent = contagem;
 }
+
+//math.sqrt é a função praver a raiz quadrada de um variável.
+//math.ABS

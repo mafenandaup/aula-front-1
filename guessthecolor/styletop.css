@@ -46,7 +46,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: aqua;
 
 }
 
@@ -60,6 +59,7 @@ body {
 
 }
 
+/* o primeiro px é movimento p/ horizontal, o 2° pra baixo, o 3° pra add blur, o ultimo pra opacidade */
 .img2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     ;
@@ -87,6 +87,11 @@ h2 {
     /* Aumente o valor conforme necessário */
 }
 
-.startbtn:hover{
-    background: radial-gradient(rgb(217, 217, 248) ,rgb(119, 138, 245));
+.startbtn:hover {
+    background: radial-gradient(rgb(217, 217, 248), rgb(119, 138, 245));
+}
+
+#countdowncolor{
+    text-align: center;
+
 }

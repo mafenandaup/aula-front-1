@@ -6,8 +6,10 @@
     align-items: center;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    
-   
+    font-size: 18px;
+    margin: 10px;
+
+
 }
 
 html,
@@ -24,41 +26,67 @@ body {
 .highcaps {
     font-family: 'Poppins';
     font-size: 70px;
-    animation-duration: 2s;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    ;
 }
 
-.lowcaps{
+.lowcaps {
     font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  text-align: center;
-  line-height: 0.1px;
-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);;
-  
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    line-height: 0.1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: default;
+
 }
 
-.container{
+.container {
     width: fit-content;
     margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  
+    margin-right: auto;
+    text-align: center;
+    background-color: aqua;
+
 }
 
-.rules{
-    font-size: 10px;
+.rules {
+    font-size: 12px;
     line-height: 20px;
     line-height: 10%;
-    font-family: "Poppins" 
-    
+    cursor: default;
+    font-family: "Poppins"
+
+
 }
 
-.img2{
-text-shadow:2px 2px 5px rgba(0, 0, 0, 0.3);; ;
+.img2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    ;
+    ;
 }
 
-.textosinicio{
+.textosinicio {
     line-height: 0.1;
-    background-color: antiquewhite;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+    line-height: 1.2;
+}
+
+.botoes {
+    margin-top: 30px;
+    /* Aumente o valor conforme necessário */
+}
+
+.startbtn:hover{
+    background: radial-gradient(rgb(217, 217, 248) ,rgb(119, 138, 245));
 }

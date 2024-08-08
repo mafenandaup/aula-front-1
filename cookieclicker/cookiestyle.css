@@ -1,0 +1,44 @@
+.div{
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+.textonice{
+    color: brown;
+    cursor: pointer;
+font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.cookieclick {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cookieclick:hover {
+    transform: scale(1.1);
+}
+
+.cookieclick.clicada {
+    transform: scale(1.5);
+}
+
+.textonice:hover{
+color: rgb(95, 24, 24);
+}
+
+.return{
+    color: black;
+    background-color: rgb(255, 227, 207);
+    border-radius: 6px;
+}
+
+.return:hover{
+    background-color: rgb(233, 163, 163);
+}
+
+.center{
+    align-content: center;
+    text-align: center;
+}

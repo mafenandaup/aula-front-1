@@ -1,48 +1,48 @@
-const decreaser = document.getElementById(decreaseBtn)
-const increaser = document.getElementById(increaseBtn);
-const exponent = document.getElementById(exponentBtn);
-const reset = document.getElementById(resetBtn);
-const contador = document.getElementById(simbolocont);
-const round = document.getElementById(roundBtn);
-const divide = document.getElementById(divideBtn);
+const decreaser = document.getElementById('decreaseBtn');
+const increaser = document.getElementById('increaseBtn');
+const exponent = document.getElementById('exponentBtn');
+const reset = document.getElementById('resetBtn');
+const contador = document.getElementById('simbolocont');
+const round = document.getElementById('roundBtn');
+const divide = document.getElementById('divideBtn');
 
 let contagem = 0;
 
-document.getElementById(decreaseBtn).onclick = function diminuir() {
+decreaser.onclick = function diminuir() {
     contagem--;
-    simbolocont.textContent = contagem;
+    contador.textContent = contagem;
 }
 
-increaseBtn.onclick = function aumentar(){
+increaser.onclick = function aumentar() {
     contagem++;
-    simbolocont.textContent = contagem;
+    contador.textContent = contagem;
 }
 
-exponentBtn.onclick = function expoente(){
-        contagem = Math.pow(contagem, 2); 
-        /// math.pow é a função para fazer um cálculo exponencial. Nesse caso, é o n° de contagem ao quadrado
-       simbolocont.textContent = contagem;
+exponent.onclick = function expoente() {
+    contagem = Math.pow(contagem, 2); 
+    // math.pow é a função para fazer um cálculo exponencial. Nesse caso, é o n° de contagem ao quadrado
+    contador.textContent = contagem;
 }
 
-resetBtn.onclick = function resetar(){
+reset.onclick = function resetar() {
     contagem = 0;
-    simbolocont.textContent = contagem;
+    contador.textContent = contagem;
 }
 
-roundBtn.onclick = function aproximar(){
-        contagem = Math.trunc(contagem);
-        simbolocont.textContent = contagem;
-    }
-//floor aproxima p/numero menor, truncate elimina qualquer porção decimal, ceiling aprox. pra numero maior
+round.onclick = function aproximar() {
+    contagem = Math.trunc(contagem);
+    contador.textContent = contagem;
+}
+// floor aproxima para o número menor, truncate elimina qualquer porção decimal, ceiling aproxima para o número maior
 
-divideBtn.onclick = function dividir(){
+divide.onclick = function dividir() {
     if (contagem !== 0) { 
         contagem = contagem / 2;
     } else {
         window.alert('Não é possível dividir por zero!');
     }
-    simbolocont.textContent = contagem;
+    contador.textContent = contagem;
 }
 
-//math.sqrt é a função praver a raiz quadrada de um variável.
-//math.ABS
+// math.sqrt é a função para ver a raiz quadrada de uma variável.
+// math.abs é a função para obter o valor absoluto de uma variável.

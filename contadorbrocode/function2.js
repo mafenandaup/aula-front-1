@@ -1,4 +1,4 @@
-const decreaser = document.getElementById(decreaseBtn);
+const decreaser = document.getElementById(decreaseBtn)
 const increaser = document.getElementById(increaseBtn);
 const exponent = document.getElementById(exponentBtn);
 const reset = document.getElementById(resetBtn);
@@ -8,7 +8,7 @@ const divide = document.getElementById(divideBtn);
 
 let contagem = 0;
 
-decreaseBtn.onclick = function diminuir() {
+document.getElementById(decreaseBtn).onclick = function diminuir() {
     contagem--;
     simbolocont.textContent = contagem;
 }

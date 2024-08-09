@@ -46,7 +46,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    display: grid;
+    place-items: center;
+    height: 100vh;
 
+}
+
+.backgroundfinal{
+ background-color: aqua;
 }
 
 .rules {
@@ -79,11 +86,10 @@ h2 {
     padding: 0;
     letter-spacing: -1px;
     word-spacing: -2px;
-    line-height: 1.2;
 }
 
 .botoes {
-    margin-top: 30px;
+    margin-top: 10px;
     /* Aumente o valor conforme necessário */
 }
 
@@ -91,7 +97,14 @@ h2 {
     background: radial-gradient(rgb(217, 217, 248), rgb(119, 138, 245));
 }
 
-#countdowncolor{
-    text-align: center;
-
+#countdowncolor {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 200px;
 }
+
+/* SETTINGS TO CENTER display: grid;
+    place-items: center;
+    height: 100vh;*/
+

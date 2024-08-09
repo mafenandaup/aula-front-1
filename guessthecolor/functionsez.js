@@ -29,6 +29,7 @@ async function contagem() {
         contador.style.color = getRandomVibrantColor();
         await sleep(2000);
     }
+    window.location.href = 'inicioguess.html';
 }
 
 window.onload = contagem;

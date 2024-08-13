@@ -1,0 +1,24 @@
+.calcbg{
+    height: 480px;
+  background: radial-gradient(rgb(208, 84, 181) 15%, rgb(164, 19, 123));
+    width: 270px;
+    cursor: default;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+.topscreen{
+    height: 90px;
+    width: 240px;
+    display: flex; /* Adiciona Flexbox */
+    justify-content: flex-end; /* Alinha à esquerda */
+    align-items: center; /* Alinha verticalmente ao centro */
+    border-radius: 10px;
+    margin-bottom: 340px;
+    background-color: rgba(255, 218, 236, 0.362);
+border-color: rgba(240, 248, 255, 0.388);
+    
+}

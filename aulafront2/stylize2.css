@@ -1,66 +1,66 @@
-.calcbg{
+.calcbg {
     height: 480px;
-  background: radial-gradient(rgb(208, 84, 181) 15%, rgb(164, 19, 123));
+    background: radial-gradient(rgb(208, 84, 181) 15%, rgb(164, 19, 123));
     width: 270px;
     cursor: default;
     border-radius: 10px;
     display: grid;
     place-items: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-    
 }
 
-.topscreen{
+.topscreen {
     height: 90px;
     width: 240px;
-    display: flex; /* Adiciona Flexbox */
-    justify-content: flex-end; /* Alinha à esquerda */
-    align-items: center; /* Alinha verticalmente ao centro */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     border-radius: 10px;
-    
+    font-size: larger;
+    color: antiquewhite;
+    font-family: Poppins, sans-serif;
     background-color: rgba(255, 218, 236, 0.362);
-border-color: rgba(240, 248, 255, 0.388);
-cursor: default3;
-    
+    border-color: rgba(240, 248, 255, 0.388);
+    cursor: default;
+    padding-right: 10px;
 }
 
-.containercalc{
+.containercalc {
     display: flex; 
     justify-content: center;
     align-self: center;
 }
+
 html, body {
-    height: 100%; /* Certifique-se de que o HTML e o corpo ocupem 100% da altura */
-    margin: 0; /* Remova as margens padrão */
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-body{
-background: linear-gradient(90deg,rgb(255, 140, 205),rgb(246, 226, 229));
+body {
+    background: linear-gradient(90deg, rgb(255, 140, 205), rgb(246, 226, 229));
 }
 
-button{
+button {
     width: 50px;
     height: 50px;
-  
     align-items: center;
     border-radius: 20px;
     border: none;
     background-color: rgb(172, 10, 126);
     color: antiquewhite;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: large;
     cursor: pointer;
     font-weight: bolder;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
-  
 }
 
-#buttons{
+#buttons {
     display: grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-bottom: 34px;
 }
@@ -73,16 +73,18 @@ button{
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-button:hover{
+button:hover {
     background-color: rgb(108, 39, 93);
 }
-button:active{
+
+button:active {
     background-color: hsl(317, 26%, 69%);
 }
-.specialbuttons:hover{
+
+.specialbuttons:hover {
     background-color: rgb(195, 6, 163);
 }
 
-.specialbuttons:active{
+.specialbuttons:active {
     background-color: hsl(306, 44%, 71%);
 }

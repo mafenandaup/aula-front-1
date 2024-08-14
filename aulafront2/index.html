@@ -16,7 +16,7 @@
 <body>
     <div class="containercalc">
         <div class="calcbg">
-            <input class="topscreen" readonly>
+            <input id="topscreen" class="topscreen" readonly>
             <div id="buttons">
                 <button onclick="appendToDisplay('+')" class="specialbuttons">+</button>
                 <button onclick="appendToDisplay('7')">7</button>
@@ -33,8 +33,8 @@
                 <button onclick="appendToDisplay('/')" class="specialbuttons">/</button>
                 <button onclick="appendToDisplay('0')">0</button>
                 <button onclick="appendToDisplay('.')">.</button>
-                <button onclick="calculate">=</button>
-                <button onclick="clear" class="specialbuttons">AC</button>
+                <button onclick="calculate" id="equal">=</button>
+                <button onclick="clear" id="clear" class="specialbuttons">AC</button>
             </div>
         </div>
     </div>

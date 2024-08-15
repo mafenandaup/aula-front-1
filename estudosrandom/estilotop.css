@@ -1,0 +1,9 @@
+.bg {
+    background: linear-gradient(white, pink);
+    height: 100%;
+
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }

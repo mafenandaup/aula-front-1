@@ -23,18 +23,18 @@ document.getElementById("send").onclick = function verify() {
     }
 }
 
-document.getElementById("send").onclick = function verify2(){
+document.getElementById("send").onclick = function verify2() {
     let hasLicense = true
     let idade = Number(document.getElementById("agemin").value);
-    if (idade>=18){
+    if (idade >= 18) {
         document.getElementById("canvote2").textContent = "old enough to drive";
-// esse 2° if testa uma 2° condição se a primeira for verdadeira, caso as 1°s não sejam, então pula logo pro else
-        if (hasLicense){
+        // esse 2° if testa uma 2° condição se a primeira for verdadeira, caso as 1°s não sejam, então pula logo pro else
+        if (hasLicense) {
             document.getElementById("canvote2").textContent = "old enough to drive :) and has license!";
-        }else{
+        } else {
             document.getElementById("canvote2").textContent = "old enough to drive but no liscense :(";
         }
-    }else{
+    } else {
         document.getElementById("canvote2").textContent = "not old enough and no license";
     }
 }
@@ -43,3 +43,23 @@ document.getElementById("send").onclick = function verify2(){
 //if(){
 //}elseif(){
 //}else
+
+const aura = document.getElementById("aura");
+const girly = document.getElementById("yass");
+const subscribe = document.getElementById("confirm");
+const mysubmit = document.getElementById("submitnow");
+const textrandom = document.getElementById("auraorgirly");
+
+mysubmit.onclick = function () {
+  if (subscribe.checked) {
+    if (girly.checked) {
+      textrandom.textContent = "Girly!";
+    } else if (aura.checked) {
+      textrandom.textContent = "Aura!";
+    } else {
+      textrandom.textContent = "Will it be Aura or Girly?";
+    }
+  } else {
+    textrandom.textContent = "Not subscribed";
+  }
+}

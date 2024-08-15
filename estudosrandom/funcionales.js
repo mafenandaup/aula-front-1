@@ -63,3 +63,9 @@ mysubmit.onclick = function () {
     textrandom.textContent = "Not subscribed";
   }
 }
+
+//function ternary operator in js 
+let age = 14
+let message = age >= 18 ? "you're an adult" : "youre a minor";
+console.log(message);
+//algo pra substituir (so certas vezes) as condições de if else vice versa, mas só com duas proposições true/false

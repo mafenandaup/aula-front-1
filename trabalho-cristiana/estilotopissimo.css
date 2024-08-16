@@ -1,7 +1,17 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  body {
-    background: linear-gradient(rgb(231, 175, 184), white);
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(rgb(231, 175, 184), white);
+}
+
+.title {
+
+  text-align: center;
+  margin: auto;
+  font-family: monospace;
+  cursor: default;
+}

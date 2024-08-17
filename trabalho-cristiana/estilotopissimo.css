@@ -12,6 +12,9 @@ body {
 
   text-align: center;
   margin: auto;
-  font-family: monospace;
+  font-family: 
   cursor: default;
+  margin-top: 10px;
+  color: rgb(121, 40, 106);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }

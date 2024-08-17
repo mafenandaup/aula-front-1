@@ -12,9 +12,49 @@ body {
 
   text-align: center;
   margin: auto;
-  font-family: 
+  font-family: monospace;
   cursor: default;
   margin-top: 10px;
   color: rgb(121, 40, 106);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.principais-tags {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+.firsttag {
+  background: radial-gradient(rgb(211, 155, 172), rgb(234, 99, 140), rgb(209, 89, 125));
+  width: 300px;
+  width: 300px;
+  height: 300px;
+  color: aliceblue;
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 20px;
+}
+
+.secondtag {
+  background: radial-gradient(rgb(211, 155, 172), rgb(234, 99, 140), rgb(209, 89, 125));
+  width: 300px;
+  height: 300px;
+  color: aliceblue;
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 20px;
+}
+
+.trdtag {
+  background: radial-gradient(rgb(211, 155, 172), rgb(234, 99, 140), rgb(209, 89, 125));
+  width: 300px;
+  height: 300px;
+  color: aliceblue;
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 20px;
 }

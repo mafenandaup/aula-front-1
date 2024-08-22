@@ -23,6 +23,28 @@ float: left;
     height:auto;
 display: flow-root;
 margin-left: 20px;
+margin-right: 20px;
+margin-top: 10px;
+}
+
+.outracaixinha {
+    width: 400px;
+    height: 250px;
+    margin-top: 20px;
+    overflow: scroll; /*permite arrastar o conteudo que não cabe de uma vez só dentro da div*/
+    border: 3px solid black; /* Added border style and color */
+    border-radius: 15px;
+  
+}
+
+.caixa2 {
+    width: 400px;
+    height: 250px;
+    margin-top: 20px;
+    overflow: scroll;
+    border: 3px solid black; /* Added border style and color */
+    border-radius: 15px;
+  
 }
 
 #ena{

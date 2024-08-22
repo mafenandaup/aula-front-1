@@ -14,6 +14,20 @@
 
 #doguinho{
     border-radius: 15px;
+float: left;
+}
+
+.floatcontainer{
+    background-color: aqua;
+    width:auto;
+    height:auto;
+display: flow-root;
+margin-left: 20px;
+}
+
+#ena{
+    float: right;
+    margin-right: 5px;
 }
 
 #labelinput1{

@@ -34,6 +34,7 @@ margin-top: 10px;
     overflow: scroll; /*permite arrastar o conteudo que não cabe de uma vez só dentro da div*/
     border: 3px solid black; /* Added border style and color */
     border-radius: 15px;
+    display: block;
   
 }
 
@@ -41,9 +42,11 @@ margin-top: 10px;
     width: 400px;
     height: 250px;
     margin-top: 20px;
-    overflow: scroll;
+    overflow: clip; /*a diferença do clip pro hidden é que no clip ele só fica visivel a partir de uma certa quantia de pixels*/
+    overflow-clip-margin: 4px;
     border: 3px solid black; /* Added border style and color */
     border-radius: 15px;
+    margin-bottom: 60px;
   
 }
 

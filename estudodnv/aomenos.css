@@ -1,0 +1,24 @@
+.randobox{
+    display: inline-block;
+    width: 340px;
+    height: 240px;
+    background-color: rgb(219, 183, 253);
+    border: 3px solid black;
+    border-radius: 10px;
+overflow: scroll;
+
+}
+
+.imges{
+float: left;
+margin-top: 10px;
+}
+
+body{
+    background-image: url(https://www.rollingstone.com/wp-content/uploads/2024/06/lisa-rockstar.jpg?crop=0px%2C62px%2C1798px%2C1014px&resize=1600%2C900);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* bg image BEST SETTINGS */
+}

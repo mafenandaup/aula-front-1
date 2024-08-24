@@ -73,3 +73,14 @@ margin-top: 10px;
     border-radius: 4px;
     font-family: 'Times New Roman'
 }
+
+.inline{
+background-color: aqua;
+display: inline;
+}
+.block{
+    background-color: brown;
+    display: inline-block;
+    height: 200px;
+    width: 100px;
+}

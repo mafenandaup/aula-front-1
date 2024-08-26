@@ -33,8 +33,9 @@ body{
     /* add solid before the border color, for the borderstylek */
     border-radius: 10px;
     vertical-align: top;
-    text-align: center;
+    text-align: left;
     margin: 10px; /* Adds space between divs */
+    padding-left: 10px;
 
 }
 

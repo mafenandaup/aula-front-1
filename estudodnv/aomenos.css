@@ -20,8 +20,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
-    /* bg image BEST SETTINGS */
+    background-size: 100vh;
+    /* bg image BEST SETTINGS VH means wiewport height*/
 }
 
 .notherbox, .notherbox2{
@@ -44,6 +44,14 @@ display: inline-block;
 width: 260px;
 height: auto;
 background-color: aliceblue;
-border: 2px solid;
+border: 4px solid;
 padding: 20px;
+box-sizing:content-box;
+text-align: center;
+}
+
+.boxpositions{
+    width: 260px;
+    height: auto;
+background-color: rgb(39, 106, 165);
 }

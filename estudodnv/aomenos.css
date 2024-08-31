@@ -44,4 +44,6 @@ display: inline-block;
 width: 260px;
 height: auto;
 background-color: aliceblue;
+border: 2px solid;
+padding: 20px;
 }

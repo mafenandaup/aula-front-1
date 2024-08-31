@@ -39,3 +39,9 @@ body{
 
 }
 
+.boxgenerico{
+display: inline-block;
+width: 260px;
+height: auto;
+background-color: aliceblue;
+}

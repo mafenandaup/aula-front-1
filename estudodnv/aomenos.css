@@ -71,3 +71,23 @@ background-color: rgb(39, 106, 165);
     top: 0;
     
 }
+
+#container{
+    border: 2px solid;
+}
+
+#container p{
+background-color: blue;
+display: inline;
+/* descendants are highlighted with blue */
+}
+
+#container > p{
+    background-color: blueviolet;
+    /* notice that only 1 and 2 are first children, because they are only inside the main div. #3 is in another div inside this onde, so it wont be a first child. */
+}
+
+#container ~ p{
+background-color: pink;
+/* ~represent the siblings inside the body tag, so if theyre inside a div, theyre no longer considered siblings. with + you can only style the adjacent sibling (o irmão que tá logo embaixo da div) */
+}

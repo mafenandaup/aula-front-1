@@ -2,6 +2,7 @@ img{
     float: right;
     height: 200px;
     border-radius: 15px;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
 }
 
 .container11{
@@ -9,6 +10,18 @@ display: inline-block;
 height: 400px;
 width: 400px;
 margin-top: 30px;
-font-family: monospace;
+font-family: Outfit;
 font-size: large;
+position: relative;
+text-align: left;
+
+}
+
+h1,h4{
+    font-family: Outfit;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+}
+
+.pagtoda{
+    text-align: center;
 }

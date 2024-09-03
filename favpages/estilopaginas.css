@@ -24,4 +24,11 @@ h1,h4{
 
 .pagtoda{
     text-align: center;
+    margin-top: 120px;
 }
+
+ol ,ul ,li, a{
+    text-decoration: none;
+    color: rgb(33, 31, 172);
+}
+

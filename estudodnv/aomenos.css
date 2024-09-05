@@ -91,3 +91,16 @@ display: inline;
 background-color: pink;
 /* ~represent the siblings inside the body tag, so if theyre inside a div, theyre no longer considered siblings. with + you can only style the adjacent sibling (o irmão que tá logo embaixo da div) */
 }
+
+.btngenerico{
+    background-color: blue;
+    color:antiquewhite;
+}
+
+.btngenerico:hover{
+    font-size: 1.1rem;
+    background-color: aqua;
+}
+.btngenerico:visited{
+    background-color: black;
+}

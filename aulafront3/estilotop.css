@@ -4,6 +4,7 @@ ul>li:hover {
     border-radius: 3px;
     color: rgb(73, 18, 66);
     cursor: pointer;
+    padding: 3px;
 }
 
 body {
@@ -15,10 +16,12 @@ body {
 .texttitle {
     font-family: Outfit;
     color: rgb(101, 19, 177);
+    padding: 10px;
 }
 
 .textfont {
     font-family: Outfit;
+    padding: 10px;
 }
 
 .btns {
@@ -61,13 +64,18 @@ justify-content: center;
 text-align: center;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
 nav {
     background-color: rgb(243, 196, 255);
-    display: flex;
     gap: 4px;
-    width:auto;
+    width: fit-content;
     height: 70px;
     border-radius: 13px;
+    display: flex;
     align-items: center;
     justify-content: center;
     filter: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
@@ -79,4 +87,46 @@ header{
 footer{
     display: flex;
 align-content: center;
+}
+
+@keyframes fadein {
+    
+}
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .btns {
+        width: 150px;
+        font-size: 18px;
+    }
+
+    article {
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .btns {
+        width: 100px;
+        font-size: 16px;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    nav {
+        gap: 2px;
+    }
 }

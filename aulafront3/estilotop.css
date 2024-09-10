@@ -64,15 +64,11 @@ justify-content: center;
 text-align: center;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: center;
-}
 
 nav {
     background-color: rgb(243, 196, 255);
     gap: 4px;
-    width: fit-content;
+    width: auto;
     height: 70px;
     border-radius: 13px;
     display: flex;
@@ -107,7 +103,7 @@ align-content: center;
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
     }
 

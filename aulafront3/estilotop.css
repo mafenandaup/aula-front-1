@@ -9,7 +9,7 @@ ul>li:hover {
 body {
     margin: 30px;
     height: 100vh;
-    background: linear-gradient( rgb(213, 191, 241), white);
+    background: linear-gradient(rgb(213, 191, 241), white);
 }
 
 .texttitle {
@@ -25,24 +25,54 @@ body {
     color: blueviolet;
     background-color: rgb(251, 230, 255);
     border: 2px solid rgb(192, 159, 207);
+    width: 200px;
     font-family: Outfit;
     border-radius: 13px;
     padding: 5px;
-font-size: 20px
+    font-size: 20px
 }
 
 .btns:hover {
     background-color: rgb(162, 98, 177);
     color: aliceblue;
     cursor: pointer;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
 }
 
 article {
     width: 400px;
+    line-height: 25px;
 }
 
-p{
+p {
     font-family: Outfit;
-    color: rgb(126, 4, 126);  
+    color: rgb(126, 4, 126);
 }
 
+img {
+    border-radius: 15px;
+    border: 3px solid purple;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+}
+
+main {
+    position: relative;
+    left: 740px;
+    right: 800px;
+}
+
+nav {
+    background-color: rgb(243, 196, 255);
+    display: flex;
+    gap: 4px;
+    width:auto;
+    height: 70px;
+    border-radius: 13px;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
+}
+header{
+
+    text-align: center;
+}

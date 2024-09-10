@@ -3,6 +3,7 @@ ul>li:hover {
     display: inline;
     border-radius: 3px;
     color: rgb(73, 18, 66);
+    cursor: pointer;
 }
 
 body {
@@ -33,6 +34,7 @@ font-size: 20px
 .btns:hover {
     background-color: rgb(162, 98, 177);
     color: aliceblue;
+    cursor: pointer;
 }
 
 article {

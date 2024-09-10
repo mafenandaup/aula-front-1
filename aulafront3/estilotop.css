@@ -1,0 +1,23 @@
+ul > li:hover {
+background-color: rgb(213, 180, 243);
+display: inline;
+border-radius: 3px;
+}
+.texttitle{
+    font-family: Outfit;
+}
+.textfont{
+    font-family: Outfit;
+}
+.btns{
+    color: blueviolet;
+    background-color: rgb(251, 230, 255);
+    border: 2px solid rgb(192, 159, 207);
+    font-family: Outfit;
+    border-radius: 13px;
+}
+
+.btns:hover{
+    background-color:  rgb(162, 98, 177);
+    color: aliceblue;
+}

@@ -8,6 +8,7 @@ ul>li:hover {
 body {
     margin: 30px;
     height: 100vh;
+    background: linear-gradient( rgb(213, 191, 241), white);
 }
 
 .texttitle {
@@ -25,7 +26,8 @@ body {
     border: 2px solid rgb(192, 159, 207);
     font-family: Outfit;
     border-radius: 13px;
-    size: ;
+    padding: 5px;
+font-size: 20px
 }
 
 .btns:hover {
@@ -36,3 +38,10 @@ body {
 article {
     width: 400px;
 }
+
+p{
+    font-family: Outfit;
+    color: rgb(126, 4, 126);  
+}
+
+nav

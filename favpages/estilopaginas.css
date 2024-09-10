@@ -32,3 +32,6 @@ ol ,ul ,li, a{
     color: rgb(33, 31, 172);
 }
 
+li:hover{
+background-color: bisque;
+}

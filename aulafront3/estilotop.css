@@ -8,7 +8,7 @@ ul>li:hover {
 
 body {
     margin: 30px;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(rgb(213, 191, 241), white);
 }
 
@@ -56,9 +56,9 @@ img {
 }
 
 main {
-    position: relative;
-    left: 740px;
-    right: 800px;
+display: flex;
+justify-content: center;
+text-align: center;
 }
 
 nav {
@@ -75,4 +75,8 @@ nav {
 header{
 
     text-align: center;
+}
+footer{
+    display: flex;
+align-content: center;
 }

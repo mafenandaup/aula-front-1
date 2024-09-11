@@ -1,10 +1,17 @@
 ul>li:hover {
-    background-color: rgb(213, 180, 243);
-    display: inline;
     border-radius: 3px;
-    color: rgb(73, 18, 66);
     cursor: pointer;
-    padding: 3px;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-name: fadeinhighlights,zoomin;
+    animation-fill-mode: forwards;
+}
+ul>li{
+    animation-name: zoomout;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
 }
 
 body {
@@ -31,8 +38,13 @@ body {
     width: 200px;
     font-family: Outfit;
     border-radius: 13px;
+    animation-name: zoomout;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
     padding: 5px;
     font-size: 20px
+        
 }
 
 .btns:hover {
@@ -40,6 +52,13 @@ body {
     color: aliceblue;
     cursor: pointer;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+    cursor: pointer;
+animation-duration: 0.3s;
+animation-timing-function: ease-in-out;
+animation-name: zoomin;
+animation-fill-mode: forwards;
+animation-play-state: running;
+
 }
 
 article {
@@ -56,12 +75,19 @@ img {
     border-radius: 15px;
     border: 3px solid purple;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+    animation-name: zoomout;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 main {
 display: flex;
 justify-content: center;
 text-align: center;
+animation-duration: 1.2s;
+animation-timing-function: ease-out;
+animation-name: fadein;
 }
 
 
@@ -75,19 +101,59 @@ nav {
     align-items: center;
     justify-content: center;
     filter: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-name: fadein;
 }
 header{
-
     text-align: center;
-}
-footer{
-    display: flex;
-align-content: center;
+    animation-duration: 1.2s;
+animation-timing-function: ease-out;
+animation-name: fadein;
+
 }
 
 @keyframes fadein {
-    
+    0%{
+        opacity: 0%;
+        position: relative;
+        top: 20px;
+    }
+    100%{
+        opacity: 100%;
+        position: relative;
+        top: 0px;
+    }
 }
+@keyframes zoomin {
+    0%{
+
+    }
+    100%{
+        transform: scale(1.2);
+        margin: 20px;
+    }
+}
+@keyframes zoomout {
+    from {
+        margin: 20px;
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeinhighlights {
+    from {
+        background-color: rgba(213, 180, 243, 0.5);
+    }
+    to {
+        background-color: rgba(213, 180, 243, 1);
+        border-radius: 30px;
+    }
+}
+
 
 
 /* Media Queries para responsividade */
@@ -126,3 +192,15 @@ align-content: center;
         gap: 2px;
     }
 }
+img:active{
+
+}
+img:hover{
+cursor: pointer;
+animation-duration: 0.3s;
+animation-timing-function: ease-in-out;
+animation-name: zoomin;
+animation-fill-mode: forwards;
+animation-play-state: running;
+}
+

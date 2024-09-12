@@ -1,0 +1,15 @@
+.btn{
+    font-family: Plus Jakarta Sans;
+}
+
+h1{
+
+}
+.hover-color {
+    font-family: Plus Jakarta Sans;
+    transition: color 0.3s ease;
+}
+
+.hover-color:hover {
+    color: rgb(251, 0, 255); /* Change to your desired color */
+}

@@ -1,15 +1,77 @@
 .btn{
     font-family: Plus Jakarta Sans;
+    font-size: large;
+    border-radius: 12px;
+    padding: 10px;
+    filter: drop-shadow(4px 3px 2px rgba(0,0,0,0.2));
+    animation-name: zoomout;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.btn:hover{
+    transition: color 0.3s ease;
+    background-color: rgb(226, 43, 183);
+    color: antiquewhite;
+    animation-name: zoomin;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
-h1{
-
-}
 .hover-color {
     font-family: Plus Jakarta Sans;
     transition: color 0.3s ease;
+    font-size: 80px;
+    filter: drop-shadow(4px 3px 2px rgba(0,0,0,0.2));
 }
 
 .hover-color:hover {
-    color: rgb(251, 0, 255); /* Change to your desired color */
+    color: rgb(226, 43, 183); 
+}
+.pedido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+}
+@keyframes zoomin {
+    0%{
+
+    }
+    100%{
+        transform: scale(1.2);
+        margin: 20px;
+    }
+}
+@keyframes zoomout {
+    from {
+        margin: 20px;
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.animated-background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #de8cff, #fff4f1, #fad0c4, #ff9a9e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

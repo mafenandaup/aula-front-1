@@ -1,13 +1,4 @@
-.balls{
-    width: 140px;
-    height: 140px;
-    background-color: blue;
-
-}
-.container{
+body{
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-    align-items: center;    /* Centers items vertically */
-    height: 100vh;          /* Full viewport height */
-    gap: 20px;
+    background-color: blanchedalmond;
 }

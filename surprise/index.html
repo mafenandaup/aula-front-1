@@ -21,11 +21,25 @@
                 </h1>
                 <nav>
                   <a href="ily.html" target="_blank" rel="noopener noreferrer">  <button class="btn" id="sim">sim!</button></a>
-                   <a href="unoreverse.html" target="_blank" rel="noopener noreferrer"> <button class="btn" id="nao">não :(</button></a>
+                   <a href="unoreverse.html" target="_blank" rel="noopener noreferrer"> <button class="btn" id="no">não :(</button></a>
                 </nav>
             </div>
         </div>
-        <script src="functionwow.js"></script>
+        <script>
+            let button = document.getElementById('no');
+            let height = window.innerHeight - 20;
+            let width = window.innerWidth - 20;
+            let moveCount = 0;
+            let maxMoves = 10; // Number of times the button will move away
+    
+            button.addEventListener('mouseover', function() {
+                if (moveCount < maxMoves) {
+                    button.style.position = 'absolute';
+                    button.style.top = Math.random() * height + 'px';
+                    button.style.left = Math.random() * width + 'px';
+                    moveCount++;
+                }
+            });
+        </script>
     </body>
-
-</html>
+    </html>

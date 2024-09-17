@@ -1,12 +1,21 @@
+:root {
+    --colornav: rgb(147, 115, 233);
+    --colorbtns: rgb(158, 154, 250);
+    --colordestaque: rgb(254, 249, 255);
+    --colorcontrast: rgb(0,0,0);
+    --colorbg: rgb(237, 225, 250);
+    --sombratop: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
+    }
+
 nav{
-    background-color: rgb(156, 129, 231);
+    background-color:var(--colornav);
     gap: 4px;
     width: 100%;
     height: 70px;
     display: flex;
     align-items: center;
     padding: 8px;
-    filter: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
+    filter: var(--sombratop);
     justify-content: start
 
 }
@@ -14,11 +23,12 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: aliceblue;
+    background-color: var(--colorbg);
 }
 .navbtn{
 width: auto;
 padding: 6px;
 display: flex;
+background-color: var(--colornav);
 
 }

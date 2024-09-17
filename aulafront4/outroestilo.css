@@ -28,6 +28,8 @@ body{
 .navbtn{
 width: auto;
 padding: 6px;
+font-family: Poppins;
+color: var(--colordestaque);
 display: flex;
 background-color: var(--colornav);
 

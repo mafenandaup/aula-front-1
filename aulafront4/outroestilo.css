@@ -5,8 +5,9 @@ nav{
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 8px;
     filter: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
+    justify-content: start
 
 }
 body{
@@ -18,4 +19,6 @@ body{
 .navbtn{
 width: auto;
 padding: 6px;
+display: flex;
+
 }

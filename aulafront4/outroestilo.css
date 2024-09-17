@@ -8,63 +8,69 @@
     --sombratop: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorbg);
+    margin: 0;
+}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--colornav);
     width: 100%;
-    height: 70px;
-    padding-left: 15%;
+    height: 60px;
+    padding: 0 15%;
     filter: var(--sombratop);
-    justify-content: space-around
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-body {
-    height: 100vh;
+nav ul {
+    position: sticky;
+    top: 0;
     display: flex;
-    justify-content: center;
-    background-color: var(--colorbg);
-}
-
-* {
-    font-family: Poppins;
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px, 20px;
+    margin: 0 15px;
     font-weight: 600;
-    margin: 30px;
     color: var(--colordestaque);
     filter: var(--sombratop);
     transition: color 0.3s ease;
     cursor: pointer;
 }
 
-li:hover {
+nav ul li:hover {
     color: var(--colorselect);
-    
 }
 
-.btns{
-padding: 6px;
-background-color: var(--colorbtns);
-color: var(--colordestaque);
-border: 0px;
-border-radius: 10px;
-width: 8%;
-filter: var(--sombratop);
-cursor: pointer;
-animation-name: zoomout;
-animation-duration: 0.2s;
-animation-timing-function: ease-in-out;
-animation-fill-mode: forwards;
+.btns {
+    padding: 6px;
+    background-color: var(--colorbtns);
+    color: var(--colordestaque);
+    border: none;
+    border-radius: 10px;
+    filter: var(--sombratop);
+    cursor: pointer;
+    animation-name: zoomout;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
 
+.btns:hover {
+    animation-name: zoomin;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 @keyframes zoomin {
@@ -85,9 +91,13 @@ animation-fill-mode: forwards;
     }
 }
 
-.btns:hover{
-    animation-name: zoomin;
-    animation-duration: 0.2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+* {
+    font-family: Poppins;
+}
+
+.testing {
+    margin-top: 100px;
+    width: 200px;
+    height: 2000px;
+    background-color: aliceblue;
 }

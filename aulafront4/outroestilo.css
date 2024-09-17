@@ -2,6 +2,7 @@
     --colornav: rgb(147, 115, 233);
     --colorbtns: rgb(158, 154, 250);
     --colordestaque: rgb(254, 249, 255);
+    --colorselect: rgb(52, 0, 121);
     --colorcontrast: rgb(0,0,0);
     --colorbg: rgb(237, 225, 250);
     --sombratop: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
@@ -39,4 +40,9 @@ nav ul li{
     padding: 10px,20px;
     font-weight: 600;
     color: var(--colordestaque);
+    transition: color 0.3s ease;
+}
+
+li:hover{
+color:var(--colorselect);
 }

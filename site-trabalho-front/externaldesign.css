@@ -9,12 +9,27 @@
 
 body {
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.988) 30%, rgba(0, 0, 0, 0.0) 70%), url(imgs/photo-1718725622477-297fcc090874.jpg);
+    margin: 0;
+    position: relative;
+    overflow: hidden; /* Garante que não apareçam barras de rolagem */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.988) 30%, rgba(0, 0, 0, 0.0) 70%), url('imgs/photo-1718725622477-297fcc090874.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    filter: grayscale(); /* Exemplo de filtro */
+    z-index: -1;
 }
+
 
 #logomarca {
     display: flex;

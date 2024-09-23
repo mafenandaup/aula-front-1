@@ -1,3 +1,14 @@
+.root{
+    --corfundo: (rgb(254, 250, 224));
+    --cordestaqueverde :(rgb(40, 54, 24));
+    --corverde :(rgb(96, 108, 56));
+    --cormarrom : (rgb(188, 108, 37));
+    --cormarromdestaque : (rgb(60, 32, 0));
+    --cormarromclaro : (rgb(221, 161, 94));
+}
+
+
+
 body{
     height: 100vh;
     background-color: rgb(255, 145, 0);

@@ -1,25 +1,73 @@
-.root{
-    --corpopups: (rgb(254, 250, 224));
-    --preto :(rgb(0, 0, 0));
-    --cinzinhabasico :(rgb(92, 93, 119));
-    --corazulclaro : (rgb(95, 98, 255));
-    --cordestaque : (rgb(105, 0, 252));
-    --roxin : (rgb(215, 94, 221));
-    --sombratop: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
+:root {
+    --corpopups: rgb(254, 250, 224);
+    --preto: rgb(0, 0, 0);
+    --cinzinhabasico: rgb(92, 93, 119);
+    --corazulclaro: rgb(95, 98, 255);
+    --cordestaque: rgb(105, 0, 252);
+    --roxin: rgb(215, 94, 221);
 }
 
-
-
-body{
+body {
     height: 100vh;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75) 30%, rgba(0, 0, 0, 0) 70%), url(imgs/photo-1718725622477-297fcc090874.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-
 }
 
-#logomarca{
-filter: invert();
+#logomarca {
+    display: flex;
+    mix-blend-mode: multiply;
+    margin-left: 60px;
 }
+
+nav {
+    width: 100%; /* Garante que a nav ocupe toda a largura da tela */
+    height: 80px;
+    background-color: rgb(246, 240, 255);
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-around; /* Espaça os itens uniformemente */
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove bullets */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Baskervville;
+}
+
+nav li {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: row; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+    nav{
+        width: 140%;
+    }
+  
+    }
+

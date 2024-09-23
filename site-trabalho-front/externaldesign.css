@@ -3,13 +3,13 @@
     --preto: rgb(0, 0, 0);
     --cinzinhabasico: rgb(92, 93, 119);
     --corazulclaro: rgb(95, 98, 255);
-    --cordestaque: rgb(105, 0, 252);
+    --cordestaque: rgb(41, 59, 255);
     --roxin: rgb(215, 94, 221);
 }
 
 body {
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75) 30%, rgba(0, 0, 0, 0) 70%), url(imgs/photo-1718725622477-297fcc090874.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.988) 30%, rgba(0, 0, 0, 0.0) 70%), url(imgs/photo-1718725622477-297fcc090874.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -18,19 +18,21 @@ body {
 
 #logomarca {
     display: flex;
-    mix-blend-mode: multiply;
+  mix-blend-mode: multiply;
     margin-left: 60px;
 }
 
 nav {
-    width: 100%; /* Garante que a nav ocupe toda a largura da tela */
+    width: 100%; 
     height: 80px;
-    background-color: rgb(246, 240, 255);
+    background-color: rgba(246, 240, 255, 0.966);
     display: flex;
     align-items: center; /* Alinha verticalmente ao centro */
     justify-content: space-between; 
     padding: 0 20px; 
     box-sizing: border-box; 
+    position: sticky;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));
 }
 
 nav ul {
@@ -38,12 +40,12 @@ nav ul {
     width: 100%;
     align-items: center; /* Alinha verticalmente ao centro */
     justify-content: space-around; /* Espaça os itens uniformemente */
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 19px;
+  font-weight: 500;
     color: rgb(0, 0, 0);
     margin: 0; /* Remove margens */
-    padding: 0; /* Remove padding */
-    list-style: none; /* Remove bullets */
+    padding: 0 100px; 
+    list-style: none; 
 }
 
 * {
@@ -58,10 +60,47 @@ nav li {
     list-style: none;
     text-decoration: none;
     padding: 1rem;
+    animation-name: zoomout;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+     transition: color 0.3s ease;
 }
+
+nav li:hover{
+    animation-name: zoomin;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    color: var(--cordestaque);
+}
+@keyframes zoomin {
+    0% {}
+
+    100% {
+        transform: scale(1.146);
+    }
+}
+
+@keyframes zoomout {
+    from {
+        transform: scale(1.146);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+* {
+    font-family: Poppins;
+}
+
 
 @media (max-width: 600px) {
     nav ul {
+        padding: 0; 
         flex-direction: row; /* Alinha os itens verticalmente */
         align-items: center; /* Centraliza os itens */
     }

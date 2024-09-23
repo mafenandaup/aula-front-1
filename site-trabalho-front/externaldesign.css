@@ -1,17 +1,18 @@
 .root{
-    --corfundo: (rgb(254, 250, 224));
-    --cordestaqueverde :(rgb(40, 54, 24));
-    --corverde :(rgb(96, 108, 56));
-    --cormarrom : (rgb(188, 108, 37));
-    --cormarromdestaque : (rgb(60, 32, 0));
-    --cormarromclaro : (rgb(221, 161, 94));
+    --corpopups: (rgb(254, 250, 224));
+    --preto :(rgb(0, 0, 0));
+    --cinzinhabasico :(rgb(92, 93, 119));
+    --corazulclaro : (rgb(95, 98, 255));
+    --cordestaque : (rgb(105, 0, 252));
+    --roxin : (rgb(215, 94, 221));
+    --sombratop: drop-shadow(3px 3px 3px rgba(62, 46, 63, 0.3));
 }
 
 
 
 body{
     height: 100vh;
-
+background-image: url(imgs/photo-1718725622477-297fcc090874.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -19,5 +20,5 @@ body{
 }
 
 #logomarca{
-    mix-blend-mode: multiply;
+filter: invert();
 }

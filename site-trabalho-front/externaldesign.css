@@ -12,11 +12,12 @@
 
 body{
     height: 100vh;
-background-image: url(imgs/photo-1718725622477-297fcc090874.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75) 30%, rgba(0, 0, 0, 0) 70%), url(imgs/photo-1718725622477-297fcc090874.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+
 }
 
 #logomarca{

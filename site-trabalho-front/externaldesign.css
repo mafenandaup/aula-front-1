@@ -1,7 +1,7 @@
 :root {
     --corpopups:  rgb(245, 245, 245);
     --preto: rgb(0, 0, 0);
-    --cinzinhabasico: rgb(92, 93, 119);
+    --cinzinhabasico: rgb(83, 84, 94);
     --corazulclaro: rgb(95, 138, 255);
     --cordestaque: rgb(12, 67, 218);
     --roxin: rgb(215, 94, 221);
@@ -74,9 +74,19 @@ nav li:hover{
 }
 
 .firstsec{
-width: 400px;
-height: 200px;
+width: 100%;
+height: 400px;
 background-color: var(--cinzinhabasico);
+}
+
+.signinup{
+    background-color: var(--cinzinhabasico);
+    border-radius: 13px;
+    color: var(--corpopups);
+
+}
+.signinup:hover{
+      color: var(--corpopups);
 }
 @keyframes zoomin {
     0% {}

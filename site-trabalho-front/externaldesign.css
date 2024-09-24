@@ -72,6 +72,12 @@ nav li:hover{
     cursor: pointer;
     color: var(--cordestaque);
 }
+
+.firstsec{
+width: 400px;
+height: 200px;
+background-color: var(--cinzinhabasico);
+}
 @keyframes zoomin {
     0% {}
 

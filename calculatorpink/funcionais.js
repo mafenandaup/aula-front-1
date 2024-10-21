@@ -15,25 +15,34 @@ document.getElementById("equal").onclick = function calculate() {
         display.value = "error";
     }
 }
+
+const buttons = document.querySelectorAll('.buttons button');
+
 buttons.forEach(button => {
     button.addEventListener('click', function() {
-        appendToDisplay(this.textContent);
+        const value = this.textContent;
+        if (value === '=') {
+            calculate();
+        } else if (value === 'AC') {
+            limpardisplay();
+        } else {
+            appendToDisplay(value);
+        }
     });
 });
 
-
 document.addEventListener('keydown', function(event) {
     const key = event.key;
-    
+
     if ('0123456789'.includes(key)) {
         appendToDisplay(key);
     } else if (key === 'Enter') {
-        document.getElementById("equal").click();
+        calculate();
     } else if (key === 'Backspace') {
         display.value = display.value.slice(0, -1);
     } else if ('+-*/.'.includes(key)) {
         appendToDisplay(key);
     } else if (key === 'Escape') {
-        document.getElementById("clear").click();
+        limpardisplay();
     }
 });

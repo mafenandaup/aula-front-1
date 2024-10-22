@@ -9,8 +9,8 @@ body {
 }
 
 .card {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     background-color: rgb(250, 243, 247);
     border-radius: 15%;
 }
@@ -18,8 +18,8 @@ body {
 .carousel {
     display: flex;
     flex-wrap: wrap; 
-    width: 400px; 
-    height: 400px; 
+    width: 750px; 
+    height: 600px; 
     background-color: rgb(252, 158, 213);
     align-items: center;
     justify-content: center;

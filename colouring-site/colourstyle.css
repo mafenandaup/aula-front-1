@@ -6,6 +6,7 @@
 
 .carousel{
     display: flex;
-    width: 500px;
-    height: auto;
+    width: 600px;
+    height: 600px;
+    background-color: blueviolet;
 }

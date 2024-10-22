@@ -5,12 +5,14 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
+    gap:15px;
 }
 
 .card {
     height: 150px;
     width: 150px;
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(250, 243, 247);
+    border-radius: 15%;
 }
 
 .carousel {
@@ -18,15 +20,16 @@ body {
     flex-wrap: wrap; 
     width: 400px; 
     height: 400px; 
-    background-color: blueviolet;
+    background-color: rgb(252, 158, 213);
     align-items: center;
     justify-content: center;
  padding: 20px;
     gap: 20px;
+    border-radius: 10%;
 }
 
 h1 {
     font-family: 'Cheri liney';
     color: rgb(228, 113, 132);
-    filter: drop-shadow(3px 3px 3px rgba(231, 50, 50, 0.5));
+    filter: drop-shadow(3px 3px 3px rgba(231, 50, 50, 0.3));
 }

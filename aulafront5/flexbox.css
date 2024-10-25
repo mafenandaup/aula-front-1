@@ -10,7 +10,7 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     width: 300px;
     height: 300px;
     border: 1px solid black;
@@ -27,13 +27,5 @@ body {
 }
 
 #item1 {
-    align-self: baseline;
-}
-
-#item2 {
     align-self: center;
-}
-
-#item3 {
-    align-self: stretch;
 }

@@ -22,7 +22,7 @@ h1 {
 }
 
 .arrow{
-    border: 2px rgb(247, 155, 170);
+    border: 2px solid rgb(247, 155, 170);
     background-color: rgb(255, 0, 144);
     border-radius: 50%;
     height: 40px;

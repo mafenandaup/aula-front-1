@@ -68,3 +68,21 @@ h1 {
     animation-fill-mode: forwards;
 }
 
+@keyframes zoomin {
+    0%{
+
+    }
+    100%{
+        transform: scale(1.2);
+        margin: 20px;
+    }
+}
+@keyframes zoomout {
+    from {
+        margin: 20px;
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}

@@ -33,3 +33,9 @@ h1 {
     color: rgb(228, 113, 132);
     filter: drop-shadow(3px 3px 3px rgba(231, 50, 50, 0.3));
 }
+
+.carousel-container {
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+}

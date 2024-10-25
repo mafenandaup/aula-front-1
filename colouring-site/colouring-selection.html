@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="colourstyle.css">
     <link href="https://fonts.cdnfonts.com/css/cheri" rel="stylesheet">
-    <link rel="shortcut icon" href="https://pngfre.com/wp-content/uploads/hello-kitty-51-243x300.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://pngfre.com/wp-content/uploads/hello-kitty-51-243x300.png"
+        type="image/x-icon">
     <title>Colour-Kitty</title>
 </head>
+
 <body>
     <audio id="bgsong" src="imgkitty/bgmusic.mp3" muted></audio>
     <button id="mute-btn">Mute</button>
     <h1>Colour-Kitty</h1>
     <div class="carousel-container">
-        <button class="arrow-left" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="arrow-right" onclick="moveSlide(1)">&#10095;</button>
+        <button class="arrow" id="arrow-left" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="arrow" id="arrow-right" onclick="moveSlide(1)">&#10095;</button>
     </div>
     <script src="carousel.js"></script>
 </body>
+
 </html>

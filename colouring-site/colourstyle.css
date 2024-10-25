@@ -62,4 +62,9 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    animation-name: zoomout;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
+

@@ -7,35 +7,8 @@ body {
     margin: 0;
     gap:15px;
 }
-
-.card {
-    height: 250px;
-    width: 200px;
-    background-color: rgb(250, 243, 247);
-    border-radius: 10%;
-}
-
-.carousel {
-    display: flex;
-    flex-wrap: wrap; 
-    width: 750px; 
-    height: 600px; 
-    background-color: rgb(252, 158, 213);
-    align-items: center;
-    justify-content: center;
- padding: 15px;
-    gap: 20px;
-    border-radius: 10px;
-}
-
 h1 {
     font-family: 'Cheri liney';
     color: rgb(228, 113, 132);
     filter: drop-shadow(3px 3px 3px rgba(231, 50, 50, 0.3));
-}
-
-.carousel-container {
-    position: relative;
-    width: 500px;
-    overflow: hidden;
 }

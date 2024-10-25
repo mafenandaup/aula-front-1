@@ -10,30 +10,34 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start; /* Define alinhamento padrão */
-    width: 300px;
-    height: 300px;
+    align-items: flex-start;
+    width: 80%;
+    height: 400px; /* Aumenta a altura para evidenciar o stretch */
     border: 1px solid black;
 }
 
 .item {
-    background-color: #287da7;
-    color: white;
     padding: 20px;
     margin: 5px;
     border: 1px solid #ccc;
-    width: 50px;
+    width: 100px;
+    color: white;
+}
+
+.baseline {
+    background-color: #FF6347; /* Tomato */
+    align-self: baseline;
     height: 50px;
 }
 
-#item1 {
-    align-self: baseline;
-}
-
-#item2 {
+.center {
+    background-color: #4682B4; /* Steel Blue */
     align-self: center;
+    height: 50px;
 }
 
-#item3 {
+.stretch {
+    background-color: #32CD32; 
     align-self: stretch;
+    height: auto; 
 }

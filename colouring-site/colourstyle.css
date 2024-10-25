@@ -5,32 +5,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    gap: 15px;
-}
-
-h1 {
-    font-family: 'Cheri liney';
-    color: rgb(228, 113, 132);
-    filter: drop-shadow(3px 3px 3px rgba(231, 50, 50, 0.3));
-}
-
-.slider {
-    position: relative;
-    width: 800px;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: rgb(252, 158, 213);
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    display: flex;
-    flex-wrap: wrap;
-    width: 800px;
+    gap:15px;
 }
 
 .card {
@@ -38,32 +13,23 @@ h1 {
     width: 200px;
     background-color: rgb(250, 243, 247);
     border-radius: 10%;
+}
+
+.carousel {
     display: flex;
+    flex-wrap: wrap; 
+    width: 750px; 
+    height: 600px; 
+    background-color: rgb(252, 158, 213);
     align-items: center;
     justify-content: center;
-    margin: 15px;
+ padding: 15px;
+    gap: 20px;
+    border-radius: 10px;
 }
 
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+h1 {
+    font-family: 'Cheri liney';
+    color: rgb(228, 113, 132);
+    filter: drop-shadow(3px 3px 3px rgba(231, 50, 50, 0.3));
 }

@@ -60,6 +60,12 @@ h1 {
     position: relative;
 }
 
+img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .arrow {
     border: 2px solid rgb(247, 155, 170);
     background-color: rgb(255, 0, 144);
@@ -74,11 +80,7 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-
-    transform: translateY(-50%);
-    cursor: pointer;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .arrow:hover {

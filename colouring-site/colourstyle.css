@@ -39,7 +39,7 @@ h1 {
     position: relative;
 }
 
-.carousel {
+.carousel-wrapper {
     display: flex;
     align-items: center;
     background-color: rgb(44, 94, 32);
@@ -88,4 +88,8 @@ h1 {
     to {
         transform: scale(1);
     }
+}
+
+img{
+    display: none;
 }

@@ -13,6 +13,11 @@ h1 {
     filter: drop-shadow(3px 3px 3px rgba(231, 50, 50, 0.3));
 }
 
+#mute-btn{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(228, 113, 132);
+}
+
 .carousel-container {
     display: flex;
     align-items: center;
@@ -32,10 +37,10 @@ h1 {
     right: 3px;
 }
 
-}
-
 .carousel-wrapper {
     display: flex;
+    background-color: rgb(245, 240, 235);
+    border-radius: 15px;
     align-items: center;
     overflow: hidden;
     width: 70%;

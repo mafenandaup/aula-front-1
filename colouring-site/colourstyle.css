@@ -46,6 +46,12 @@ h1 {
     margin-left: 4px;
 }
 
+.slide {
+    display: inline;
+    min-width: 200px;
+    height: auto;
+}
+
 #arrow-right {
     right: 3px;
     margin-right: 4px;
@@ -107,8 +113,4 @@ img {
     to {
         transform: scale(1);
     }
-}
-
-img {
-    display: none;
 }

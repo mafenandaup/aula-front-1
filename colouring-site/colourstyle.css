@@ -22,6 +22,7 @@ h1 {
     background-color: rgb(255, 181, 220);
     width: 60px;
     height: 60px;
+    border: 2px solid rgb(186, 91, 107);
     border-radius: 50%;
     filter: drop-shadow(3px 3px 3px rgba(150, 31, 31, 0.3));
     display: flex;

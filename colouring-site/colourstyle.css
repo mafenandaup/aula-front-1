@@ -12,7 +12,8 @@ h1 {
     font-family: 'Cheri liney';
     color: rgb(228, 113, 132);
     filter: drop-shadow(3px 3px 3px rgba(231, 50, 50, 0.3));
-}k
+}
+
 #mute-btn {
     font-family: 'Cheri liney';
     justify-content: center;

@@ -5,21 +5,29 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    gap:15px;
+    gap: 15px;
 }
+
 h1 {
     font-family: 'Cheri liney';
     color: rgb(228, 113, 132);
     filter: drop-shadow(3px 3px 3px rgba(231, 50, 50, 0.3));
 }
 
-#mute-btn{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#mute-btn {
+    font-family: 'Cheri liney';
+    justify-content: center;
+    align-items: center;
     color: rgb(228, 113, 132);
+    background-color: rgb(255, 181, 220);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    filter: drop-shadow(3px 3px 3px rgba(150, 31, 31, 0.3));
     display: flex;
     align-self: flex-end;
-margin-top: 5px;
-margin-right: 20%;
+    margin-top: 5px;
+    margin-right: 20%;
 }
 
 .carousel-container {
@@ -73,27 +81,30 @@ margin-right: 20%;
 
 }
 
-.arrow:hover{
-        transform: translateY(-50%) scale(1.2);
+.arrow:hover {
+    transform: translateY(-50%) scale(1.2);
 }
 
 @keyframes zoomin {
-    0%{
+    0% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.2);
     }
 }
+
 @keyframes zoomout {
     from {
         transform: scale(1.2);
     }
+
     to {
         transform: scale(1);
     }
 }
 
-img{
+img {
     display: none;
 }

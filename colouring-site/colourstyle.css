@@ -16,6 +16,10 @@ h1 {
 #mute-btn{
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(228, 113, 132);
+    display: flex;
+    align-self: flex-end;
+margin-top: 5px;
+margin-right: 20%;
 }
 
 .carousel-container {

@@ -49,6 +49,7 @@ h1 {
     display: inline;
     min-width: 200px;
     height: auto;
+    width: 80%;
 }
 
 #arrow-right {

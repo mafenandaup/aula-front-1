@@ -153,3 +153,12 @@ slide h3 {
     }
 }
 
+@keyframes blurout{
+
+    from{
+        filter: blur(6px);
+    }
+    to{
+        filter: blur(0px);
+    }
+}

@@ -28,6 +28,7 @@ h1 {
     align-self: flex-end;
     margin-top: 5px;
     margin-right: 20%;
+    cursor: pointer;
 }
 .carousel-container {
     display: flex;

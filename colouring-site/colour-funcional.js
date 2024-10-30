@@ -13,6 +13,8 @@ function moveSlide(direction) {
     document.getElementById('arrow-right').style.visibility = currentSlide === totalSlides - 1 ? 'hidden' : 'visible';
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
     moveSlide(0); // Chama a função para configurar a posição inicial das setas
 });

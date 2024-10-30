@@ -1,12 +1,22 @@
 let currentSlide = 0;
 
 function moveSlide(direction) {
-    const slides = document.querySelectorAll('.carousel-slider img');
+    const slides = document.querySelectorAll('.carousel-slider .slide');
     const totalSlides = slides.length;
+
     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    
     const carouselSlider = document.querySelector('.carousel-slider');
     carouselSlider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    document.getElementById('arrow-left').style.visibility = currentSlide === 0 ? 'hidden' : 'visible';
+    document.getElementById('arrow-right').style.visibility = currentSlide === totalSlides - 1 ? 'hidden' : 'visible';
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    moveSlide(0); // Chama a função para configurar a posição inicial das setas
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const audio = document.getElementById('bgsong');
     const muteBtn = document.getElementById('mute-btn');

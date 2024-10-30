@@ -41,7 +41,6 @@ h1 {
     position: relative;
 }
 
-
 #arrow-left {
     left: 3px;
     margin-left: 4px;
@@ -58,18 +57,18 @@ h1 {
     animation:zoomin 0.5s ease-in-out forwards, blurin 0.3s ease-in-out forwards;
 }
 
-slide h3 {
+.slide h3 {
     position: absolute;
-    top: 50%;
+    bottom: 10px; /* Positioning from the bottom of the image */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%); /* Centers text horizontally */
     color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* Optional background for readability */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
     padding: 8px 12px;
     border-radius: 8px;
-    font-size: 1.2em;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease-in-out;
+    font-size: 1.2em; /* Adjust text size */
+    width: 90%; /* Adjust width */
+    text-align: center;
 }
 
 /* Show text on hover */

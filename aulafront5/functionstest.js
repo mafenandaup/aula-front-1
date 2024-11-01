@@ -1,3 +1,3 @@
-document.getElementById('click-hello').addEventListener('click' , function(){
+document.getElementById('click-hello').onclick = function() {
     console.log('Olá, Mundo!');
-});
+};

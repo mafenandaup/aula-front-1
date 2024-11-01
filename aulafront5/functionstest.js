@@ -18,6 +18,7 @@ document.getElementById('submit-ops').addEventListener('click', function() {
         return; 
     }
 
+    console.log('ATIVIDADE 3:');
     const soma = num1 + num2;
     console.log(`Soma: ${num1} + ${num2} = ${soma}`);
 
@@ -46,10 +47,11 @@ document.getElementById('submit-imppar').addEventListener('click', function(){
     }
 
     if(paroimpa%2 == 0){
-        console.log('O número apresentado é par!');
+        console.log(`ATIVIDADE 5: O número apresentado ${paroimpa} é par!`); 
+        // aqui, pra declarar variáveis dentro de texto, se usa aspas ao invés de crase.
         document.getElementById('POP-result-log').textContent = 'O número apresentado é par!';
     }else{
-        console.log('O número apresentado é impar!');
+        console.log('ATIVIDADE 5: O número apresentado é impar!');
         document.getElementById('POP-result-log').textContent = 'O número apresentado é impar!';
     }
 });

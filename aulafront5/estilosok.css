@@ -23,11 +23,19 @@ justify-content: center;
 
 .math-ops{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 15px;
+}
+.numbercalc{
+    display: flex;
     background-color: antiquewhite;
     flex-direction: row;
-    padding: 20px;
     height: auto;
     gap: 15px;
     width: auto;
-    border-radius: 15px;
+    padding: 20px;
 }

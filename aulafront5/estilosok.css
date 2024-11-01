@@ -24,6 +24,14 @@ flex-direction: column;
     padding: 10px;
 }
 
+#result-1{
+    display: flex;
+    background-color: #fff;
+    height: auto;
+    gap: 15px;
+    width: auto;
+}
+
 .math-ops{
     display: flex;
     flex-direction: column;

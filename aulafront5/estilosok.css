@@ -14,11 +14,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .twonumbers{
     display: flex;
-justify-content: center;
+justify-content: start;
+flex-direction: column;
     width:300px;
     height: auto;
     font-size: 10px;
-    background-color: aqua;
+    background-color: rgb(239, 176, 235);
     border-radius: 10px;
     padding: 10px;
 }

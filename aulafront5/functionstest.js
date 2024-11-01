@@ -41,6 +41,15 @@ document.getElementById('submit-imppar').addEventListener('click', function(){
     const paroimpa = parseFloat(document.getElementById('parimpar-op').value);
 
     if(isNaN(paroimpa)){
-        window.alert('Por favor, insira abaixo um número válido.')
+        window.alert('Por favor, insira abaixo um número válido.');
+        return;
+    }
+
+    if(paroimpa%2 == 0){
+        console.log('O número apresentado é par!');
+        document.getElementById('POP-result-log').textContent = 'O número apresentado é par!';
+    }else{
+        console.log('O número apresentado é impar!');
+        document.getElementById('POP-result-log').textContent = 'O número apresentado é impar!';
     }
 });

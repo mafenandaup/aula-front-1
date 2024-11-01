@@ -12,7 +12,7 @@ document.getElementById('submit-ops').addEventListener('click', function() {
     const num2 = parseFloat(document.getElementById('n2-diffops').value);
 
     if (isNaN(num1) || isNaN(num2)) {
-        console.log('Por favor, insira números válidos.');
+        window.alert('Por favor, insira números válidos.');
         return;
     }
 

@@ -32,3 +32,4 @@ document.getElementById('submit-ops').addEventListener('click', function() {
         console.log('Erro: divisão por zero não é permitida.');
     }
 });
+

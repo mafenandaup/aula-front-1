@@ -54,7 +54,8 @@ flex-direction: column;
 }
 
 .button-test{
-    display: inline-block;
+    display: flex;
+  align-self: center;
     width: auto;
     padding: 5px 3px;
     font-family: 'Poppins';

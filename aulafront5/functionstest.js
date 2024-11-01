@@ -7,6 +7,8 @@ let nome = 'Maria';
 const idade = Math.floor(Math.random() * 30); 
 console.log(`ATIVIDADE 2: Meu nome é ${nome} e eu tenho ${idade} anos.`);
 
+// ATIVIDADE 3: OPERAÇÃO COM DOIS NÚMEROS 
+
 document.getElementById('submit-ops').addEventListener('click', function() {
     const num1 = parseFloat(document.getElementById('n1-diffops').value);
     const num2 = parseFloat(document.getElementById('n2-diffops').value);
@@ -32,6 +34,8 @@ document.getElementById('submit-ops').addEventListener('click', function() {
         console.log('Erro: divisão por zero não é permitida.');
     }
 });
+
+// ATIVIDADE 5: PAR OU IMPAR
 
 document.getElementById('submit-imppar').addEventListener('click', function(){
     const num1 = parseFloat(document.getElementById('n1-diffops').value);

@@ -25,7 +25,7 @@ flex-direction: column;
    gap: 3px;
 }
 
-.math-ops{
+.js-ops{
     display: flex;
     flex-direction: column;
     justify-content: center;

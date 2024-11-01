@@ -13,8 +13,8 @@
     <!-- ATIVIDADE 1: HELLO WORLD -->
     <button id="click-hello" class="button-test">Hello, Console!</button>
     <!-- ATIVIDADE 3: OPERAÇÃO COM DOIS NÚMEROS -->
-    <section class="math-ops">
-        <h1>Operações Matemáticas:</h1>
+    <section class="js-ops" id="math-ops">
+        <h1>Operações Matemáticas</h1>
         <div class="numbercalc">
             <div class="twonumbers">
                 <h3>Operações distintas</h3>
@@ -43,7 +43,41 @@
             <div class="twonumbers">
                 <h3>Cálculo da Média (3 notas)</h3>
                 <button id="prompt-medias" class="button-test">Fazer Prompt</button>
-                <p id="POP-result-log">Os resultados serão expostos aqui e no console.</p>
+                <p id="NOTAS-result-log">Os resultados serão expostos aqui e no console.</p>
+            </div>
+        </div>
+    </section>
+    <section class="js-ops" id="random-ops1">
+        <h1>Comandos Aleatórios</h1>
+        <div class="numbercalc">
+            <div class="twonumbers">
+                <h3>Operações distintas</h3>
+                <p>multiplicação, soma, subtração e divisão de dois números.</p>
+                <label for="n1-diffops">Número 1</label>
+                <input type="text" id="n1-diffops">
+                <label for="n2-diffops">Número 2</label>
+                <input type="text" id="n2-diffops">
+                <button id="submit-ops" class="button-test">Consultar</button>
+
+
+                    <p>Os resultados serão expostos no console.</p>
+            </div>
+            <!-- ATIVIDADE 5: PAR OU IMPAR -->
+            <div class="twonumbers">
+                <h3>Par ou ímpar?</h3>
+                <p>Escreva um número aqui e determinarei se é par ou ímpar.</p>
+                <label for="parimpar-op">Número a ser determinado:</label>
+                <input type="text" id="parimpar-op">
+                <div class="result-tab" id="result-imppar">
+                    <button id="submit-imppar" class="button-test">Consultar</button>
+                    <p id="POP-result-log">Os resultados serão expostos aqui e no console.</p>
+                </div>
+            </div>
+                <!-- ATIVIDADE 4: CÁLCULO MÉDIA-->
+            <div class="twonumbers">
+                <h3>Cálculo da Média (3 notas)</h3>
+                <button id="prompt-medias" class="button-test">Fazer Prompt</button>
+                <p id="NOTAS-result-log">Os resultados serão expostos aqui e no console.</p>
             </div>
         </div>
     </section>

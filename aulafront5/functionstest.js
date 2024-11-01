@@ -64,9 +64,16 @@ document.getElementById('prompt-medias').addEventListener('click', function () {
     const nota2 = parseFloat(prompt('Insira a segunda nota:'));
     const nota3 = parseFloat(prompt('Insira a terceira nota:'));
 
-    if (nota1 < 10 || nota2 < 10 || nota3 < 10) {
-        window.alert('o comando foi interrompido. reenicie esse prompt e insira uma nota até 10.')
-    } else {
+    if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+        window.alert('Por favor, insira números válidos.');
+        return;
+    }
+
+    if (nota1 > 10 || nota2 > 10 || nota3 > 10) {
+        window.alert('O comando foi interrompido. Reenicie esse prompt e insira uma nota até 10.');
+        return;
+    }
+
         const media_final = (nota1 + nota2 + nota3) / 3;
 
         // Determina se o aluno foi aprovado ou reprovado
@@ -82,5 +89,4 @@ document.getElementById('prompt-medias').addEventListener('click', function () {
 
             // Parse é usado pra converter uma string em um número, pode ser parseFloat, parsedouble, parseInt..
         }
-    }
 });

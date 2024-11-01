@@ -22,11 +22,11 @@ document.getElementById('submit-ops').addEventListener('click', function() {
     const subtracao = num1 - num2;
     console.log(`Subtração: ${num1} - ${num2} = ${subtracao}`);
 
-    const multiplicacao = num1 * num2;
+    const multiplicacao = Math.round(num1 * num2);
     console.log(`Multiplicação: ${num1} * ${num2} = ${multiplicacao}`);
 
     if (num2 !== 0) {
-        const divisao = num1 / num2;
+        const divisao = Math.round(num1 / num2);
         console.log(`Divisão: ${num1} / ${num2} = ${divisao}`);
     } else {
         console.log('Erro: divisão por zero não é permitida.');

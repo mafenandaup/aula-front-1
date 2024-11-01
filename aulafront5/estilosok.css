@@ -9,5 +9,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
+}
+
+.twonumbers{
+    display: flex;
+justify-content: center;
+    width:300px;
+    height: auto;
+    font-size: 10px;
+    background-color: aqua;
 }

@@ -68,9 +68,9 @@ document.getElementById('').addEventListener('click', function () {
 
     // Determina se o aluno foi aprovado ou reprovado
     if (media_final >= 7) {
-        alert(`Sua média é ${media_final.toFixed(1)}. Você foi aprovado!`);
+        alert(`Sua média é ${media_final.toFixed(2)}. Você foi aprovado!`);
     } else {
-        alert(`Sua média é ${media_final.toFixed(1)}. Você foi reprovado.`);
+        alert(`Sua média é ${media_final.toFixed(2)}. Você foi reprovado.`);
         // Tofixed é usado para converter em apenas 1 casa decimal
 
         //         let num = 3.14159;

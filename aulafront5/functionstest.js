@@ -47,11 +47,11 @@ document.getElementById('submit-imppar').addEventListener('click', function(){
     }
 
     if(paroimpa%2 == 0){
-        console.log(`ATIVIDADE 5: O número apresentado ${paroimpa} é par!`); 
+        console.log(`ATIVIDADE 5: O número apresentado (${paroimpa}) é par!`); 
         // aqui, pra declarar variáveis dentro de texto, se usa aspas ao invés de crase.
         document.getElementById('POP-result-log').textContent = 'O número apresentado é par!';
     }else{
-        console.log('ATIVIDADE 5: O número apresentado é impar!');
+        console.log(`ATIVIDADE 5: O número apresentado (${paroimpa}) é impar!`);
         document.getElementById('POP-result-log').textContent = 'O número apresentado é impar!';
     }
 });

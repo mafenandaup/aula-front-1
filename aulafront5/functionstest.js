@@ -38,5 +38,9 @@ document.getElementById('submit-ops').addEventListener('click', function() {
 // ATIVIDADE 5: PAR OU IMPAR
 
 document.getElementById('submit-imppar').addEventListener('click', function(){
-    const num1 = parseFloat(document.getElementById('n1-diffops').value);
+    const paroimpa = parseFloat(document.getElementById('parimpar-op').value);
+
+    if(isNaN(paroimpa)){
+        window.alert('Por favor, insira abaixo um número válido.')
+    }
 });

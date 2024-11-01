@@ -58,7 +58,7 @@ document.getElementById('submit-imppar').addEventListener('click', function () {
 
 // ATIVIDADE 4: CÁLCULO DAS MÉDIAS
 
-document.getElementById('').addEventListener('click', function () {
+document.getElementById('prompt-medias').addEventListener('click', function () {
 
     const nota1 = parseFloat(prompt('Insira a primeira nota:'));
     const nota2 = parseFloat(prompt('Insira a segunda nota:'));

@@ -33,3 +33,6 @@ document.getElementById('submit-ops').addEventListener('click', function() {
     }
 });
 
+document.getElementById('submit-imppar').addEventListener('click', function(){
+    const num1 = parseFloat(document.getElementById('n1-diffops').value);
+});

@@ -58,4 +58,20 @@ document.getElementById('submit-imppar').addEventListener('click', function(){
 
 // ATIVIDADE 4: CÁLCULO DAS MÉDIAS
 
-document.getElementById('')
+document.getElementById('').addEventListener('click', function() {
+
+    const nota1 = parseFloat(prompt('Insira a primeira nota:'));
+    const nota2 = parseFloat(prompt('Insira a segunda nota:'));
+    const nota3 = parseFloat(prompt('Insira a terceira nota:'));
+    
+    const media_final = (nota1 + nota2 + nota3) / 3;
+    
+    // Determina se o aluno foi aprovado ou reprovado
+    if (media_final >= 7) {
+        alert(`Sua média é ${media_final.toFixed(1)}. Você foi aprovado!`);
+    } else {
+        alert(`Sua média é ${media_final.toFixed(1)}. Você foi reprovado.`);
+        // Tofixed é usado para converter em apenas 1 casa decimal
+        // Parse é usado pra converter uma string em um número, pode ser parseFloat, parsedouble, parseInt..
+    }
+});

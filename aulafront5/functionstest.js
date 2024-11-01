@@ -64,19 +64,23 @@ document.getElementById('prompt-medias').addEventListener('click', function () {
     const nota2 = parseFloat(prompt('Insira a segunda nota:'));
     const nota3 = parseFloat(prompt('Insira a terceira nota:'));
 
-    const media_final = (nota1 + nota2 + nota3) / 3;
-
-    // Determina se o aluno foi aprovado ou reprovado
-    if (media_final >= 7) {
-        alert(`Sua média é ${media_final.toFixed(2)}. Você foi aprovado!`);
+    if (nota1 < 10 || nota2 < 10 || nota3 < 10) {
+        window.alert('o comando foi interrompido. reenicie esse prompt e insira uma nota até 10.')
     } else {
-        alert(`Sua média é ${media_final.toFixed(2)}. Você foi reprovado.`);
-        // Tofixed é usado para converter em apenas 1 casa decimal
+        const media_final = (nota1 + nota2 + nota3) / 3;
 
-        //         let num = 3.14159;
-        // let formattedNum = num.toFixed(2); // formattedNum é "3.14"
-        // console.log(formattedNum);
+        // Determina se o aluno foi aprovado ou reprovado
+        if (media_final >= 7) {
+            alert(`Sua média é ${media_final.toFixed(2)}. Você foi aprovado!`);
+        } else {
+            alert(`Sua média é ${media_final.toFixed(2)}. Você foi reprovado.`);
+            // Tofixed é usado para converter em apenas 1 casa decimal
 
-        // Parse é usado pra converter uma string em um número, pode ser parseFloat, parsedouble, parseInt..
+            //         let num = 3.14159;
+            // let formattedNum = num.toFixed(2); // formattedNum é "3.14"
+            // console.log(formattedNum);
+
+            // Parse é usado pra converter uma string em um número, pode ser parseFloat, parsedouble, parseInt..
+        }
     }
 });

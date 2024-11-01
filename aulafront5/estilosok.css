@@ -25,15 +25,6 @@ flex-direction: column;
    gap: 3px;
 }
 
-#result-tab{
-    display: flex;
-    background-color: #fbf1fd;
-    height: 30%;
-    gap: 15px;
-    width: auto;
-    border-radius: 3px;
-}
-
 .math-ops{
     display: flex;
     flex-direction: column;

@@ -55,3 +55,7 @@ document.getElementById('submit-imppar').addEventListener('click', function(){
         document.getElementById('POP-result-log').textContent = 'O número apresentado é impar!';
     }
 });
+
+// ATIVIDADE 4: CÁLCULO DAS MÉDIAS
+
+document.getElementById('')

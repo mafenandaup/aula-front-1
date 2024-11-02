@@ -90,3 +90,11 @@ document.getElementById('prompt-medias').addEventListener('click', function () {
             // Parse é usado pra converter uma string em um número, pode ser parseFloat, parsedouble, parseInt..
         }
 });
+
+document.getElementById('submit-age').addEventListener('click', function(){
+const maioridade = parseFloat(document.getElementById('age-op'));
+
+if(isNaN(maioridade)){
+    window.alert('Por favor, insira uma idade válida.');
+}
+});

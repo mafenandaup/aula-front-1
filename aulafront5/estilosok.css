@@ -64,6 +64,12 @@ flex-direction: column;
     border: 2px solid #811891; 
 }
 
+.button-calc:hover{
+    background-color: #860677;
+    color: white;
+    border: 2px solid #811891;
+}
+
 
 #calc-select {
     display: flex;

@@ -188,3 +188,10 @@ for(countfor = 10; countfor>=0; countfor--){
 
 //ATIVIDADE 10
 
+document.getElementById('start-countfor').addEventListener('click', async function(){
+    const num_tabuada = document.getElementById('') ;
+    
+    for(){
+       
+    }
+    });

@@ -171,3 +171,7 @@ document.getElementById('subtract-btn').addEventListener('click', function() {
 });
 
 //ATIVIDADE 9
+
+document.getElementById('start-countfor').addEventListener('click', function(){
+
+});

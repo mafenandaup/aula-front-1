@@ -81,6 +81,7 @@ document.getElementById('prompt-medias').addEventListener('click', function () {
         alert(`Sua média é ${media_final.toFixed(2)}. Você foi aprovado!`);
     } else {
         alert(`Sua média é ${media_final.toFixed(2)}. Você foi reprovado.`);
+
         // Tofixed é usado para converter em apenas 1 casa decimal
 
         //         let num = 3.14159;
@@ -108,6 +109,8 @@ document.getElementById('submit-age').addEventListener('click', function () {
     }
 });
 
+//ATIVIDADE 8
+
 document.getElementById('submit-namestring').addEventListener('click', function () {
     const namestring = document.getElementById('namestring-op').value;
 
@@ -117,3 +120,5 @@ document.getElementById('submit-namestring').addEventListener('click', function 
 
     document.getElementById('namestring-result-log').textContent = (`Nome em maiúsculas: ${namestring.toUpperCase()}, Nome em minúsculas: ' ${namestring.toLowerCase()}, 'Quantidade de caracteres no nome: ${namestring.length}`);
 });
+
+//ATIVIDADE 7

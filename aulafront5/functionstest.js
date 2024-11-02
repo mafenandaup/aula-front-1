@@ -188,10 +188,15 @@ for(countfor = 10; countfor>=0; countfor--){
 
 //ATIVIDADE 10
 
-document.getElementById('start-countfor').addEventListener('click', async function(){
-    const num_tabuada = document.getElementById('') ;
+        document.getElementById('submit-tabuada').addEventListener('click', function () {
+            const num_tabuada = parseFloat(document.getElementById('tabuada-op').value);
+            const resultLog = document.getElementById('tabuada-log');
+
+            let tabuada = '';
+            for (let i = 1; i <= 10; i++) {
+                tabuada += `${number} x ${i} = ${number * i}<br>`;
+            }
+
+            resultLog.innerHTML = tabuada;
+        });
     
-    for(){
-       
-    }
-    });

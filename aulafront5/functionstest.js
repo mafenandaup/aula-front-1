@@ -200,3 +200,4 @@ for(countfor = 10; countfor>=0; countfor--){
             resultLog.innerHTML = tabuada;
         });
     
+        //ATIVIDADE 11

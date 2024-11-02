@@ -172,6 +172,16 @@ document.getElementById('subtract-btn').addEventListener('click', function() {
 
 //ATIVIDADE 9
 
-document.getElementById('start-countfor').addEventListener('click', function(){
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
+document.getElementById('start-countfor').addEventListener('click', async function(){
+let countfor = 10;
+
+for(countfor = 10; countfor>=0; countfor--){
+    console.log(countfor);
+    document.getElementById('contagem-for').textContent = countfor;
+    await sleep(500);
+}
 });

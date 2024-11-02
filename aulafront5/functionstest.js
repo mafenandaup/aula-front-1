@@ -194,7 +194,7 @@ for(countfor = 10; countfor>=0; countfor--){
 
             let tabuada = '';
             for (let i = 1; i <= 10; i++) {
-                tabuada += `${num_tabuada} x ${i} = ${num_tabuada * i}<br>`;
+                tabuada += `${num_tabuada} x ${i} = ${num_tabuada * i}    ///     `;
             }
 
             resultLog.innerHTML = tabuada;

@@ -138,7 +138,7 @@ function calculadora(num1, num2, operacao) {
     }
 }
 
-document.getElementById('sum-btn').addEventListener('click', function() {
+document.getElementById('sum-btn').addEventListener('click', function () {
     const num1 = parseFloat(document.getElementById('n1-calc').value);
     const num2 = parseFloat(document.getElementById('n2-calc').value);
     const resultado = calculadora(num1, num2, 'soma');
@@ -146,7 +146,7 @@ document.getElementById('sum-btn').addEventListener('click', function() {
     document.getElementById('CALC-result-log').textContent = (`O resultado da soma é ${resultado}`);
 });
 
-document.getElementById('multiply-btn').addEventListener('click', function() {
+document.getElementById('multiply-btn').addEventListener('click', function () {
     const num1 = parseFloat(document.getElementById('n1-calc').value);
     const num2 = parseFloat(document.getElementById('n2-calc').value);
     const resultado = calculadora(num1, num2, 'multiplicacao');
@@ -154,7 +154,7 @@ document.getElementById('multiply-btn').addEventListener('click', function() {
     document.getElementById('CALC-result-log').textContent = (`O resultado da multiplicação é ${resultado}`);
 });
 
-document.getElementById('divide-btn').addEventListener('click', function() {
+document.getElementById('divide-btn').addEventListener('click', function () {
     const num1 = parseFloat(document.getElementById('n1-calc').value);
     const num2 = parseFloat(document.getElementById('n2-calc').value);
     const resultado = calculadora(num1, num2, 'divisao');
@@ -162,7 +162,7 @@ document.getElementById('divide-btn').addEventListener('click', function() {
     document.getElementById('CALC-result-log').textContent = (`O resultado da divisão é ${resultado}`);
 });
 
-document.getElementById('subtract-btn').addEventListener('click', function() {
+document.getElementById('subtract-btn').addEventListener('click', function () {
     const num1 = parseFloat(document.getElementById('n1-calc').value);
     const num2 = parseFloat(document.getElementById('n2-calc').value);
     const resultado = calculadora(num1, num2, 'subtracao');
@@ -176,28 +176,38 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-document.getElementById('start-countfor').addEventListener('click', async function(){
-let countfor = 10;
+document.getElementById('start-countfor').addEventListener('click', async function () {
+    let countfor = 10;
 
-for(countfor = 10; countfor>=0; countfor--){
-    console.log(countfor);
-    document.getElementById('contagem-for').textContent = countfor;
-    await sleep(500);
-}
+    for (countfor = 10; countfor >= 0; countfor--) {
+        console.log(countfor);
+        document.getElementById('contagem-for').textContent = countfor;
+        await sleep(500);
+    }
 });
 
 //ATIVIDADE 10
 
-        document.getElementById('submit-tabuada').addEventListener('click', function () {
-            const num_tabuada = parseFloat(document.getElementById('tabuada-op').value);
-            const resultLog = document.getElementById('tabuada-log');
+document.getElementById('submit-tabuada').addEventListener('click', function () {
+    const num_tabuada = parseFloat(document.getElementById('tabuada-op').value);
+    const resultLog = document.getElementById('tabuada-log');
 
-            let tabuada = '';
-            for (let i = 1; i <= 10; i++) {
-                tabuada += `${num_tabuada} x ${i} = ${num_tabuada * i}    ///     `;
-            }
+    let tabuada = '';
+    for (let i = 1; i <= 10; i++) {
+        tabuada += `${num_tabuada} x ${i} = ${num_tabuada * i}    ///     `;
+    }
 
-            resultLog.innerHTML = tabuada;
-        });
-    
-        //ATIVIDADE 11
+    resultLog.innerHTML = tabuada;
+});
+
+//ATIVIDADE 11
+
+let nomes = ['mafê', 'jonas', 'cris', 'vitor', 'gabi'];
+let i;
+let nomesconjunto = '';
+document.getElementById('submit-array').addEventListener('click', function () {
+    for (i = 0; i < nomes.length; i++) {
+        document.getElementById
+    }
+
+});

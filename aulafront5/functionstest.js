@@ -91,10 +91,19 @@ document.getElementById('prompt-medias').addEventListener('click', function () {
     }
 });
 
-document.getElementById('submit-age').addEventListener('click', function () {
-    const maioridade = parseFloat(document.getElementById('age-op'));
 
-    if (isNaN(maioridade)) {
-        window.alert('Por favor, insira uma idade válida.');
+
+// ATIVIDADE 6
+document.getElementById('submit-age').addEventListener('click', function () {
+    const maioridade = parseInt(document.getElementById('age-op').value);
+
+    if (maioridade < 0) {
+        window.alert('Insira uma idade válida.');
+    } else if (maioridade >= 18) {
+        console.log('Você é maior de idade!');
+        document.getElementById('age-result-log').textContent = 'Você é maior de idade!';
+    } else {
+        console.log('Você é menor de idade!');
+        document.getElementById('age-result-log').textContent = 'Você é menor de idade!';
     }
 });

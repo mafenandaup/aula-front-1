@@ -74,27 +74,27 @@ document.getElementById('prompt-medias').addEventListener('click', function () {
         return;
     }
 
-        const media_final = (nota1 + nota2 + nota3) / 3;
+    const media_final = (nota1 + nota2 + nota3) / 3;
 
-        // Determina se o aluno foi aprovado ou reprovado
-        if (media_final >= 7) {
-            alert(`Sua média é ${media_final.toFixed(2)}. Você foi aprovado!`);
-        } else {
-            alert(`Sua média é ${media_final.toFixed(2)}. Você foi reprovado.`);
-            // Tofixed é usado para converter em apenas 1 casa decimal
+    // Determina se o aluno foi aprovado ou reprovado
+    if (media_final >= 7) {
+        alert(`Sua média é ${media_final.toFixed(2)}. Você foi aprovado!`);
+    } else {
+        alert(`Sua média é ${media_final.toFixed(2)}. Você foi reprovado.`);
+        // Tofixed é usado para converter em apenas 1 casa decimal
 
-            //         let num = 3.14159;
-            // let formattedNum = num.toFixed(2); // formattedNum é "3.14"
-            // console.log(formattedNum);
+        //         let num = 3.14159;
+        // let formattedNum = num.toFixed(2); // formattedNum é "3.14"
+        // console.log(formattedNum);
 
-            // Parse é usado pra converter uma string em um número, pode ser parseFloat, parsedouble, parseInt..
-        }
+        // Parse é usado pra converter uma string em um número, pode ser parseFloat, parsedouble, parseInt..
+    }
 });
 
-document.getElementById('submit-age').addEventListener('click', function(){
-const maioridade = parseFloat(document.getElementById('age-op'));
+document.getElementById('submit-age').addEventListener('click', function () {
+    const maioridade = parseFloat(document.getElementById('age-op'));
 
-if(isNaN(maioridade)){
-    window.alert('Por favor, insira uma idade válida.');
-}
+    if (isNaN(maioridade)) {
+        window.alert('Por favor, insira uma idade válida.');
+    }
 });

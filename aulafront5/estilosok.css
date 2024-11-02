@@ -58,6 +58,12 @@ flex-direction: column;
     cursor: pointer;
 }
 
+.button-test:hover{
+    background-color: #ffffff;
+    color:#b633d3;;
+    border: 2px solid #811891; 
+}
+
 
 #calc-select {
     display: flex;

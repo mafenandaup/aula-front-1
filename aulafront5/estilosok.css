@@ -65,5 +65,18 @@ flex-direction: column;
     align-items: stretch;
     width: 100%; 
     margin: 0 auto;
-    background-color: aliceblue;
+}
+
+.button-calc {
+    flex: 1 1 50%; 
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    padding: 5px 3px;
+    font-family: 'Poppins';
+    background-color: #f7d1ff;
+    color: rgb(98, 41, 99);
+    border: 2px solid #811891;
+    border-radius: 4px;
+    cursor: pointer;
 }

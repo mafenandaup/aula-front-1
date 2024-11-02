@@ -107,3 +107,13 @@ document.getElementById('submit-age').addEventListener('click', function () {
         document.getElementById('age-result-log').textContent = 'Você é menor de idade!';
     }
 });
+
+document.getElementById('submit-namestring').addEventListener('click', function () {
+    const namestring = document.getElementById('namestring-op').value;
+
+    console.log('Nome em maiúsculas: ' + namestring.toUpperCase());
+    console.log('Nome em minúsculas: ' + namestring.toLowerCase());
+    console.log('Quantidade de caracteres no nome: ' + namestring.length);
+
+    document.getElementById('namestring-result-log').textContent = (`Nome em maiúsculas: ${namestring.toUpperCase()}, Nome em minúsculas: ' ${namestring.toLowerCase()}, 'Quantidade de caracteres no nome: ${namestring.length}`);
+});

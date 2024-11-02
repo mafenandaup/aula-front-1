@@ -151,7 +151,7 @@ document.getElementById('multiply-btn').addEventListener('click', function() {
     const num2 = parseFloat(document.getElementById('n2-calc').value);
     const resultado = calculadora(num1, num2, 'multiplicacao');
     console.log(`Resultado da multiplicação: ${resultado}`);
-    document.getElementById('CALC-result-log').textContent = (`O resultado da soma é ${resultado}`);
+    document.getElementById('CALC-result-log').textContent = (`O resultado da multiplicação é ${resultado}`);
 });
 
 document.getElementById('divide-btn').addEventListener('click', function() {
@@ -159,7 +159,7 @@ document.getElementById('divide-btn').addEventListener('click', function() {
     const num2 = parseFloat(document.getElementById('n2-calc').value);
     const resultado = calculadora(num1, num2, 'divisao');
     console.log(`Resultado da divisão: ${resultado}`);
-    document.getElementById('CALC-result-log').textContent = (`O resultado da soma é ${resultado}`);
+    document.getElementById('CALC-result-log').textContent = (`O resultado da divisão é ${resultado}`);
 });
 
 document.getElementById('subtract-btn').addEventListener('click', function() {
@@ -167,5 +167,5 @@ document.getElementById('subtract-btn').addEventListener('click', function() {
     const num2 = parseFloat(document.getElementById('n2-calc').value);
     const resultado = calculadora(num1, num2, 'subtracao');
     console.log(`Resultado da subtração: ${resultado}`);
-    document.getElementById('CALC-result-log').textContent = (`O resultado da soma é ${resultado}`);
+    document.getElementById('CALC-result-log').textContent = (`O resultado da subtração é ${resultado}`);
 });

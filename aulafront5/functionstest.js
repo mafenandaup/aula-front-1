@@ -169,3 +169,5 @@ document.getElementById('subtract-btn').addEventListener('click', function() {
     console.log(`Resultado da subtração: ${resultado}`);
     document.getElementById('CALC-result-log').textContent = (`O resultado da subtração é ${resultado}`);
 });
+
+//ATIVIDADE 9

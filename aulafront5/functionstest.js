@@ -185,3 +185,6 @@ for(countfor = 10; countfor>=0; countfor--){
     await sleep(500);
 }
 });
+
+//ATIVIDADE 10
+

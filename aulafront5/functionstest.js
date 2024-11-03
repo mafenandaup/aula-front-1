@@ -286,6 +286,15 @@ document.getElementById('start-countwhile').addEventListener('click', async func
 
 //ATIVIDADE 16
 
+document.getElementById('number-guess-ops').addEventListener('click', function () {
+
+    const numSorteado = Math.floor(Math.random() * 100);
+    let numInsert = parseInt(document.getElementById('number-guess').value);
+{
+    while (numInsert != numSorteado){
+
+    }
+});
 
 //ATIVIDADE 17
 

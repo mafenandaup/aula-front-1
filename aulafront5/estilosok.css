@@ -125,4 +125,14 @@ label {
     width:120px;
     filter: hue-rotate(185deg);
     margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carro:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.carro:active {
+    transform: scale(1);
 }

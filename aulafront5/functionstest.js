@@ -246,5 +246,6 @@ document.getElementById('car.btn').addEventListener("click", function(){
 console.log('Marca: ' + carro.marca);   
 console.log('Modelo: ' + carro.modelo); 
 console.log('Ano: ' + carro.ano);
+ document.getElementById('car-obj-log').textContent(`Marca: ${carro.marca} Modelo: ${carro.modelo}, Ano: ${carro.ano}`);
 });
 

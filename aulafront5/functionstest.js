@@ -259,7 +259,10 @@ document.getElementById('compare-ops').addEventListener('click', function () {
     } else if (num2 > num1) {
         console.log(`Maior valor ${num2}; Menor valor ${num1} .`);
         document.getElementById('comparenumbers-log').textContent = `Maior valor ${num2}; Menor valor ${num1} .`;
-    } else if (num1 == num2) {
-        console.log('Ambos números possuem valores iguais.')
+    } else if (isNaN(num1) || isNaN(num2)) {
+        window.alert('Por favor, insira um número válido.');
+    } else {
+        console.log('Ambos os números possuem valores iguais.');
+        document.getElementById('comparenumbers-log').textContent = 'Ambos os números possuem valores iguais.';
     }
 });

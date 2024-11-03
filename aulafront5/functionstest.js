@@ -241,3 +241,10 @@ let carroObj = {
     ano: 1987
 }
 
+document.getElementById('car.btn').addEventListener("click", function(){
+
+console.log('Marca: ' + carro.marca);   
+console.log('Modelo: ' + carro.modelo); 
+console.log('Ano: ' + carro.ano);
+});
+

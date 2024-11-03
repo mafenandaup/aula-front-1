@@ -292,21 +292,23 @@ console.log(`ATIVIDADE 16: NÚMERO SORTEADO; ${numSorteado}`)
 document.getElementById('number-guess-ops').addEventListener('click', function () {
     let numInsert = parseInt(document.getElementById('number-guess').value);
 
-    while (numInsert != numSorteado) {
-        if (numInsert < numSorteado) {
-            console.log('O número escolhido é menor que o número sorteado');
-            document.getElementById('number-guess-log').textContent = 'O número escolhido é menor que o número sorteado';
-        } else if (numInsert > numSorteado) {
-            console.log('O número escolhido é maior que o número sorteado');
-            document.getElementById('number-guess-log').textContent = 'O número escolhido é maior que o número sorteado';
-        } else if (isNaN(numInsert)) {
-            window.alert('escolha um número válido, por favor.');
-        }
+    if (isNaN(numInsert)) {
+        alert('Escolha um número válido, por favor.');
+        return;
     }
-    console.log(`O número escolhido é ${numSorteado}. Você acertou!`);
-    document.getElementById('number-guess-log').textContent = `O número escolhido é ${numSorteado}. Você acertou!`;
 
+    if (numInsert < numSorteado) {
+        console.log('O número escolhido é menor que o número sorteado');
+        document.getElementById('number-guess-log').textContent = 'O número escolhido é menor que o número sorteado';
+    } else if (numInsert > numSorteado) {
+        console.log('O número escolhido é maior que o número sorteado');
+        document.getElementById('number-guess-log').textContent = 'O número escolhido é maior que o número sorteado';
+    } else {
+        console.log(`O número escolhido é ${numSorteado}. Você acertou!`);
+        document.getElementById('number-guess-log').textContent = `O número escolhido é ${numSorteado}. Você acertou!`;
+    }
 });
+
 
 //ATIVIDADE 17
 

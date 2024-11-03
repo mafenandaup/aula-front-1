@@ -241,10 +241,25 @@ let carroObj = {
     ano: 1987
 }
 
-document.getElementById('car-btn').addEventListener('click', function() {
+document.getElementById('car-btn').addEventListener('click', function () {
     console.log('Marca: ' + carroObj.marca);
     console.log('Modelo: ' + carroObj.modelo);
     console.log('Ano: ' + carroObj.ano);
-    
+
     document.getElementById('car-obj-log').textContent = `Marca: ${carroObj.marca}, Modelo: ${carroObj.modelo}, Ano: ${carroObj.ano}`;
+});
+
+document.getElementById('compare-ops').addEventListener('click', function () {
+    const num1 = parseFloat(document.getElementById('n1-bigger').value);
+    const num2 = parseFloat(document.getElementById('n2-bigger').value);
+
+    if (num1 > num2) {
+        console.log(`Maior valor ${num1}; Menor valor ${num2} .`);
+        document.getElementById('comparenumbers-log').textContent = `Maior valor ${num1}; Menor valor ${num2} .`;
+    } else if (num2 > num1) {
+        console.log(`Maior valor ${num2}; Menor valor ${num1} .`);
+        document.getElementById('comparenumbers-log').textContent = `Maior valor ${num2}; Menor valor ${num1} .`;
+    } else if (num1 == num2) {
+        console.log('Ambos números possuem valores iguais.')
+    }
 });

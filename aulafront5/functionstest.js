@@ -198,6 +198,7 @@ document.getElementById('submit-tabuada').addEventListener('click', function () 
     }
 
     resultLog.innerHTML = tabuada;
+    console.log(tabuada);
 });
 
 //ATIVIDADE 11
@@ -210,6 +211,7 @@ document.getElementById('submit-array').addEventListener('click', function () {
     let namesarray = ''
     for (i = 0; i < nomes.length; i++) {
         namesarray += `${nomes[i]}<br>`
+        console.log(nomes[i]);
     }
 
     arrayLog.innerHTML = namesarray;

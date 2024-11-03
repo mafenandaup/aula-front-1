@@ -274,13 +274,13 @@ document.getElementById('compare-ops').addEventListener('click', function () {
 
 //ATIVIDADE 15
 
-document.getElementById('start-countwhile').addEventListener('click', async function(){
-let countwhile;
+document.getElementById('start-countwhile').addEventListener('click', async function () {
+    let countwhile;
 
-for (countwhile = 0; countwhile <= 10; countwhile++) {
-    console.log(countwhile);
-    document.getElementById('contagem-for').textContent = countwhile;
-    await sleep(500);
-}
+    for (countwhile = 0; countwhile <= 10; countwhile++) {
+        console.log(countwhile);
+        document.getElementById('contagem-while').textContent = countwhile;
+        await sleep(500);
+    }
 });
 

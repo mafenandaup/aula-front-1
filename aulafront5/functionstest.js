@@ -312,7 +312,17 @@ document.getElementById('number-guess-ops').addEventListener('click', function (
 
 
 //ATIVIDADE 17
-document.getElementById('stringinversion-ops').addEventListener('click', function(){
- let stringInsert = document.getElementById('string-inversion').value;
-});
 
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+document.getElementById('stringinversion-ops').addEventListener('click', function() {
+    let stringInsert = document.getElementById('string-inversion').value;
+    let invertedString = reverseString(stringInsert);
+
+    console.log(`String original: ${stringInsert}`);
+    console.log(`String invertida: ${invertedString}`);
+    
+    document.getElementById('string-inversion-log').textContent = `String invertida: ${invertedString}`;
+});

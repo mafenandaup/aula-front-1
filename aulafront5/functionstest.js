@@ -206,8 +206,8 @@ let nomes = ['mafê', 'jonas', 'cris', 'vitor', 'gabi'];
 let i;
 let nomesconjunto = '';
 document.getElementById('submit-array').addEventListener('click', function () {
-    const arrayLog =  document.getElementById('arrayname-log');
-       let namesarray = ''
+    const arrayLog = document.getElementById('arrayname-log');
+    let namesarray = ''
     for (i = 0; i < nomes.length; i++) {
         namesarray += `${nomes[i]}<br>`
     }
@@ -219,16 +219,25 @@ document.getElementById('submit-array').addEventListener('click', function () {
 //atividade 12
 
 
-document.getElementById('CLS-btn').addEventListener('click', function() {
+document.getElementById('CLS-btn').addEventListener('click', function () {
     const temp_og = parseFloat(document.getElementById('temp-op').value);
     const temp_FH = (temp_og * 9 / 5) + 32;
     document.getElementById('temp-log').textContent = `TEMPERATURA EM CELSIUS: ${temp_og}°. TEMPERATURA EM FAHRENHEIT: ${temp_FH}°.`;
     console.log(`TEMPERATURA EM CELSIUS: ${temp_og}°. TEMPERATURA EM FAHRENHEIT: ${temp_FH}°.`);
 });
 
-document.getElementById('FH-btn').addEventListener('click', function() {
+document.getElementById('FH-btn').addEventListener('click', function () {
     const temp_og = parseFloat(document.getElementById('temp-op').value);
     const temp_CLS = (temp_og - 32) * 5 / 9;
     document.getElementById('temp-log').textContent = `TEMPERATURA EM FAHRENHEIT: ${temp_og}°. TEMPERATURA EM CELSIUS: ${temp_CLS}°.`;
     console.log(`TEMPERATURA EM FAHRENHEIT: ${temp_og}°. TEMPERATURA EM CELSIUS: ${temp_CLS}°.`);
 });
+
+// ATIVIDADE 13
+
+let carroObj = {
+    marca: 'Chevrolet',
+    modelo: 'Old Money',
+    ano: 1987
+}
+

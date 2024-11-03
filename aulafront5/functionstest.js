@@ -290,10 +290,21 @@ document.getElementById('number-guess-ops').addEventListener('click', function (
 
     const numSorteado = Math.floor(Math.random() * 100);
     let numInsert = parseInt(document.getElementById('number-guess').value);
-{
-    while (numInsert != numSorteado){
 
+    while (numInsert != numSorteado) {
+        if (numInsert < numSorteado) {
+            console.log('O número escolhido é menor que o número sorteado');
+            document.getElementById('number-guess-log').textContent = 'O número escolhido é menor que o número sorteado';
+        } else if (numInsert > numSorteado) {
+            console.log('O número escolhido é maior que o número sorteado');
+            document.getElementById('number-guess-log').textContent = 'O número escolhido é maior que o número sorteado';
+        } else if (isNaN(numInsert)) {
+            window.alert('escolha um número válido, por favor.');
+        }
     }
+    console.log(`O número escolhido é ${numSorteado}. Você acertou!`);
+    document.getElementById('number-guess-log').textContent = `O número escolhido é ${numSorteado}. Você acertou!`;
+
 });
 
 //ATIVIDADE 17

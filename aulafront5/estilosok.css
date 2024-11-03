@@ -116,3 +116,13 @@ label {
     width: auto;
     height: 40%;
 }
+
+.carro{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height:120px; 
+    width:120px;
+    filter: hue-rotate(185deg);
+    margin: 0;
+}

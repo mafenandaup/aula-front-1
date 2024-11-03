@@ -326,3 +326,14 @@ document.getElementById('stringinversion-ops').addEventListener('click', functio
     
     document.getElementById('string-inversion-log').textContent = `String invertida: ${invertedString}`;
 });
+
+// Para dividir uma string em caracteres individuais, você pode usar uma string vazia como delimitador:
+
+// let str = "Hello";
+// let arr = str.split('');
+// console.log(arr); // Saída: ["H", "e", "l", "l", "o"]
+
+// // você também pode usar um deltimitador diferente, como vírgulas, asteríscos...
+// let str = "Hello i am here";
+// let arr = str.split(' ');
+// console.log(arr); // Saída: ["Hello", "i", "am", "here"]

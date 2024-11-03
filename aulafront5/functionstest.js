@@ -216,3 +216,19 @@ document.getElementById('submit-array').addEventListener('click', function () {
 
 });
 
+//atividade 12
+
+
+document.getElementById('CLS-btn').addEventListener('click', function() {
+    const temp_og = parseFloat(document.getElementById('temp-op').value);
+    const temp_FH = (temp_og * 9 / 5) + 32;
+    document.getElementById('temp-log').textContent = `TEMPERATURA EM CELSIUS: ${temp_og}°. TEMPERATURA EM FAHRENHEIT: ${temp_FH}°.`;
+    console.log(`TEMPERATURA EM CELSIUS: ${temp_og}°. TEMPERATURA EM FAHRENHEIT: ${temp_FH}°.`);
+});
+
+document.getElementById('FH-btn').addEventListener('click', function() {
+    const temp_og = parseFloat(document.getElementById('temp-op').value);
+    const temp_CLS = (temp_og - 32) * 5 / 9;
+    document.getElementById('temp-log').textContent = `TEMPERATURA EM FAHRENHEIT: ${temp_og}°. TEMPERATURA EM CELSIUS: ${temp_CLS}°.`;
+    console.log(`TEMPERATURA EM FAHRENHEIT: ${temp_og}°. TEMPERATURA EM CELSIUS: ${temp_CLS}°.`);
+});

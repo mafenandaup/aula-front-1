@@ -288,7 +288,8 @@ document.getElementById('start-countwhile').addEventListener('click', async func
 
 
 const numSorteado = Math.floor(Math.random() * 100);
-console.log(`ATIVIDADE 16: NÚMERO SORTEADO; ${numSorteado}`)
+console.log(`ATIVIDADE 16: NÚMERO SORTEADO; ${numSorteado}`);
+
 document.getElementById('number-guess-ops').addEventListener('click', function () {
     let numInsert = parseInt(document.getElementById('number-guess').value);
 

@@ -206,8 +206,13 @@ let nomes = ['mafê', 'jonas', 'cris', 'vitor', 'gabi'];
 let i;
 let nomesconjunto = '';
 document.getElementById('submit-array').addEventListener('click', function () {
+    const arrayLog =  document.getElementById('arrayname-log');
+       let namesarray = ''
     for (i = 0; i < nomes.length; i++) {
-        document.getElementById
+        namesarray += `${nomes[i]}<br>`
     }
 
+    arrayLog.innerHTML = namesarray;
+
 });
+

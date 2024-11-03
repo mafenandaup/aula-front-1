@@ -312,4 +312,7 @@ document.getElementById('number-guess-ops').addEventListener('click', function (
 
 
 //ATIVIDADE 17
+document.getElementById('stringinversion-ops').addEventListener('click', function(){
+ let stringInsert = document.getElementById('string-inversion').value;
+});
 

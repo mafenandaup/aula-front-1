@@ -249,6 +249,8 @@ document.getElementById('car-btn').addEventListener('click', function () {
     document.getElementById('car-obj-log').textContent = `Marca: ${carroObj.marca}, Modelo: ${carroObj.modelo}, Ano: ${carroObj.ano}`;
 });
 
+//ATIVIDADE 14
+
 document.getElementById('compare-ops').addEventListener('click', function () {
     const num1 = parseFloat(document.getElementById('n1-bigger').value);
     const num2 = parseFloat(document.getElementById('n2-bigger').value);
@@ -266,3 +268,6 @@ document.getElementById('compare-ops').addEventListener('click', function () {
         document.getElementById('comparenumbers-log').textContent = 'Ambos os números possuem valores iguais.';
     }
 });
+
+//ATIVIDADE 15
+

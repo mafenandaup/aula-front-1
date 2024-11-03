@@ -284,3 +284,8 @@ document.getElementById('start-countwhile').addEventListener('click', async func
     }
 });
 
+//ATIVIDADE 16
+
+
+//ATIVIDADE 17
+

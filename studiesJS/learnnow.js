@@ -3,7 +3,7 @@
 //                                 (strings, numbers, booleans)
 
 // --------------- EXAMPLE 1 ---------------
-let age = window.prompt("How old are you?");
+let age = 25;
 age = Number(age);
 age+=1;
 
@@ -23,3 +23,7 @@ console.log(y, typeof y);
 console.log(z, typeof z);
 
 //string methods: te ajudam a manipular e trabalhar com texto
+
+let userName = "Mafenes";
+
+console.log(userName.charAt(3));

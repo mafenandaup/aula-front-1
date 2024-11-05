@@ -5,7 +5,7 @@
 // --------------- EXAMPLE 1 ---------------
 let age = 25;
 age = Number(age);
-age+=1;
+age += 1;
 
 console.log(age, typeof age);
 
@@ -38,8 +38,25 @@ console.log(userName);
 
 let cpf = "123.456.789.00";
 
-cpf = cpf.replaceAll("." , "-"); //substitui um tipo de caracter específico por outro caracter.
+cpf = cpf.replaceAll(".", "-"); //substitui um tipo de caracter específico por outro caracter.
 console.log(cpf);
 
-cpf = cpf.padStart(20, "0");
+cpf = cpf.padStart(20, "0"); // padstart define o n° de indices que vocÊ quer na string, depois preenche os espaços vazios do cpf.length com um caracter específico
 console.log(cpf);
+
+cpf = cpf.padEnd(22, "-"); // mesma coisa com o pad end
+console.log(cpf);
+
+// string slicing = creating a substring  from a portion of another string
+
+// ------------ EXAMPLE 1 ------------
+
+
+const fullName = "Mamonas Assasinas";
+
+let firstName = fullName.slice(0, 8); // o string.slice(start, end) usa esse formato: pega o ínex do caracter em que vc
+// quer que comece e o indice do caracter em que você quer que acabe.
+// lembrando que o end é um número exclusivo, ou seja: só mostra do caracter de indice 0 até o 7.
+console.log(firstName);
+let lastName = fullName.slice(8, 19);
+console.log(lastName);

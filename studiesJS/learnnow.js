@@ -60,3 +60,11 @@ let firstName = fullName.slice(0, 8); // o string.slice(start, end) usa esse for
 console.log(firstName);
 let lastName = fullName.slice(8, 19);
 console.log(lastName);
+
+const email = "Bro1@gmail.com";
+
+let username = email.slice(0, email.indexOf("@"));
+let extension = email.slice(email.indexOf("@") + 1);
+
+console.log(username);
+console.log(extension);

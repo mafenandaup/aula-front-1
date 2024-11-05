@@ -68,3 +68,5 @@ let extension = email.slice(email.indexOf("@") + 1); //essa string começa onde 
 
 console.log(username);
 console.log(extension);
+
+// METHOD CHAINING : chamando um método atrás do outro em uma linha contínua de código.

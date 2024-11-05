@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 600px;
+    height: auto;
+    background-color: pink;
 
 }
 

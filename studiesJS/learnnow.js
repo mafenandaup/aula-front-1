@@ -31,3 +31,12 @@ console.log(userName.indexOf("n")); //imprime o número do index daquele caracte
 console.log(userName.length); //imprime o comprimento, número de caracteres daquela string
 console.log(userName.toLowerCase);
 console.log(userName.toUpperCase);
+console.log(userName.repeat(3));
+
+let result = userName.startsWith("N"); //retornará um boolean, mesma coisa pro endswith, includes...
+console.log(userName);
+
+let cpf = "123.456.789.00";
+
+cpf = cpf.replaceAll("." , "-"); //substitui um tipo de caracter específico por outro caracter.
+console.log(cpf);

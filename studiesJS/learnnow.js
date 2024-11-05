@@ -26,4 +26,5 @@ console.log(z, typeof z);
 
 let userName = "Mafenes";
 
-console.log(userName.charAt(3));
+console.log(userName.charAt(0)); //imprime o caracter naquele index
+console.log(userName.indexOf("n"));

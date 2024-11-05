@@ -41,4 +41,5 @@ let cpf = "123.456.789.00";
 cpf = cpf.replaceAll("." , "-"); //substitui um tipo de caracter específico por outro caracter.
 console.log(cpf);
 
-cpf = cpf.padStart()
+cpf = cpf.padStart(20, "0");
+console.log(cpf);

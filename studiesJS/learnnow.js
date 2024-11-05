@@ -61,10 +61,10 @@ console.log(firstName);
 let lastName = fullName.slice(8, 19);
 console.log(lastName);
 
-const email = "Bro1@gmail.com";
+const email = "mafenandaup1@gmail.com";
 
-let username = email.slice(0, email.indexOf("@"));
-let extension = email.slice(email.indexOf("@") + 1);
+let username = email.slice(0, email.indexOf("@")); //aqui só vai até o 1
+let extension = email.slice(email.indexOf("@") + 1); //essa string começa onde a última terminou, e como não tem a outra v´rigula, vai até o ultimo caracter da string
 
 console.log(username);
 console.log(extension);

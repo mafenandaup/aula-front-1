@@ -70,3 +70,24 @@ console.log(username);
 console.log(extension);
 
 // METHOD CHAINING : chamando um método atrás do outro em uma linha contínua de código.
+
+let username2 = window.prompt('enter an username');
+
+// ---- NO METHOD CHAINING ----
+/*
+username = username.trim();
+let letter = username.charAt(0);
+letter = letter.toUpperCase();
+
+let extraChars = username.slice(1);
+extraChars = extraChars.toLowerCase();
+username = letter + extraChars;
+
+console.log(username);
+*/
+
+// ---- METHOD CHAINING ----
+
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+
+console.log(username);

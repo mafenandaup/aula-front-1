@@ -28,3 +28,6 @@ let userName = "Mafenes";
 
 console.log(userName.charAt(0)); //imprime o caracter naquele index
 console.log(userName.indexOf("n")); //imprime o número do index daquele caracter
+console.log(userName.length); //imprime o comprimento, número de caracteres daquela string
+console.log(userName.toLowerCase);
+console.log(userName.toUpperCase);

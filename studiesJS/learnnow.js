@@ -185,11 +185,12 @@ let answer = add(2,3);
 console.log(answer);
 
 console.log(isValidEmail("mafenandaup@gmail.com"));
+console.log(isValidEmail("elonmusk.gmail.com"));
 
 function isValidEmail(useremail){
     if(useremail.includes("@")){
-        console.log('valid email');
+        console.log(`${useremail} is a valid email`);
     }else{
-        console.log('not valid email')
+        console.log(`${useremail} is NOT a valid email`)
     }
 }

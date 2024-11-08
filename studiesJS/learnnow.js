@@ -135,4 +135,10 @@ class Carro {
 
 //EX:
 
-const numrandom = 3.14;
+const numrandom = 3.14294;
+
+if(numrandom === "3.14294"){
+    console.log(`${numrandom} NÃO É ESSTRITAMENTE UM NÚMERO `)
+}else{
+    console.log('é, pode ser um número')
+}

@@ -143,8 +143,16 @@ if(numrandom === "3.14294"){
     console.log('é, pode ser um número')
 }
 
-document.getElementById('hbd-btn').addEventListener('click')
+/// FUNÇÕES
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+document.getElementById('text-header').textContent = (' ');
+document.getElementById('hbd-btn').addEventListener('click',hbdToYou);
 
-function hbdToYou(){
-
+async function hbdToYou(){
+    
+console.log('Parabéns pra você,');
+document.getElementById('text-header').textContent = ('Parabéns pra você,');
+await sleep (500);
 }

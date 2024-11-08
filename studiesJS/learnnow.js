@@ -154,5 +154,17 @@ async function hbdToYou(){
     
 console.log('Parabéns pra você,');
 document.getElementById('text-header').textContent = ('Parabéns pra você,');
-await sleep (500);
+await sleep (1000);
+    
+console.log('nessa data querida,');
+document.getElementById('text-header').textContent = ('nessa data querida,');
+await sleep (1000);
+    
+console.log('muitas felicidades,');
+document.getElementById('text-header').textContent = ('muitas felicidades,');
+await sleep (1000);
+    
+console.log('Muitos anos de vida!');
+document.getElementById('text-header').textContent = ('Muitos anos de vida!');
+await sleep (1000);
 }

@@ -213,6 +213,12 @@ function function1(){
 
 /// conversor de temperatura: exercício prático
 
+const textBox = document.getElementById("textBox");
+const toFahrenheit = document.getElementById("to-FH");
+const toCelsius = document.getElementById("to-celsius");
+const results = document.getElementById("result");
+let temp;
+
 function convert(){
-    
+
 }

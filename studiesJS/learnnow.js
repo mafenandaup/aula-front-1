@@ -71,7 +71,7 @@ console.log(extension);
 
 // METHOD CHAINING : chamando um método atrás do outro em uma linha contínua de código.
 
-let username2 = window.prompt('enter an username');
+let username2 = "mafenandaup"
 
 // ---- NO METHOD CHAINING ----
 /*
@@ -146,5 +146,5 @@ if(numrandom === "3.14294"){
 document.getElementById('hbd-btn').addEventListener('click')
 
 function hbdToYou(){
-    
+
 }

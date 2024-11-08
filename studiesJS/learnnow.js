@@ -91,3 +91,37 @@ console.log(username);
 username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 
 console.log(username);
+
+//mais um exemplo de method chaining
+class Carro {
+    constructor() {
+      this.marca = '';
+      this.modelo = '';
+      this.cor = '';
+    }
+  
+    setMarca(marca) {
+      this.marca = marca;
+      return this; // Retorna o próprio objeto para permitir o encadeamento
+    }
+  
+    setModelo(modelo) {
+      this.modelo = modelo;
+      return this;
+    }
+  
+    setCor(cor) {
+      this.cor = cor;
+      return this;
+    }
+  
+    exibirCarro() {
+      console.log(`Carro: ${this.marca} ${this.modelo} na cor ${this.cor}`);
+      return this;
+    }
+  }
+  
+  // Utilizando method chaining
+  const meuCarro = new Carro();
+  meuCarro.setMarca('Toyota').setModelo('Corolla').setCor('Azul').exibirCarro();
+  

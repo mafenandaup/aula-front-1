@@ -210,3 +210,9 @@ function function1(){
     let x = 1; // local scope/ESCOPO LOCAL (declarado dentro de uma função)
     console.log(x);
 }
+
+/// conversor de temperatura: exercício prático
+
+function convert(){
+    
+}

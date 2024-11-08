@@ -16,6 +16,11 @@
             <h3>Temperature conversion</h3>
             <input type="number" id="textBox" value="0">
             <input type="radio" id="to-FH" name="unit">
+            <label for="to-FH">celsius→farenheit</label>
+            <input type="radio" id="to-celsius" name="unit">
+            <label for="to-celsius">farenheit→celsius</label>
+            <button onclick="convert()">submit</button>
+            <p id="result"></p>
         </form>
     </section>
 

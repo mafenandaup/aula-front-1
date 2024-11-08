@@ -18,4 +18,14 @@ color: antiquewhite;
 padding: 10px;
 border-radius: 15px;
 border: none;
+transition: transform 0.3s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(1);
 }

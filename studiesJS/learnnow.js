@@ -202,7 +202,7 @@ function isValidEmail(useremail){
 // variable scope = where a variable is recognized
 //                               and accessible (local vs global)            
 
-let x = 3; // global scope/ESCOPO GLOBAL (declarado fora de uma função)
+let yeezy = 3; // global scope/ESCOPO GLOBAL (declarado fora de uma função)
 
 function1();
 

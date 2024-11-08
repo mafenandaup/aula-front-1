@@ -147,24 +147,32 @@ if(numrandom === "3.14294"){
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-document.getElementById('text-header').textContent = (' ');
-document.getElementById('hbd-btn').addEventListener('click',hbdToYou); //NÃO ADD OS PARENTESES CHAMANDO OUTRA FUNÇÃO 
+document.getElementById('text-header').textContent = '';
+document.getElementById('hbd-btn').addEventListener('click', function() {
+  hbdToYou("mafê", 18); // Chama a função com os parâmetros nome e idade. se for void, CHAMA SEM OS PARÂMETROS, PURAMENTE NO 1° PARENTESES
+});
 
-async function hbdToYou(){
-    
-console.log('Parabéns pra você,');
-document.getElementById('text-header').textContent = ('Parabéns pra você,');
-await sleep (1000);
-    
-console.log('nessa data querida,');
-document.getElementById('text-header').textContent = ('nessa data querida,');
-await sleep (1000);
-    
-console.log('muitas felicidades,');
-document.getElementById('text-header').textContent = ('muitas felicidades,');
-await sleep (1000);
-    
-console.log('Muitos anos de vida!');
-document.getElementById('text-header').textContent = ('Muitos anos de vida!');
-await sleep (1000);
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function hbdToYou(nome, idade) {
+  console.log('Parabéns pra você,');
+  document.getElementById('text-header').textContent = 'Parabéns pra você,';
+  await sleep(1000);
+
+  console.log('nessa data querida,');
+  document.getElementById('text-header').textContent = 'nessa data querida,';
+  await sleep(1000);
+
+  console.log('muitas felicidades,');
+  document.getElementById('text-header').textContent = 'muitas felicidades,';
+  await sleep(1000);
+
+  console.log('Muitos anos de vida!');
+  document.getElementById('text-header').textContent = 'Muitos anos de vida!';
+  await sleep(1000);
+
+  console.log(`Feliz aniversário, ${nome}! Agora você possui ${idade} anos!`);
+  document.getElementById('text-header').textContent = `Feliz aniversário, ${nome}! Agora você possui ${idade} anos!`;
 }

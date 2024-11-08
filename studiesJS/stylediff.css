@@ -30,3 +30,10 @@ button:active{
     transform: scale(1);
 }
 
+.temp-conversion{
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    width: 300px;
+    padding: 15px;
+}

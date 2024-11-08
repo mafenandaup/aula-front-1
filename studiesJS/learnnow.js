@@ -142,3 +142,9 @@ if(numrandom === "3.14294"){
 }else{
     console.log('é, pode ser um número')
 }
+
+document.getElementById('hbd-btn').addEventListener('click')
+
+function hbdToYou(){
+    
+}

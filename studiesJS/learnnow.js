@@ -144,6 +144,9 @@ if(numrandom === "3.14294"){
 }
 
 /// FUNÇÕES
+
+
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }

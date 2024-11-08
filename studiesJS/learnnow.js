@@ -148,7 +148,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 document.getElementById('text-header').textContent = (' ');
-document.getElementById('hbd-btn').addEventListener('click',hbdToYou);
+document.getElementById('hbd-btn').addEventListener('click',hbdToYou); //NÃO ADD OS PARENTESES CHAMANDO OUTRA FUNÇÃO 
 
 async function hbdToYou(){
     

@@ -194,3 +194,16 @@ function isValidEmail(useremail){
         console.log(`${useremail} is NOT a valid email`)
     }
 }
+
+/// ESCOPO LOCAL X ESCOPO GLOBAL
+// variable scope = where a variable is recognized
+//                               and accessible (local vs global)            
+
+let x = 3; // global scope/ESCOPO GLOBAL (declarado fora de uma função)
+
+function1();
+
+function function1(){
+    let x = 1; // local scope/ESCOPO LOCAL (declarado dentro de uma função)
+    console.log(x);
+}

@@ -156,7 +156,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function hbdToYou(nome, idade) {
+async function hbdToYou(nome, idade) { ///AS VARIÁVEIS TEMPORÁRIAS PRECISAM SER DEFINIDAS NOS PARENTES DA FUNÇÃO! que nem em java, por ex.
   console.log('Parabéns pra você,');
   document.getElementById('text-header').textContent = 'Parabéns pra você,';
   await sleep(1000);
@@ -175,4 +175,21 @@ async function hbdToYou(nome, idade) {
 
   console.log(`Feliz aniversário, ${nome}! Agora você possui ${idade} anos!`);
   document.getElementById('text-header').textContent = `Feliz aniversário, ${nome}! Agora você possui ${idade} anos!`;
+}
+
+function add(x, y){
+    return x + y;
+}
+
+let answer = add(2,3);
+console.log(answer);
+
+console.log(isValidEmail("mafenandaup@gmail.com"));
+
+function isValidEmail(useremail){
+    if(useremail.includes("@")){
+        console.log('valid email');
+    }else{
+        console.log('not valid email')
+    }
 }

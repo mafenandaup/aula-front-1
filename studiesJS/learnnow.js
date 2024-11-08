@@ -129,6 +129,10 @@ class Carro {
   
 //   = assignment operator
 //  == comparison operator (compare if values are equal)
-// === strict equality operator (compare if values & datatype are equal)
+// === strict equality operator (compare if VALUES AND DATATYPE are equal)
 //  != inequality operator
 // !== strict inequality operator
+
+//EX:
+
+const 

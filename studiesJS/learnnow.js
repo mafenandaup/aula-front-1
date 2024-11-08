@@ -124,4 +124,6 @@ class Carro {
   // Utilizando method chaining
   const meuCarro = new Carro();
   meuCarro.setMarca('Toyota').setModelo('Corolla').setCor('Azul').exibirCarro();
+
+  /// STRICT EQUALITY && STRICT INEQUALITY
   

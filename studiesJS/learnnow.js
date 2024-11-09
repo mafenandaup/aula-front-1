@@ -259,3 +259,7 @@ fruit.unshift("kiwi");
 console.log(fruit);
 
 let numOfFruits = fruit.length;
+let fruitIndex = fruit.indexOf("kiwi");
+
+console.log(fruitIndex); // se o console.log retornar -1..
+//significa que o elemento não foi encontrado no array

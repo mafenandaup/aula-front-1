@@ -94,39 +94,39 @@ console.log(username);
 
 //mais um exemplo de method chaining
 class Carro {
-    constructor() {
-      this.marca = '';
-      this.modelo = '';
-      this.cor = '';
-    }
-  
-    setMarca(marca) {
-      this.marca = marca;
-      return this; // Retorna o próprio objeto para permitir o encadeamento
-    }
-  
-    setModelo(modelo) {
-      this.modelo = modelo;
-      return this;
-    }
-  
-    setCor(cor) {
-      this.cor = cor;
-      return this;
-    }
-  
-    exibirCarro() {
-      console.log(`Carro: ${this.marca} ${this.modelo} na cor ${this.cor}`);
-      return this;
-    }
+  constructor() {
+    this.marca = '';
+    this.modelo = '';
+    this.cor = '';
   }
-  
-  // Utilizando method chaining
-  const meuCarro = new Carro();
-  meuCarro.setMarca('Toyota').setModelo('Corolla').setCor('Azul').exibirCarro();
 
-  /// STRICT EQUALITY && STRICT INEQUALITY
-  
+  setMarca(marca) {
+    this.marca = marca;
+    return this; // Retorna o próprio objeto para permitir o encadeamento
+  }
+
+  setModelo(modelo) {
+    this.modelo = modelo;
+    return this;
+  }
+
+  setCor(cor) {
+    this.cor = cor;
+    return this;
+  }
+
+  exibirCarro() {
+    console.log(`Carro: ${this.marca} ${this.modelo} na cor ${this.cor}`);
+    return this;
+  }
+}
+
+// Utilizando method chaining
+const meuCarro = new Carro();
+meuCarro.setMarca('Toyota').setModelo('Corolla').setCor('Azul').exibirCarro();
+
+/// STRICT EQUALITY && STRICT INEQUALITY
+
 //   = assignment operator
 //  == comparison operator (compare if values are equal)
 // === strict equality operator (compare if VALUES AND DATATYPE are equal)
@@ -137,10 +137,10 @@ class Carro {
 
 const numrandom = 3.14294;
 
-if(numrandom === "3.14294"){
-    console.log(`${numrandom} NÃO É ESSTRITAMENTE UM NÚMERO `)
-}else{
-    console.log('é, pode ser um número')
+if (numrandom === "3.14294") {
+  console.log(`${numrandom} NÃO É ESSTRITAMENTE UM NÚMERO `)
+} else {
+  console.log('é, pode ser um número')
 }
 
 /// FUNÇÕES
@@ -148,10 +148,10 @@ if(numrandom === "3.14294"){
 
 
 function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 document.getElementById('text-header').textContent = '';
-document.getElementById('hbd-btn').addEventListener('click', function() {
+document.getElementById('hbd-btn').addEventListener('click', function () {
   hbdToYou("mafê", 18); // Chama a função com os parâmetros nome e idade. se for void, CHAMA SEM OS PARÂMETROS, PURAMENTE NO 1° PARENTESES
 });
 
@@ -180,22 +180,22 @@ async function hbdToYou(nome, idade) { ///AS VARIÁVEIS TEMPORÁRIAS PRECISAM SE
   document.getElementById('text-header').textContent = `Feliz aniversário, ${nome}! Agora você possui ${idade} anos!`;
 }
 
-function add(x, y){
-    return x + y;
+function add(x, y) {
+  return x + y;
 }
 
-let answer = add(2,3);
+let answer = add(2, 3);
 console.log(answer);
 
 console.log(isValidEmail("mafenandaup@gmail.com"));
 console.log(isValidEmail("elonmusk.gmail.com"));
 
-function isValidEmail(useremail){
-    if(useremail.includes("@")){
-        console.log(`${useremail} is a valid email`);
-    }else{
-        console.log(`${useremail} is NOT a valid email`)
-    }
+function isValidEmail(useremail) {
+  if (useremail.includes("@")) {
+    console.log(`${useremail} is a valid email`);
+  } else {
+    console.log(`${useremail} is NOT a valid email`)
+  }
 }
 
 /// ESCOPO LOCAL X ESCOPO GLOBAL
@@ -206,9 +206,9 @@ let yeezy = 3; // global scope/ESCOPO GLOBAL (declarado fora de uma função)
 
 function1();
 
-function function1(){
-    let x = 1; // local scope/ESCOPO LOCAL (declarado dentro de uma função)
-    console.log(x);
+function function1() {
+  let x = 1; // local scope/ESCOPO LOCAL (declarado dentro de uma função)
+  console.log(x);
 }
 
 /// conversor de temperatura: exercício prático
@@ -219,21 +219,21 @@ const toCelsius = document.getElementById("to-celsius");
 const results = document.getElementById("result");
 let temp;
 
-function convert(){
+function convert() {
 
-    if(toFahrenheit.checked){
-        temp = Number(textBox.value);
-        temp = temp * 9 / 5 + 32;
-        results.textContent = temp.toFixed(1) + "°F";
-    }
-    else if(toCelsius.checked){
-        temp = Number(textBox.value);
-        temp = (temp - 32) * (5/9);
-        results.textContent = temp.toFixed(1) + "°C";
-    }
-    else{
-        results.textContent = "Select a unit"; 
-    }
+  if (toFahrenheit.checked) {
+    temp = Number(textBox.value);
+    temp = temp * 9 / 5 + 32;
+    results.textContent = temp.toFixed(1) + "°F";
+  }
+  else if (toCelsius.checked) {
+    temp = Number(textBox.value);
+    temp = (temp - 32) * (5 / 9);
+    results.textContent = temp.toFixed(1) + "°C";
+  }
+  else {
+    results.textContent = "Select a unit";
+  }
 }
 
 // ARRAYS
@@ -264,7 +264,7 @@ let fruitIndex = fruit.indexOf("kiwi");
 console.log(fruitIndex); // se o console.log retornar -1..
 //significa que o elemento não foi encontrado no array
 
-for(let element of fruit){ //loop para imprimir os elementos de um array EM ORDEM
+for (let element of fruit) { //loop para imprimir os elementos de um array EM ORDEM
   console.log(element);
 }
 
@@ -274,3 +274,13 @@ console.log(fruit.sort().reverse())
 // 2D array = multi-dimensional array that stores a matrix
 //                    of data in rows and columns.
 //                    Useful for games, spreadsheets, or representing images 
+
+const matrix = [[1, 2,], //ESSA É UMA MATRIS 2X2
+[3, 4,]];
+
+matrix[0][0] = 'X';
+matrix[0][1] = 'O'; //pra representar uma matriz em js, a primeira linha/coluna SEMPRE COMEÇA COM 0!
+// ex: se uma matriz tem 6 linhas, o index dessas linhas vai de 0 a 5, etc.
+matrix[1][0] = 'O';
+matrix[1][1] = 'X';
+

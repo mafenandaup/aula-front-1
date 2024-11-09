@@ -247,7 +247,15 @@ fruit[0] = "coconut";// vai mudar o elemento de um determinado index
 console.log(fruit);
 console.log(fruit[0]);
 
-//fruits.push("coconut");  //add an element
-//fruits.pop();                     //removes last element
-//fruits.unshift("mango"); //add element to beginning
-//fruits.shift();                    //removes element from beginning
+//fruits.push("coconut");  //adiciona um elemento para o final
+//fruits.pop();                     //remove o ultimo elemento
+//fruits.unshift("mango"); //adiciona um elemento para o início
+//fruits.shift();                    //remove elemento do início
+
+fruit.push("lemon");
+fruit.shift("coconut");
+fruit.unshift("kiwi");
+
+console.log(fruit);
+
+let numOfFruits = fruit.length;

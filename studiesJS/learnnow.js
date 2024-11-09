@@ -284,3 +284,5 @@ matrix[0][1] = 'O'; //pra representar uma matriz em js, a primeira linha/coluna 
 matrix[1][0] = 'O';
 matrix[1][1] = 'X';
 
+console.log(matrix);
+

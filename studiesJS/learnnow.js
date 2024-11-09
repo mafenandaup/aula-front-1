@@ -235,3 +235,8 @@ function convert(){
         results.textContent = "Select a unit"; 
     }
 }
+
+// ARRAYS
+
+let fruit = ["apple", "banana", "orange", "lime"];
+console.log(fruit); // vai imprimir todos os elementos do array

@@ -240,3 +240,4 @@ function convert(){
 
 let fruit = ["apple", "banana", "orange", "lime"];
 console.log(fruit); // vai imprimir todos os elementos do array
+console.log(fruit[2]); //vai imprimir só o 2° item

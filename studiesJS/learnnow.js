@@ -270,3 +270,7 @@ for(let element of fruit){ //loop para imprimir os elementos de um array EM ORDE
 
 console.log(fruit.sort()) //IMPRIME EM ORDEM ALFABÉTICA
 console.log(fruit.sort().reverse())
+
+// 2D array = multi-dimensional array that stores a matrix
+//                    of data in rows and columns.
+//                    Useful for games, spreadsheets, or representing images 

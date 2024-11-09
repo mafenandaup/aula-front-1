@@ -295,3 +295,5 @@ for(let row of matrix2){
 }
 
 //SPREAD OPERATOR: permite que um string ou array seja separado em elementos diferentes.
+
+let numberSet = [1,2,3,4,5];

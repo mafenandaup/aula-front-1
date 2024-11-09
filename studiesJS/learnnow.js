@@ -247,3 +247,7 @@ fruit[0] = "coconut";// vai mudar o elemento de um determinado index
 console.log(fruit);
 console.log(fruit[0]);
 
+//fruits.push("coconut");  //add an element
+//fruits.pop();                     //removes last element
+//fruits.unshift("mango"); //add element to beginning
+//fruits.shift();                    //removes element from beginning

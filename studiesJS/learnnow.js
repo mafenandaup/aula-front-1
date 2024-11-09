@@ -291,5 +291,5 @@ const matrix2 = [[1,2,3],
 [7,8,9]];
 
 for(let row of matrix2){
-  console.log(row);   // outra forma de imprimir toda a matriz
+  console.log(row);   // outra forma de imprimir toda a matriz, pode fazer com coluna tb
 }

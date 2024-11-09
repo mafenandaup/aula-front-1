@@ -294,4 +294,4 @@ for(let row of matrix2){
   console.log(row);   // outra forma de imprimir toda a matriz, pode fazer com coluna tb
 }
 
-//SPREAD OPERATOR
+//SPREAD OPERATOR: permite que um string ou array seja separado em elementos diferentes.

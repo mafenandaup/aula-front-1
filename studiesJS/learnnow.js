@@ -303,3 +303,7 @@ console.log(numSetMax);
 
 let numSetMin = Math.min(...numberSet) //o ... é o SPREAD OPERATOR
 console.log(numSetMin);
+
+let stringrand = "maria"
+let letters =[...stringrand];
+console.log(letters);

@@ -278,11 +278,11 @@ console.log(fruit.sort().reverse())
 const matrix = [[1, 2,], //ESSA É UMA MATRIS 2X2
 [3, 4,]];
 
-matrix[0][0] = 'X';
-matrix[0][1] = 'O'; //pra representar uma matriz em js, a primeira linha/coluna SEMPRE COMEÇA COM 0!
+matrix[0][0] = '1';
+matrix[0][1] = '2'; //pra representar uma matriz em js, a primeira linha/coluna SEMPRE COMEÇA COM 0!
 // ex: se uma matriz tem 6 linhas, o index dessas linhas vai de 0 a 5, etc.
-matrix[1][0] = 'O';
-matrix[1][1] = 'X';
+matrix[1][0] = '3';
+matrix[1][1] = '4';
 
 console.log(matrix);
 

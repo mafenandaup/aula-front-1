@@ -263,3 +263,7 @@ let fruitIndex = fruit.indexOf("kiwi");
 
 console.log(fruitIndex); // se o console.log retornar -1..
 //significa que o elemento não foi encontrado no array
+
+for(let element of fruit){ //loop para imprimir os elementos de um array
+  console.log(element);
+}

@@ -301,5 +301,5 @@ let numberSet = [1,2,3,4,5];
 let numSetMax = Math.max(...numberSet) //o ... é o SPREAD OPERATOR
 console.log(numSetMax);
 
-let numSetMin = Math.max(...numberSet) //o ... é o SPREAD OPERATOR
+let numSetMin = Math.min(...numberSet) //o ... é o SPREAD OPERATOR
 console.log(numSetMin);

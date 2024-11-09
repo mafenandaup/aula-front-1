@@ -267,3 +267,6 @@ console.log(fruitIndex); // se o console.log retornar -1..
 for(let element of fruit){ //loop para imprimir os elementos de um array EM ORDEM
   console.log(element);
 }
+
+console.log(fruit.sort()) //IMPRIME EM ORDEM ALFABÉTICA
+console.log(fruit.sort().reverse())

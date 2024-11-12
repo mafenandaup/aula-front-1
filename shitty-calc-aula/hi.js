@@ -9,6 +9,6 @@ function somar(){
     const num2 = parseInt(document.getElementById('num2').value)
 
     const resultado = num1+num2;
-    document.getElementById('results-tab').innerText = "Resultado; " +resultado;
+    document.getElementById('results-tab').textContent = "Resultado; " +resultado;
 
 }

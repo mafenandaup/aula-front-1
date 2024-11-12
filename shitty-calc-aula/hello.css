@@ -22,3 +22,14 @@ body {
 *{
     font-family: 'Poppins';  
 }
+
+.calc-btn{
+    width: 50%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 5px;
+}

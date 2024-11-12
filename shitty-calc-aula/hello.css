@@ -8,7 +8,7 @@ body {
     gap: 15px;
 }
 
-.calc-contain{
+.calc-contain {
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -16,4 +16,15 @@ body {
     background-color: rgb(211, 177, 235);
     padding: 30px;
     text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+    font-family: 'Poppins';
 }

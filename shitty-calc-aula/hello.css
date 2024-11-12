@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     width: 400px;
     height: auto;
-    background-color: aquamarine;
+    background-color: rgb(211, 177, 235);
     padding: 30px;
     text-align: center;
 }

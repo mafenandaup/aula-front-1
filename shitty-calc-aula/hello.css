@@ -16,6 +16,7 @@ body {
     background-color: rgb(211, 177, 235);
     padding: 30px;
     text-align: center;
+    border-radius: 14px;
 }
 
 *{

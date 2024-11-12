@@ -25,6 +25,12 @@ body {
 
 .calc-btn{
     width: 50%;
+background-color: rgb(220, 173, 243);
+}
+.calc-btn:hover{
+    color: azure;
+    background-color: blueviolet;
+    cursor: pointer;
 }
 
 .buttons{

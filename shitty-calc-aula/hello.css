@@ -1,0 +1,46 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 15px;
+}
+
+.calc-contain {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    background-color: rgb(211, 177, 235);
+    padding: 30px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+*{
+    font-family: 'Poppins';  
+}
+
+.calc-btn{
+    width: 50%;
+background-color: rgb(220, 173, 243);
+}
+.calc-btn:hover{
+    color: azure;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 5px;
+}
+
+.results-tab{
+    height: 30px;
+    background-color: azure;
+}

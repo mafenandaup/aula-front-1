@@ -14,6 +14,11 @@
     padding: 10px;
    position: sticky;
   }
+  .paintlogo{
+    height: 50px;
+    display: flex;
+    align-self: flex-start;
+  }
   
   .menu {
     list-style: none;

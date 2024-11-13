@@ -109,6 +109,20 @@ body {
   z-index: 2; /* Ensures content (e.g., the form) appears above the dimming overlay */
 }
 
+.nl-text{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  
+}
+
+.nl-text h1{
+  font-size: 40px;
+}
 .newsletter-signup {
   background-color: var(--greyish); 
   width: 400px;

@@ -77,7 +77,12 @@
 .newsletter-contain{
   width: auto;
   height: 250px;
-  background-color: aquamarine;
+  background-image: url('https://poliplac.cdn.magazord.com.br/img/2023/08/blog/2636/moma.jpeg'); 
+  filter: brightness(0.4);
+  image-rendering: ;
+    background-size: cover; /* Scales the image to cover the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
   display: flex;
 }
 

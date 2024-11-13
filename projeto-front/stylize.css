@@ -83,29 +83,40 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  fill-opacity: 0.5;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   position: relative;
-  filter: brightness(0.5); 
 }
 
-input{
-  width: auto;
-  height: 30px;
+.newsletter-backdrop::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000; 
+  opacity: 0.5; 
+  z-index: 1; 
 }
 
+.newsletter-backdrop > * {
+  z-index: 2; /* Ensures content (e.g., the form) appears above the dimming overlay */
+}
 
 .newsletter-signup {
-  background-color: var(--greyish);
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
   width: 400px;
-  height: 80%;
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  filter: brightness(1.5);
-  align-self: center;
+  flex-direction: column; /* Arrange inputs and button vertically */
+  gap: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow effect for depth */
   margin-right: 30px;
-  padding: 10px;
 }
 
 

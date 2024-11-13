@@ -60,7 +60,6 @@
 
 #nav-item{
     color: white;
-    transition: color 0.3s ease; 
 }
 #nav-item :hover {
     color: red;

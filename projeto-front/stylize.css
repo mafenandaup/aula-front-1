@@ -17,7 +17,8 @@
   .paintlogo{
     height: 50px;
     display: flex;
-    align-self: flex-start;
+    align-self: flex-end;
+    filter: invert();
   }
   
   .menu {

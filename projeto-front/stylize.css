@@ -110,7 +110,7 @@ body {
 }
 
 .newsletter-signup {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background-color: var(--greyish); 
   width: 400px;
   padding: 20px;
   border-radius: 10px;
@@ -142,5 +142,9 @@ body {
 
   .menu.active {
     display: flex;
+  }
+  .newsletter-signup {
+    width: 60%; /* Make the form width responsive on smaller screens */
+    margin-right: 0; /* Remove right margin */
   }
 }

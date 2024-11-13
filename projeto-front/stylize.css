@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+.hamb-nav {
+    position: relative;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .menu-hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+  
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+    .menu {
+      display: none; /* Menu escondido em mobile */
+      flex-direction: column;
+      gap: 10px;
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  
+    .menu-hamburger {
+      display: flex;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  }

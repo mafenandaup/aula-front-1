@@ -86,6 +86,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative; /* Ensures the form can be positioned on top of it */
+  filter: brightness(0.5); /* Optional: add brightness effect */
 }
 
 
@@ -94,11 +96,13 @@ body {
   width: 400px;
   height: 80%;
   display: flex;
-  filter: n;
+  filter: brightness(1.5);
   justify-content: flex-end;
   align-self: center;
   margin-right: 30px;
+  padding: 10px;
 }
+
 
 @media (max-width: 768px) {
   .menu {

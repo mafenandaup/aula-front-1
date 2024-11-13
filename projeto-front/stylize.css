@@ -78,6 +78,14 @@
   width: auto;
   height: 250px;
   background-color: aquamarine;
+  display: flex;
+}
+
+.newsletter-signup{
+  background-color: var(--greyish);
+  width: 300px;
+  height: 80%;
+  display: flex;
 }
 
   /* Estilos para telas menores */

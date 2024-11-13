@@ -88,10 +88,11 @@
 
 .newsletter-signup{
   background-color: var(--greyish);
-  width: 300px;
+  width: 400px;
   height: 80%;
   display: flex;
  align-self: center;
+ justify-content: center;
 }
 
   /* Estilos para telas menores */

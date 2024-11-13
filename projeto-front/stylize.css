@@ -71,7 +71,7 @@
     color: white;
 }
 #nav-item :hover {
-    color: rgb(252, 163, 17);
+    color: var(--vividyellow);
 }
 
 .newsletter-contain{

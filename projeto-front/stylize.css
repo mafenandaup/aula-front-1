@@ -76,33 +76,29 @@ body {
   color: var(--vividyellow);
 }
 
-.newsletter-contain {
+.newsletter-backdrop {
   width: auto;
   height: 250px;
-  background-image: url('imgs/art-museum-bg.png');
+  background-image: url('imgs/art-museum-bg.png'); /* background image reference can be another image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: brightness(0.5) blur(1px);
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 
 .newsletter-signup {
   background-color: var(--greyish);
   width: 400px;
   height: 80%;
   display: flex;
+  filter: n;
   justify-content: flex-end;
   align-self: center;
   margin-right: 30px;
 }
-
-img[src = 'imgs/art-museum-bg.png']{
-filter: brightness(0.5) blur(1px);
-}
-
 
 @media (max-width: 768px) {
   .menu {

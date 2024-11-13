@@ -1,3 +1,10 @@
+.root{
+  --darkblue: rgb(20, 33, 61);
+  --vividyellow: rgb(252, 163, 17);
+  --greyish: rgb(229, 229, 229);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -62,7 +69,7 @@
     color: white;
 }
 #nav-item :hover {
-    color: red;
+    color: rgb(252, 163, 17);
 }
 
 .newsletter-contain{

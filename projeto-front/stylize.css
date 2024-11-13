@@ -65,6 +65,12 @@
     color: red;
 }
 
+.newsletter-contain{
+  width: auto;
+  height: 200px;
+  background-color: aquamarine;
+}
+
   /* Estilos para telas menores */
   @media (max-width: 768px) {
     .menu {

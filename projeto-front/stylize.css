@@ -84,6 +84,7 @@
     background-position: center; /* Centers the image within the div */
     background-repeat: no-repeat; /* Prevents the image from repeating */
   display: flex;
+  align-items: center;
 }
 
 
@@ -92,9 +93,8 @@
   width: 400px;
   height: 80%;
   display: flex;
-  justify-content: flex-end; 
-  align-items: center; /* Centers items vertically */
-  margin: 10px; /* Centers .newsletter-signup within its own container */
+  justify-content: flex-start; 
+  align-self: center; /* Centers items vertically */
 }
 
 

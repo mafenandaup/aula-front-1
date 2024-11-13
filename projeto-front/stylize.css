@@ -62,7 +62,7 @@
     color: white;
     transition: color 0.3s ease; 
 }
-.menu li:hover {
+#nav-item :hover {
     color: red;
 }
 

@@ -78,7 +78,7 @@
 .newsletter-contain{
   width: auto;
   height: 250px;
-  background-image: url('https://poliplac.cdn.magazord.com.br/img/2023/08/blog/2636/moma.jpeg'); 
+  background-image: url('imgs/art-museum-bg.png'); 
   image-rendering: var(--coolblur);
     background-size: cover; /* Scales the image to cover the entire div */
     background-position: center; /* Centers the image within the div */

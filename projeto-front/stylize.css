@@ -1,90 +1,92 @@
-:root{
+:root {
   --darkblue: rgb(20, 33, 61);
   --vividyellow: rgb(252, 163, 17);
   --greyish: rgb(229, 229, 229);
-  --coolshadow:drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+  --coolshadow: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   --coolblur: brightness(0.4) blur(1px);
 }
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
 
 .hamb-nav {
-    position: sticky;
-    top: 0;
-    background-color: #000;
-    padding: 10px;
-   position: sticky;
-   filter: var(--coolshadow);
-  }
-
-  .paintlogo{
-    height: 50px;
-    display: flex;
-    filter: invert();
-    align-self: center;
-  }
-  
-  .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .menu li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .menu-hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .menu-hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-  }
-
-.contain-test{
-    width:fit-content;
-    padding: 15px;
-    background-color: aquamarine;
-    height: 700px;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  padding: 10px;
+  position: sticky;
+  filter: var(--coolshadow);
 }
 
-#nav-item{
-    color: white;
+.paintlogo {
+  height: 50px;
+  display: flex;
+  filter: invert();
+  align-self: center;
 }
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.contain-test {
+  width: fit-content;
+  padding: 15px;
+  background-color: aquamarine;
+  height: 700px;
+}
+
+#nav-item {
+  color: white;
+}
+
 #nav-item :hover {
-    color: var(--vividyellow);
+  color: var(--vividyellow);
 }
 
-.newsletter-contain{
+.newsletter-contain {
   width: auto;
   height: 250px;
-  background-image: url('imgs/art-museum-bg.png'); 
+  background-image: url('imgs/art-museum-bg.png');
   image-rendering: var(--coolblur);
-    background-size: cover; /* Scales the image to cover the entire div */
-    background-position: center; /* Centers the image within the div */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 
@@ -93,31 +95,29 @@
   width: 400px;
   height: 80%;
   display: flex;
-  justify-content: flex-start; 
-  align-self: center; /* Centers items vertically */
+  justify-content: flex-end;
+  align-self: center;
 }
 
 
-  /* Estilos para telas menores */
-  @media (max-width: 768px) {
-    .menu {
-      display: none; /* Menu escondido em mobile */
-      flex-direction: column;
-      gap: 10px;
-      background-color: #000;
-      position: absolute;
-      top: 50px;
-      right: 10px;
-      padding: 10px;
-      border-radius: 8px;
-    }
-  
-    .menu-hamburger {
-      display: flex;
-    }
-  
-    .menu.active {
-      display: flex;
-    }
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 8px;
   }
-  
+
+  .menu-hamburger {
+    display: flex;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}

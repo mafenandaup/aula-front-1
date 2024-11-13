@@ -91,6 +91,7 @@
   width: 300px;
   height: 80%;
   display: flex;
+ align-self: center;
 }
 
   /* Estilos para telas menores */

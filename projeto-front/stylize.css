@@ -15,7 +15,7 @@
     padding: 10px;
    position: sticky;
   }
-  
+
   .paintlogo{
     height: 50px;
     display: flex;
@@ -58,6 +58,13 @@
     height: 700px;
 }
 
+#nav-item{
+    color: white;
+    transition: color 0.3s ease; 
+}
+.menu li:hover {
+    color: red;
+}
 
   
   /* Estilos para telas menores */
@@ -82,3 +89,4 @@
       display: flex;
     }
   }
+  

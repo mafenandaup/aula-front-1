@@ -86,14 +86,17 @@
   display: flex;
 }
 
-.newsletter-signup{
+
+.newsletter-signup {
   background-color: var(--greyish);
   width: 400px;
   height: 80%;
   display: flex;
- align-self: center;
- justify-content: center;
+  justify-content: flex-end; 
+  align-items: center; /* Centers items vertically */
+  margin: 10px; /* Centers .newsletter-signup within its own container */
 }
+
 
   /* Estilos para telas menores */
   @media (max-width: 768px) {

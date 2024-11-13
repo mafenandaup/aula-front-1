@@ -10,7 +10,7 @@
 
 .hamb-nav {
     position: relative;
-    background-color: #333;
+    background-color: #000;
     padding: 10px;
    position: sticky;
   }
@@ -24,7 +24,8 @@
   .menu {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     gap: 20px;
   }
   

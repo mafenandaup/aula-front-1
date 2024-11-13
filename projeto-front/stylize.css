@@ -97,9 +97,12 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000; 
-  opacity: 0.5; 
-  z-index: 1; 
+  background-image: inherit; /* Inherit the background image */
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  filter: brightness(0.5) blur(2px); /* Apply the filter to the pseudo-element */
+  z-index: 1;
 }
 
 .newsletter-backdrop > * {

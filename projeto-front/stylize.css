@@ -134,6 +134,9 @@ body {
     width: 80%;
     margin-left: 10px;
   }
+  .nl-text h1{
+    font-size: 40px;
+  }
 
   .newsletter-signup {
     width: 60%;
@@ -144,6 +147,11 @@ body {
 @media (max-width: 480px) {
   .nl-text {
     width: 90%;
+    font-size: 13px;
     margin-left: 5px;
   }
+.nl-text h1{
+  font-size: 35px;
+}
+
 }

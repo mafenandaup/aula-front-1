@@ -16,6 +16,17 @@ body {
   font-family: Arial, sans-serif;
 }
 
+ button{
+  color: #000000;
+  background-color: #fff;
+  border: solid 1px;
+}
+  button:hover{
+    color: #fff;
+    background-color: var(--darkblue);
+    cursor: pointer;
+  }
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -176,7 +187,7 @@ body {
   flex-direction: column;
   gap: 10px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .monthly-pieces{
@@ -195,6 +206,12 @@ body {
   width: auto;
   height: 300px;
   background-color: rgb(255, 0, 0);
+}
+
+.end-footer{
+  width: auto;
+  height: 60px;
+  background-color:black;
 }
 @media (max-width: 768px) {
   .nl-text {

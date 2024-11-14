@@ -15,10 +15,28 @@
 body {
   font-family: Arial, sans-serif;
 }
+.hamburger{
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.hamburger::before{
+}
+
+.hamburger::after{
+content: " ";
+display: block;
+width: 30px;
+width: 6px;
+margin-top: 5px;
+}
 
 .header{
 background-color: rgb(0, 0, 0);
-padding-inline: 14px;
+padding-inline: 18px;
 }
 
 .hamb-nav{
@@ -55,6 +73,15 @@ padding-inline: 14px;
   align-self: center;
 }
 
+.main-content {
+  height: calc(100vh - 70px);
+  background-color: aqua;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 .newsletter-backdrop {
   width: auto;
   height: 250px;
@@ -65,8 +92,6 @@ padding-inline: 14px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
-  z-index: 1;
   /* eu meio que desisti do pseudoelemento */
 }
 
@@ -109,10 +134,28 @@ padding-inline: 14px;
     font-size: 35px;
   }
 
+  .menu{
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: black;
+
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+gap: 0;
+  }
+
   .newsletter-signup {
     width: 60%;
     margin-right: 10px;
     margin-left: 10px;
+  }
+
+  .hamburger{
+    display: block;
   }
 
 

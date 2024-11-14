@@ -2,43 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylize.css">
-    <title>Museu Virtual</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="stylize.css">
+   <title>Museu Virtual</title>
 </head>
+
 <body>
-    <nav class="hamb-nav">
-       <div class="menu-hamburger" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-       </div>
-       <ul class="menu">
-         <div class="paintlogo">
-            <img src="imgs/art-icon-vector-600nw-1247247169.png" alt="vetor logo museu virtual" class="paintlogo">
-         </div>
-          <li id="nav-item"><a href="#home">Início</a></li>
-          <li id="nav-item"><a href="#about">Sobre Nós</a></li>
-          <li id="nav-item"><a href="#contact">Newsletter</a></li>
-          <li id="nav-item"><a href="#services">Servicos(alterar)</a></li>
-       </ul>
-    </nav>
- 
-    <section class="newsletter-backdrop">
-       <div class="nl-text">
-          <h1>Junte-se a Nós</h1>
-          <p>Assine a nossa newsletter para ser notificado das maiores novidades, curiosidades, e obras existentes no mundo da arte.</p>
-       </div>
-       <form class="newsletter-signup">
-          <h3>Preencha os detalhes abaixo:</h3>
-          <input type="text" placeholder="Insira seu nome/apelido"  id="name-nl"/>
-          <input type="email" placeholder="Insira seu melhor email"  id="email-nl"/>
-          <button type="submit" id="submit-nl">Enviar</button>
-          <p id="nl-message"></p>
-       </form>
-    </section>
- 
-    <script src="fortests.js"></script>
- </body>
+   <nav class="hamb-nav">
+      <div class="paintlogo">
+         <img src="imgs/art-icon-vector-600nw-1247247169.png" alt="vetor logo museu virtual" class="paintlogo">
+      </div>
+      <ul class="menu">
+         <li id="nav-item"><a href="#home">Início</a></li>
+         <li id="nav-item"><a href="#about">Sobre Nós</a></li>
+         <li id="nav-item"><a href="#contact">Newsletter</a></li>
+         <li id="nav-item"><a href="#services">Servicos(alterar)</a></li>
+      </ul>
+      <div class="menu-icon">
+         <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+     </div>
+   </nav>
+
+   <section class="newsletter-backdrop">
+      <div class="nl-text">
+         <h1>Junte-se a Nós</h1>
+         <p>Assine a nossa newsletter para ser notificado das maiores novidades, curiosidades, e obras existentes no
+            mundo da arte.</p>
+      </div>
+      <form class="newsletter-signup">
+         <h3>Preencha os detalhes abaixo:</h3>
+         <input type="text" placeholder="Insira seu nome/apelido" id="name-nl" />
+         <input type="email" placeholder="Insira seu melhor email" id="email-nl" />
+         <button type="submit" id="submit-nl">Enviar</button>
+         <p id="nl-message"></p>
+      </form>
+   </section>
+
+   <script src="fortests.js"></script>
+</body>
+
 </html>

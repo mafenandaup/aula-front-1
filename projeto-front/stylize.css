@@ -1,6 +1,6 @@
 :root {
   --darkblue: rgb(20, 33, 61);
-  --vividyellow: rgb(252, 163, 17); 
+  --vividyellow: rgb(252, 163, 17);
   --greyish: rgb(229, 229, 229);
   --coolshadow: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
   --coolblur: brightness(0.4) blur(1px);
@@ -33,12 +33,12 @@ body {
   cursor: pointer;
 }
 
-.header{
-background-color: rgb(0, 0, 0);
-padding-inline: 18px;
+.header {
+  background-color: rgb(0, 0, 0);
+  padding-inline: 18px;
 }
 
-.hamb-nav{
+.hamb-nav {
   max-width: 1280px;
   height: 70px;
   margin-inline: auto;
@@ -47,7 +47,7 @@ padding-inline: 18px;
   align-items: center;
 }
 
-.menu{
+.menu {
   display: flex;
   gap: 30px;
   list-style: none;
@@ -60,7 +60,7 @@ padding-inline: 18px;
   transition: color 0.3s ease-in-out;
 }
 
-.menu a:hover{
+.menu a:hover {
   cursor: pointer;
   color: var(--vividyellow);
 }
@@ -78,24 +78,30 @@ padding-inline: 18px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .hamb-popup {
-  display: none; 
+  display: none;
   position: fixed;
-  bottom: 150px;
-  right: 0px;
-left: 220px;
-  width: 100vw;
-  height: 100vh;
+  top: 20px;
+  /* Distance from the bottom of the viewport */
+  right: 20px;
+  /* Distance from the right of the viewport */
+  width: auto;
+  /* Use auto width to prevent it from expanding across the page */
+  max-width: 300px;
+  /* Optional: set a max-width to control its size */
+  height: auto;
+  /* Use auto height to fit its content */
   align-items: center;
   justify-content: center;
   z-index: 1000;
 }
 
 .hamb-popup.active {
-  display: flex; /* Shows the popup when .active is added */
+  display: flex;
+  /* Shows the popup when .active is added */
 }
 
 
@@ -110,14 +116,14 @@ left: 220px;
 }
 
 
-.popup-menu a{
+.popup-menu a {
   font-size: 18px;
   text-decoration: none;
   color: #fff;
   transition: color 0.3s ease-in-out;
 }
 
-.popup-menu a:hover{
+.popup-menu a:hover {
   cursor: pointer;
   color: var(--vividyellow);
 }
@@ -180,16 +186,17 @@ left: 220px;
     width: 80%;
     margin-left: 10px;
   }
-  .nl-text h1{
+
+  .nl-text h1 {
     font-size: 35px;
   }
 
   .menu {
-   display: none;
+    display: none;
   }
 
   /* estilos ativos */
-  
+
   .newsletter-signup {
     width: 60%;
     margin-right: 10px;
@@ -197,23 +204,24 @@ left: 220px;
   }
 
   .main-content {
-    z-index: 1; 
+    z-index: 1;
   }
 
-  .hamburger{
+  .hamburger {
     display: flex;
   }
 
 
-@media (max-width: 480px) {
-  .nl-text {
-    width: 90%;
-    font-size: 13px;
-    margin-left: 5px;
-  }
-.nl-text h1{
-  font-size: 30px;
-}
+  @media (max-width: 480px) {
+    .nl-text {
+      width: 90%;
+      font-size: 13px;
+      margin-left: 5px;
+    }
 
-}
+    .nl-text h1 {
+      font-size: 30px;
+    }
+
+  }
 }

@@ -16,58 +16,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.hamb-nav {
-  position: sticky;
-  top: 0;
-  background-color: #000;
-  padding: 10px;
-  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
-}
-
 .paintlogo {
   height: 50px;
   display: flex;
   filter: invert();
   align-self: center;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  z-index: 5;
-}
-
-.menu li a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.menu li a:hover {
-  color: var(--vividyellow); 
-}
-
-.menu-hamburger {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
-}
-
-input{
-  border-radius: 5px;
-  border: solid 3px rgb(176, 173, 167);
-}
-
-.menu-hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  border-radius: 2px;
 }
 
 .newsletter-backdrop {
@@ -120,26 +73,6 @@ input{
 }
 
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #000;
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    padding: 10px;
-    border-radius: 8px;
-  }
-
-  .menu-hamburger {
-    display: flex;
-  }
-
-  .menu.active {
-    display: flex;
-  }
-
   .nl-text {
     width: 80%;
     margin-left: 10px;

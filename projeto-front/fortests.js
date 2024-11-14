@@ -18,6 +18,8 @@ document.getElementById('submit-nl').addEventListener('click', function() {
       messageElement.style.color = 'green'; 
     } else {
       console.log(`${useremail} is NOT a valid email`);
+      document.getElementById('name-nl').value = '';
+      document.getElementById('email-nl').value = '';
       messageElement.textContent = 'Por favor, digite um email válido';
       messageElement.style.color = 'red'; 
     }

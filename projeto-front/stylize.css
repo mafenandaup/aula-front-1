@@ -154,11 +154,14 @@ body {
     display: flex;
   }
 
+  .nl-text {
+    width: 80%; 
   .menu.active {
     display: flex;
   }
   .newsletter-signup {
-    width: 60%; /* Make the form width responsive on smaller screens */
-    margin-right: 0; /* Remove right margin */
+    width: 60%; 
+    margin-right: 0; 
   }
+}
 }

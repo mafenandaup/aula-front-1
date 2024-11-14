@@ -15,24 +15,21 @@
 body {
   font-family: Arial, sans-serif;
 }
-.hamburger{
+
+.hamburger {
   display: none;
-  border: none;
-  background: none;
-  border-top: 3px solid #fff;
+  flex-direction: column;
+  gap: 5px;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
-.hamburger::before{
-}
-
-.hamburger::after{
-content: " ";
-display: block;
-width: 30px;
-height: 3px;
-background-color: #fff;
-margin-top: 5px;
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
 }
 
 .header{
@@ -135,30 +132,28 @@ padding-inline: 18px;
     font-size: 35px;
   }
 
-  .menu{
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-background-color: black;
-clip-path: circle(100px at 90% -15%); 
-/* 90% no eixo x, -15% no eixo y, ajuda a posicionar o elemento */
-
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-gap: 0;
-pointer-events: none;
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
   }
 
   /* estilos ativos */
 
-  .nav.active .menu{
-    clip-path: circle(1500px at 90% -15%); 
-    pointer-events: all;
-  }
 
+  .menu.active {
+    transform: translateX(0);
+  }
+  
   .newsletter-signup {
     width: 60%;
     margin-right: 10px;
@@ -166,7 +161,7 @@ pointer-events: none;
   }
 
   .hamburger{
-    display: block;
+    display: flex;
   }
 
 

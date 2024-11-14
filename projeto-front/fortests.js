@@ -37,18 +37,11 @@ document.getElementById('submit-nl').addEventListener('click', function() {
   isValidEmail(email, nome);
 });
 
-
-let menuList = document.getElementById("menuList")
-menuList.style.maxHeight = "0px";
-
-function toggleMenu(){
-    if(menuList.style.maxHeight == "0px")
-    {
-        menuList.style.maxHeight = "300px";
-    }
-    else{
-        menuList.style.maxHeight = "0px";
-    }
-}
         
-const
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+

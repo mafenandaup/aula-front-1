@@ -38,7 +38,7 @@ body {
   padding-inline: 18px;
   position: sticky; 
   top: 0;
-  z-index: 100; /* Garante que o cabeçalho esteja sobre outros elementos */
+  z-index: 100; /* garante que o cabeçalho esteja sobre outros elementos */
 }
 
 .hamb-nav {

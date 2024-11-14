@@ -8,7 +8,7 @@ document.getElementById('submit-nl').addEventListener('click', function() {
 
   function isValidEmail(useremail, name) {
     const messageElement = document.getElementById('nl-message');
-    
+
     if (!useremail || !name) {
       console.log(`Please fill in both fields.`);
       document.getElementById('name-nl').value = '';
@@ -37,3 +37,17 @@ document.getElementById('submit-nl').addEventListener('click', function() {
   isValidEmail(email, nome);
 });
 
+
+let menuList = document.getElementById("menuList")
+menuList.style.maxHeight = "0px";
+
+function toggleMenu(){
+    if(menuList.style.maxHeight == "0px")
+    {
+        menuList.style.maxHeight = "300px";
+    }
+    else{
+        menuList.style.maxHeight = "0px";
+    }
+}
+        

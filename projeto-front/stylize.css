@@ -16,41 +16,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.hamb-nav{
-  padding: 10px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #000000;
-  position: relative;
-  height: 70px;
-}
-
-.menu{
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
-.menu li {
-  list-style-type: none;
-}
-
-.menu li a  {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.menu-icon{
-  display: none;  
-  /* isso ocorre somente nos momentos iniciais em que o menu tem seu display */
-}
-
-.menu-icon i{
-  color: #fff;
-  font-size: 30px;
-}
 
 .paintlogo {
   height: 50px;
@@ -118,7 +83,7 @@ body {
     margin-right: 10px;
     margin-left: 10px;
   }
-}
+
 
 @media (max-width: 480px) {
   .nl-text {
@@ -130,4 +95,5 @@ body {
   font-size: 30px;
 }
 
+}
 }

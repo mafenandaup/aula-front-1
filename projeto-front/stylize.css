@@ -16,7 +16,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.paintlogo {
+#paintlogo {
   height: 50px;
   display: flex;
   filter: invert();

@@ -191,6 +191,11 @@ body {
   background-color: pink;
 }
 
+.art-history{
+  width: auto;
+  height: 300px;
+  background-color: rgb(255, 0, 0);
+}
 @media (max-width: 768px) {
   .nl-text {
     width: 80%;

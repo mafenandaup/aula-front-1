@@ -87,7 +87,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: relative;
+  position: relative; 
+  /* tem que ter esses settings de position pro pseudoelement */
 }
 
 .newsletter-backdrop::before {

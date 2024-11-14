@@ -176,6 +176,16 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.monthly-pieces{
+  width: auto;
+  height: 250px;
+  background-color: aqua;
+}
+
+.about-us{
+  
+}
+
 @media (max-width: 768px) {
   .nl-text {
     width: 80%;

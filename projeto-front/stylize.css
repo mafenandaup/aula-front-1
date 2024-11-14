@@ -37,6 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  z-index: 5;
 }
 
 .menu li a {

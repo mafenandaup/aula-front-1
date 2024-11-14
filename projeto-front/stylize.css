@@ -79,7 +79,7 @@ body {
 .newsletter-backdrop {
   width: auto;
   height: 250px;
-  background-image: url('imgs/art-museum-bg.png'); /* background image reference can be another image */
+  background-image: url('imgs/art-museum-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,25 +91,29 @@ body {
 }
 
 .newsletter-backdrop::before {
-  content: ''; /* Required for pseudo-elements */
+  content: '';
+  /* Required for pseudo-elements */
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: inherit; /* Inherit the background image */
+  background-image: inherit;
+  /* Inherit the background image */
   background-size: inherit;
   background-position: inherit;
   background-repeat: inherit;
-  filter: brightness(0.5) blur(2px); /* Apply the filter to the pseudo-element */
+  filter: brightness(0.5) blur(2px);
+  /* Apply the filter to the pseudo-element */
   z-index: 1;
 }
 
-.newsletter-backdrop > * {
-  z-index: 2; /* Ensures content (e.g., the form) appears above the dimming overlay */
+.newsletter-backdrop>* {
+  z-index: 2;
+  /* Ensures content (e.g., the form) appears above the dimming overlay */
 }
 
-.nl-text{
+.nl-text {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -117,22 +121,23 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  
+
 }
 
-.nl-text h1{
+.nl-text h1 {
   font-size: 40px;
 }
+
 .newsletter-signup {
-  background-color: var(--greyish); 
+  background-color: var(--greyish);
   width: 400px;
   padding: 20px;
   border-radius: 10px;
   display: flex;
-  flex-direction: column; /* Arrange inputs and button vertically */
+  flex-direction: column;
   gap: 10px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow effect for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin-right: 30px;
 }
 
@@ -155,13 +160,24 @@ body {
   }
 
   .nl-text {
-    width: 80%; 
+    width: 80%;
+    margin-left: 10px;
+  }
+
   .menu.active {
     display: flex;
   }
+
   .newsletter-signup {
-    width: 60%; 
-    margin-right: 0; 
+    width: 60%;
+    margin-right: 0;
   }
-}
+
+
+  @media (max-width: 480px) {
+    .nl-text {
+      width: 90%;
+      margin-left: 5px;
+    }
+  }
 }

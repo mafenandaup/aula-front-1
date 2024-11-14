@@ -38,3 +38,18 @@ document.getElementById('submit-nl').addEventListener('click', function() {
 });
 
         
+// Select elements
+const hamburger = document.querySelector('.hamburger');
+const popupContainer = document.getElementById('.hamb-popup');
+const menuItems = document.querySelectorAll('.popup-menu a');
+
+hamburger.addEventListener('click', () => {
+    popupContainer.classList.toggle('active');
+});
+
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        popupContainer.classList.remove('active');
+    });
+});

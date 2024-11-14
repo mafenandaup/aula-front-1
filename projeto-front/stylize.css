@@ -83,11 +83,11 @@ padding-inline: 18px;
 .hamb-popup {
   display: none; 
   position: fixed;
-  top: 0;
-  left: 0;
+  bottom: 20px; 
+    right: 20px;
+    width: 200px; 
   width: 100vw;
   height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
@@ -98,9 +98,13 @@ padding-inline: 18px;
   width: auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
   text-align: center;
   position: relative;
+}
+
+.popup-container.active {
+  display: flex;
 }
 
 .popup-menu a{

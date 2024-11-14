@@ -2,7 +2,7 @@
   --darkblue: rgb(20, 33, 61);
   --vividyellow: rgb(252, 163, 17);
   --greyish: rgb(229, 229, 229);
-  --coolshadow: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  --coolshadow: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
   --coolblur: brightness(0.4) blur(1px);
 }
 
@@ -78,7 +78,8 @@ body {
   flex-direction: column;
   width: 350px;
   color: white;
-  background-color: rgba(54, 55, 55, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
   filter: var(--coolshadow);
   padding: 20px;
   align-items: flex-start;

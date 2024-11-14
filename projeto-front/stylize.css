@@ -84,12 +84,13 @@ body {
     margin-left: 10px;
   }
   .nl-text h1{
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .newsletter-signup {
     width: 60%;
-    margin-right: 0;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -100,7 +101,7 @@ body {
     margin-left: 5px;
   }
 .nl-text h1{
-  font-size: 35px;
+  font-size: 30px;
 }
 
 }

@@ -71,8 +71,13 @@ body {
   align-items: center;
   justify-content: space-around;
   position: relative;
+  z-index: 1;
   /* eu meio que desisti do pseudoelemento */
 }
+.newsletter-backdrop > * {
+  z-index: 2;
+}
+
 
 .nl-text {
   display: flex;
@@ -123,5 +128,22 @@ body {
 
   .menu.active {
     display: flex;
+  }
+
+  .nl-text {
+    width: 80%;
+    margin-left: 10px;
+  }
+
+  .newsletter-signup {
+    width: 60%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nl-text {
+    width: 90%;
+    margin-left: 5px;
   }
 }

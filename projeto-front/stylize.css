@@ -85,15 +85,10 @@ body {
   display: none;
   position: fixed;
   top: 20px;
-  /* Distance from the bottom of the viewport */
   right: 20px;
-  /* Distance from the right of the viewport */
   width: auto;
-  /* Use auto width to prevent it from expanding across the page */
   max-width: 300px;
-  /* Optional: set a max-width to control its size */
   height: auto;
-  /* Use auto height to fit its content */
   align-items: center;
   justify-content: center;
   z-index: 1000;

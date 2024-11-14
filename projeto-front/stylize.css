@@ -18,13 +18,46 @@ body {
 
  button{
   color: #000000;
-  background-color: #fff;
-  border: solid 1px;
+  background-color: #ffffff00;
+  border: solid 2px;
+  border-radius: 6px;
+  padding: 8px;
 }
   button:hover{
     color: #fff;
     background-color: var(--darkblue);
     cursor: pointer;
+  }
+
+  #end-btn{
+    color: #fff0f0;
+  background-color: #ffffff00;
+  border: solid 1px;
+  border-radius: 6px;
+  padding: 8px;
+  }
+
+  #end-btn:hover{
+    color: #fff;
+    background-color: var(--darkblue);
+    cursor: pointer;
+  }
+
+
+  .end-footer{
+    width: auto;
+    height: 50px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+  }
+  
+  .end-footer h2{
+  color: #fff;
+  font-size: 18px;
   }
 
 .hamburger {
@@ -208,11 +241,6 @@ body {
   background-color: rgb(255, 0, 0);
 }
 
-.end-footer{
-  width: auto;
-  height: 60px;
-  background-color:black;
-}
 @media (max-width: 768px) {
   .nl-text {
     width: 80%;
@@ -234,6 +262,11 @@ body {
     margin-right: 10px;
     margin-left: 10px;
   }
+  .end-footer h2{
+    color: #fff;
+    font-size: 14px;
+    }
+  
 
   .main-content {
     z-index: 1;

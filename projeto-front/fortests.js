@@ -38,18 +38,25 @@ document.getElementById('submit-nl').addEventListener('click', function() {
 });
 
         
-// Select elements
 const hamburger = document.querySelector('.hamburger');
-const popupContainer = document.getElementById('.hamb-popup');
+const popupContainer = document.querySelector('.hamb-popup'); // Removed the dot from ID selector
 const menuItems = document.querySelectorAll('.popup-menu a');
+const closePopup = document.getElementById('closePopup');
 
+// Toggle popup visibility when clicking the hamburger
+popupContainer.classList.toggle('none');
 hamburger.addEventListener('click', () => {
     popupContainer.classList.toggle('active');
 });
 
-
+// Hide popup when any menu item is clicked
 menuItems.forEach(item => {
     item.addEventListener('click', () => {
         popupContainer.classList.remove('active');
     });
+});
+
+// Hide popup when clicking the close button (optional if using a close icon)
+closePopup.addEventListener('click', () => {
+    popupContainer.classList.remove('active');
 });

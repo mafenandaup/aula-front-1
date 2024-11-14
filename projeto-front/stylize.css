@@ -96,7 +96,7 @@ body {
 
 .hamb-popup.active {
   display: flex;
-  /* Shows the popup when .active is added */
+  /* mostra o popup quando uma classe ativa está acionada*/
 }
 
 

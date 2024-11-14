@@ -38,11 +38,6 @@ body {
   /* eu meio que desisti do pseudoelemento */
 }
 
-.newsletter-backdrop > * {
-  z-index: 2;
-}
-
-
 .nl-text {
   display: flex;
   flex-direction: column;

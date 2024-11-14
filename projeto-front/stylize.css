@@ -93,25 +93,23 @@ body {
 
 .newsletter-backdrop::before {
   content: '';
-  /* Required for pseudo-elements */
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-image: inherit;
-  /* Inherit the background image */
   background-size: inherit;
   background-position: inherit;
   background-repeat: inherit;
   filter: brightness(0.5) blur(2px);
-  /* Apply the filter to the pseudo-element */
+  /* Aplicando o filtro no pseudoelement */
   z-index: 1;
 }
 
 .newsletter-backdrop>* {
   z-index: 2;
-  /* Ensures content (e.g., the form) appears above the dimming overlay */
+  /* assegura que o conteudo da div apareça em cima do overlay */
 }
 
 .nl-text {

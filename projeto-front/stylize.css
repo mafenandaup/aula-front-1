@@ -30,7 +30,8 @@ body {
 content: " ";
 display: block;
 width: 30px;
-width: 6px;
+height: 3px;
+background-color: #fff;
 margin-top: 5px;
 }
 
@@ -141,11 +142,21 @@ left: 0;
 width: 100vw;
 height: 100vh;
 background-color: black;
+clip-path: circle(100px at 90% -15%); 
+/* 90% no eixo x, -15% no eixo y, ajuda a posicionar o elemento */
 
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
 gap: 0;
+pointer-events: none;
+  }
+
+  /* estilos ativos */
+
+  .nav.active .menu{
+    clip-path: circle(1500px at 90% -15%); 
+    pointer-events: all;
   }
 
   .newsletter-signup {

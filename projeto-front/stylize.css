@@ -16,6 +16,36 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.header{
+background-color: rgb(0, 0, 0);
+padding-inline: 14px;
+}
+
+.hamb-nav{
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a:hover{
+  cursor: pointer;
+  color: var(--vividyellow);
+}
 
 .paintlogo {
   height: 50px;

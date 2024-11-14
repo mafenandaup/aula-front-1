@@ -37,6 +37,7 @@ body {
   z-index: 1;
   /* eu meio que desisti do pseudoelemento */
 }
+
 .newsletter-backdrop > * {
   z-index: 2;
 }

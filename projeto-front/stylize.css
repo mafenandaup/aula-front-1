@@ -73,14 +73,57 @@ padding-inline: 18px;
 
 .main-content {
   height: calc(100vh - 70px);
-  background-color: aqua;
+  background-color: white;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 1; /* Make sure it stays behind the menu */
-  transition: all 0.3s ease; /* Transition to prevent jump when menu is active */
+  z-index: 1; 
 }
 
+.hamb-popup {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup {
+  background-color: #000000;
+  width: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+.popup-menu a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.popup-menu a:hover{
+  cursor: pointer;
+  color: var(--vividyellow);
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
 
 .newsletter-backdrop {
   width: auto;

@@ -26,6 +26,31 @@ body {
   height: 70px;
 }
 
+.hamb-nav ul{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.hamb-nav ul li{
+  list-style-type: none;
+}
+
+.hamb-nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-icon{
+  display: none;  
+  /* isso ocorre somente nos momentos iniciais em que o menu tem seu display */
+}
+
+.menu-icon i{
+  color: #fff;
+  font-size: 30px;
+}
+
 .paintlogo {
   height: 50px;
   display: flex;

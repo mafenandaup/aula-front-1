@@ -43,20 +43,20 @@ const popupContainer = document.querySelector('.hamb-popup'); // Removed the dot
 const menuItems = document.querySelectorAll('.popup-menu a');
 const closePopup = document.getElementById('closePopup');
 
-// Toggle popup visibility when clicking the hamburger
+// dá visibilidade ao popup quando clica no hamburguer
 popupContainer.classList.toggle('none');
 hamburger.addEventListener('click', () => {
     popupContainer.classList.toggle('active');
 });
 
-// Hide popup when any menu item is clicked
+// quando clicar em qq item, o popup fecha
 menuItems.forEach(item => {
     item.addEventListener('click', () => {
         popupContainer.classList.remove('active');
     });
 });
 
-// Hide popup when clicking the close button (optional if using a close icon)
+// quando clicar no 'x', o popup fecha
 closePopup.addEventListener('click', () => {
     popupContainer.classList.remove('active');
 });

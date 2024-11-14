@@ -16,6 +16,16 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.hamb-nav{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000000;
+  position: relative;
+  height: 70px;
+}
+
 .paintlogo {
   height: 50px;
   display: flex;

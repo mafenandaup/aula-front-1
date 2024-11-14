@@ -1,7 +1,4 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu");
-  menu.classList.toggle("active");  
-}
+
 
 document.getElementById('submit-nl').addEventListener('click', function() {
   event.preventDefault();

@@ -119,6 +119,7 @@ body {
   flex-direction: column;
   width: 300px;
   color: white;
+  background-color: aqua;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;

@@ -227,7 +227,7 @@ body {
 
 .monthly-pieces{
   width: auto;
-  height: 250px;
+  height: 300px;
   background-color: aqua;
   display: flex;
   justify-content: center;
@@ -237,14 +237,22 @@ body {
 
 .about-us{
   width: auto;
-  height: 300px;
+  height: 260px;
   background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .art-history{
   width: auto;
   height: 300px;
   background-color: rgb(255, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 @media (max-width: 768px) {

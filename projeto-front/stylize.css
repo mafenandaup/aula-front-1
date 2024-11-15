@@ -238,15 +238,25 @@ body {
 .about-us{
   width: auto;
   height: 260px;
-  background-color: pink;
+  background-color: var(--greyish);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-.about-text{
-  
+#about-text{
+  width: 400px;
+  gap: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+#about-text h2, p{
+  filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 .art-history{

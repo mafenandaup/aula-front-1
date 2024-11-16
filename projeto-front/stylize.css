@@ -402,7 +402,7 @@ a {
       align-items: center; /* Centraliza as cartas */
       height: 600px; /* Permite que a altura seja ajustada automaticamente */
       gap: 5px; /* Adiciona espaço entre as cartas */
-      align-items: center;
+     justify-content: center;
     }
 
     .about-museums{

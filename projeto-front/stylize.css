@@ -309,7 +309,7 @@ a {
   display: inline-block;
   background-color: #ffe8d6;
   color: var(--vividyellow);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   padding: 2px 8px;
   border-radius: 20px;
@@ -321,7 +321,7 @@ a {
   display: inline-block;
   background-color: var(--darkblue);
   color: white;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   padding: 2px 8px;
   border-radius: 20px;
@@ -331,7 +331,7 @@ a {
 
 
 .card-content h3 {
-  font-size: 14px;
+  font-size: 11px;
   color: #000000;
   line-height: 1.4;
   margin-bottom: 15px;

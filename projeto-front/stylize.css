@@ -270,7 +270,7 @@ a {
 .about-museums{
   width: 600px;
   gap: 15px;
-  height: 200px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -301,7 +301,7 @@ a {
 }
 
 .card-content {
-  padding: 15px;
+  padding: 12px;
 }
 
 /* Tag estilizada (brasil e mundo) */
@@ -313,7 +313,7 @@ a {
   font-weight: bold;
   padding: 2px 8px;
   border-radius: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
@@ -324,8 +324,8 @@ a {
   font-size: 10px;
   font-weight: bold;
   padding: 2px 8px;
+  margin-bottom: 5px;
   border-radius: 20px;
-  margin-bottom: 8px;
   filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
@@ -343,7 +343,7 @@ a {
 .museum-cards{
   display: flex;
   width: auto;
-  height: 100px;
+  height: 110px;
   flex-direction: row;
   justify-content: space-around;
 }

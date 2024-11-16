@@ -271,6 +271,71 @@ body {
   padding: 20px;
   background-color: white;
 }
+
+.card {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem do card */
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Conteúdo do card */
+.card-content {
+  padding: 15px;
+}
+
+/* Tag estilizada */
+.tag-br {
+  display: inline-block;
+  background-color: #ffe8d6;
+  color: #ff8c42;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* Texto principal */
+.card-content h3 {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+/* Rodapé com seta */
+.card-footer {
+  text-align: right;
+}
+
+.arrow-link {
+  font-size: 18px;
+  color: #ff8c42;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.arrow-link:hover {
+  color: #ff5a00;
+}
+
 .art-history{
   width: auto;
   height: 300px;

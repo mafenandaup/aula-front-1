@@ -345,6 +345,7 @@ a {
   width: auto;
   height: 100px;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .art-history{

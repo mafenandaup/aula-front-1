@@ -269,7 +269,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.56);
 }
 
 .card {
@@ -304,7 +304,7 @@ body {
 .tag-br {
   display: inline-block;
   background-color: #ffe8d6;
-  color: #ff8c42;
+  color: var(--vividyellow);
   font-size: 14px;
   font-weight: bold;
   padding: 5px 10px;
@@ -312,28 +312,30 @@ body {
   margin-bottom: 10px;
 }
 
+.tag-mundo {
+  display: inline-block;
+  background-color: var(--darkblue);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+
 /* Texto principal */
 .card-content h3 {
   font-size: 18px;
-  color: #333;
+  color: #000000;
   line-height: 1.4;
   margin-bottom: 15px;
-}
-
-/* Rodapé com seta */
-.card-footer {
-  text-align: right;
-}
-
-.arrow-link {
-  font-size: 18px;
-  color: #ff8c42;
   text-decoration: none;
-  transition: color 0.3s ease;
+  filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
-.arrow-link:hover {
-  color: #ff5a00;
+.card a {
+  text-decoration: none;
 }
 
 .art-history{

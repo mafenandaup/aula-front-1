@@ -16,6 +16,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
  button{
   color: #000000;
   background-color: #ffffff00;
@@ -265,7 +270,7 @@ body {
 .about-museums{
   width: 600px;
   gap: 15px;
-  height: auto;
+  height: 200px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -295,12 +300,11 @@ body {
   object-fit: cover;
 }
 
-/* Conteúdo do card */
 .card-content {
   padding: 15px;
 }
 
-/* Tag estilizada */
+/* Tag estilizada (brasil e mundo) */
 .tag-br {
   display: inline-block;
   background-color: #ffe8d6;
@@ -326,7 +330,6 @@ body {
 }
 
 
-/* Texto principal */
 .card-content h3 {
   font-size: 14px;
   color: #000000;
@@ -336,8 +339,12 @@ body {
   filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
-.card a {
-  text-decoration: none;
+
+.museum-cards{
+  display: flex;
+  width: auto;
+  height: 100px;
+  flex-direction: row;
 }
 
 .art-history{

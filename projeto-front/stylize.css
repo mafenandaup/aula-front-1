@@ -406,14 +406,15 @@ a {
     }
 
     .about-museums{
-      height: 580px;
+      height: 640px;
+      padding: 20px;
       margin-bottom: 20px;
       display: flex;
       align-items: center;
     }
   
     .card {
-      width: 50%; 
+      width: 45%; 
       height: 90%;/* Faz as cartas ocuparem uma proporção maior da tela */
     }
   

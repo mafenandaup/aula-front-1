@@ -345,6 +345,7 @@ a {
   width: auto;
   height: 110px;
   flex-direction: row;
+  gap: 5px;
   justify-content: space-around;
 }
 
@@ -372,8 +373,6 @@ a {
     display: none;
   }
 
-  /* estilos ativos */
-
   .newsletter-signup {
     width: 60%;
     margin-right: 10px;
@@ -392,6 +391,39 @@ a {
   .hamburger {
     display: flex;
   }
+
+  .about-us{
+    height: 700px;
+    align-items: flex-start;
+  }
+
+    .museum-cards {
+      flex-direction: column; /* Empilha as cartas verticalmente */
+      align-items: center; /* Centraliza as cartas */
+      height: 600px; /* Permite que a altura seja ajustada automaticamente */
+      gap: 5px; /* Adiciona espaço entre as cartas */
+      align-items: center;
+    }
+
+    .about-museums{
+      height: 580px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .card {
+      width: 50%; 
+      height: 90%;/* Faz as cartas ocuparem uma proporção maior da tela */
+    }
+  
+    .card-image img {
+      height: auto; /* Ajusta a altura da imagem para mantê-la proporcional */
+    }
+  }
+
+
+  
 
 
   @media (max-width: 480px) {

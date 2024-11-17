@@ -73,8 +73,3 @@ cards.forEach(card => {
     });
   });
 });
-
-flipArea.addEventListener('click', () => {
-  // Alterna a classe 'flipped' para virar o card
-  card.classList.toggle('flipped');
-});

@@ -304,7 +304,10 @@ button:hover {
   color: #fff;
   background-color: blue;
   border-radius: 14px;
+  flex-direction: row;
+gap: 2px;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-around;
 }

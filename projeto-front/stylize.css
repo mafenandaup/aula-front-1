@@ -258,6 +258,7 @@ button:hover {
   width: 95%;
   height: 200px;
   margin: 10px;
+
   background-color: var(--vividyellow);
   justify-content: space-around;
   margin: 10px;
@@ -333,7 +334,7 @@ gap: 2px;
   padding: 10px;
 }
 .card-back p {
- font-size: 10px;
+ font-size: 8px;
 }
 
 .flip-container.flipped .monthly-flip {
@@ -470,32 +471,6 @@ p {
 
 }
 
-.art-history {
-  width: auto;
-  height: 300px;
-background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  
-}
-
-.timeline-section{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 200px;
-  margin: 10px;
-  background-color: var(--vividyellow);
-  /* vou tirar a cor e o border radius depois, é só p ter noção de espaço */
-  justify-content: space-around;
-  margin: 10px;
-  border-radius: 15px;
-  padding: 15px;
-
-}
 
 @media (max-width: 768px) {
   .nl-text {
@@ -566,6 +541,14 @@ background-color: #fff;
     height: auto;
     /* Ajusta a altura da imagem para mantê-la proporcional */
   }
+  .monthly-pieces{
+    height: 600px;
+  }
+
+  .monthly-section{
+    height: 150%;
+    flex-wrap: wrap;
+  }
 }
 
 
@@ -578,6 +561,9 @@ background-color: #fff;
 
   .nl-text h1 {
     font-size: 30px;
+  }
+  .monthly-pieces{
+    height: 200%;
   }
 
 }

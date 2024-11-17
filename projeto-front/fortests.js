@@ -60,3 +60,21 @@ menuItems.forEach(item => {
 closePopup.addEventListener('click', () => {
     popupContainer.classList.remove('active');
 });
+
+const cards = document.querySelectorAll('.flip-container');
+
+cards.forEach(card => {
+  const flipArea = card.querySelector('.monthly-flip');
+  const flipButtons = card.querySelectorAll('.flip-button');
+  
+  flipButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+  });
+});
+
+flipArea.addEventListener('click', () => {
+  // Alterna a classe 'flipped' para virar o card
+  card.classList.toggle('flipped');
+});

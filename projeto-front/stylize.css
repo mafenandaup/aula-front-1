@@ -255,19 +255,25 @@ a, h1, h2, h3, h4, h5, h6 ,p {
 }
 
 .flip-container{
-
+width: 220px;
+height: 140px;
+padding: 10px;
 }
 
 .motnhly-flip{
+width: 100%;
+height: 100%;
+}
 
+.card-front, .card-back{
+  width: 100%;
+  height: 100%;
 }
 
 .card-front{
-
-}
-
-.card-back{
-
+  padding: 10px;
+  background-color: blue;
+  border-radius: 14px;
 }
 
 .about-us{

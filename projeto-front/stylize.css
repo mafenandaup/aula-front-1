@@ -247,7 +247,7 @@ a {
   width: 95%;
   height: 200px;
   margin: 10px;
-  background-color: var(--greyish);
+  background-color: var(--vividyellow);
   border-radius: 15px;
   padding: 15px;
 }
@@ -271,7 +271,7 @@ a {
 .about-us{
   width: auto;
   height: 260px;
-  background-color: var(--greyish);
+  background:linear-gradient( white,rgb(229, 229, 229)70%);
   display: flex;
   justify-content: space-around;
   align-items: center;

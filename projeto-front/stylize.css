@@ -16,14 +16,21 @@ body {
   font-family: Arial, sans-serif;
 }
 
-a, h1, h2, h3, h4, h5, h6 ,p {
-  text-decoration: none; 
-  color: inherit; 
-  filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-decoration: none;
+  color: inherit;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 
 }
 
- button{
+button {
   color: #000000;
   background-color: #ffffff00;
   border: solid 2px;
@@ -31,43 +38,44 @@ a, h1, h2, h3, h4, h5, h6 ,p {
   padding: 8px;
   transition: color 0.2s ease-in-out;
 }
-  button:hover{
-    color: #fff;
-    background-color: var(--darkblue);
-    cursor: pointer;
-  }
 
-  #end-btn{
-    color: #fff0f0;
+button:hover {
+  color: #fff;
+  background-color: var(--darkblue);
+  cursor: pointer;
+}
+
+#end-btn {
+  color: #fff0f0;
   background-color: #ffffff00;
   border: solid 1px;
   border-radius: 6px;
   padding: 8px;
   transition: color 0.2s ease-in-out;
-  }
+}
 
-  #end-btn:hover{
-    color: #fff;
-    background-color: var(--darkblue);
-    cursor: pointer;
-  }
+#end-btn:hover {
+  color: #fff;
+  background-color: var(--darkblue);
+  cursor: pointer;
+}
 
 
-  .end-footer{
-    width: auto;
-    height: 50px;
-    background-color:black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    gap: 30px;
-  }
-  
-  .end-footer h2{
+.end-footer {
+  width: auto;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 30px;
+}
+
+.end-footer h2 {
   color: #fff;
   font-size: 18px;
-  }
+}
 
 .hamburger {
   display: none;
@@ -89,9 +97,10 @@ a, h1, h2, h3, h4, h5, h6 ,p {
 .header {
   background-color: rgb(0, 0, 0);
   padding-inline: 18px;
-  position: sticky; 
+  position: sticky;
   top: 0;
-  z-index: 100; /* garante que o cabeçalho esteja sobre outros elementos */
+  z-index: 100;
+  /* garante que o cabeçalho esteja sobre outros elementos */
 }
 
 .hamb-nav {
@@ -232,7 +241,7 @@ a, h1, h2, h3, h4, h5, h6 ,p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
-.monthly-pieces{
+.monthly-pieces {
   width: auto;
   height: 300px;
   background-color: #fff;
@@ -243,22 +252,25 @@ a, h1, h2, h3, h4, h5, h6 ,p {
   padding: 20px;
 }
 
-.monthly-section{
+.monthly-section {
   display: flex;
   flex-direction: row;
   width: 95%;
   height: 200px;
   margin: 10px;
   background-color: var(--vividyellow);
+  justify-content: space-around;
+  margin: 15px;
   border-radius: 15px;
   padding: 15px;
 }
 
-.flip-container{
-width: 220px;
-height: 160px;
-padding: 10px;
-perspective: 1000px; /* perspectiva pro 3D */
+.flip-container {
+  width: 220px;
+  height: 160px;
+  padding: 10px;
+  perspective: 1000px;
+  /* perspectiva pro 3D */
 }
 
 .monthly-flip {
@@ -270,11 +282,12 @@ perspective: 1000px; /* perspectiva pro 3D */
 }
 
 .monthly-flip:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   cursor: pointer;
 }
 
-.card-front, .card-back{
+.card-front,
+.card-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -286,7 +299,7 @@ perspective: 1000px; /* perspectiva pro 3D */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card-front{
+.card-front {
   padding: 14px;
   color: #fff;
   background-color: blue;
@@ -296,9 +309,9 @@ perspective: 1000px; /* perspectiva pro 3D */
   justify-content: space-around;
 }
 
-.card-back{
-  background-color: var(--greyish);
-  color: #fff;
+.card-back {
+  background-color: black;
+  color: var(--greyish);
   transform: rotateY(180deg);
   cursor: pointer;
 }
@@ -320,20 +333,21 @@ button.flip-button {
 }
 
 button.flip-button:hover {
-  background-color: var(--darkblue);;
+  background-color: var(--darkblue);
+  ;
 }
 
-.about-us{
+.about-us {
   width: auto;
   height: 260px;
-  background:linear-gradient( white,rgb(229, 229, 229)70%);
+  background: linear-gradient(white, rgb(229, 229, 229)70%);
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
 }
 
-#about-text{
+#about-text {
   width: 400px;
   gap: 15px;
   height: auto;
@@ -343,14 +357,16 @@ button.flip-button:hover {
 
 }
 
-#about-text h2, p{
-  filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
-}
-.about-museums h4{
-  filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+#about-text h2,
+p {
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
-.about-museums{
+.about-museums h4 {
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+}
+
+.about-museums {
   width: 600px;
   gap: 15px;
   height: 220px;
@@ -398,7 +414,7 @@ button.flip-button:hover {
   padding: 2px 8px;
   border-radius: 20px;
   margin-bottom: 5px;
-  filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 .tag-mundo {
@@ -410,7 +426,7 @@ button.flip-button:hover {
   padding: 2px 8px;
   margin-bottom: 5px;
   border-radius: 20px;
-  filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 
@@ -420,21 +436,21 @@ button.flip-button:hover {
   line-height: 1.4;
   margin-bottom: 15px;
   text-decoration: none;
-  filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 
-.museum-cards{
+.museum-cards {
   display: flex;
   width: auto;
   height: 110px;
   flex-direction: row;
   gap: 5px;
   justify-content: space-around;
-  
+
 }
 
-.art-history{
+.art-history {
   width: auto;
   height: 300px;
   background-color: rgb(255, 0, 0);
@@ -446,19 +462,21 @@ button.flip-button:hover {
 
 @keyframes zoomin {
   0% {
-    transform: scale(1); 
+    transform: scale(1);
   }
+
   100% {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
 }
 
 @keyframes zoomout {
   0% {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
+
   100% {
-    transform: scale(1); 
+    transform: scale(1);
   }
 }
 
@@ -481,11 +499,12 @@ button.flip-button:hover {
     margin-right: 10px;
     margin-left: 10px;
   }
-  .end-footer h2{
+
+  .end-footer h2 {
     color: #fff;
     font-size: 14px;
-    }
-  
+  }
+
 
   .main-content {
     z-index: 1;
@@ -495,47 +514,53 @@ button.flip-button:hover {
     display: flex;
   }
 
-  .about-us{
+  .about-us {
     height: 700px;
     align-items: flex-start;
   }
 
-    .museum-cards {
-      flex-direction: column; /* Empilha as cartas verticalmente */
-      align-items: center; /* Centraliza as cartas */
-      height: 600px; /* Permite que a altura seja ajustada automaticamente */
-      gap: 5px; /* Adiciona espaço entre as cartas */
-     justify-content: center;
-    }
-
-    .about-museums{
-      height: 640px;
-      padding: 20px;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-    }
-  
-    .card {
-      width: 45%; 
-      height: 90%;/* Faz as cartas ocuparem uma proporção maior da tela */
-    }
-  
-    .card-image img {
-      height: auto; /* Ajusta a altura da imagem para mantê-la proporcional */
-    }
+  .museum-cards {
+    flex-direction: column;
+    /* Empilha as cartas verticalmente */
+    align-items: center;
+    /* Centraliza as cartas */
+    height: 600px;
+    /* Permite que a altura seja ajustada automaticamente */
+    gap: 5px;
+    /* Adiciona espaço entre as cartas */
+    justify-content: center;
   }
 
-
-  @media (max-width: 480px) {
-    .nl-text {
-      width: 90%;
-      font-size: 13px;
-      margin-left: 5px;
-    }
-
-    .nl-text h1 {
-      font-size: 30px;
-    }
-
+  .about-museums {
+    height: 640px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
   }
+
+  .card {
+    width: 45%;
+    height: 90%;
+    /* Faz as cartas ocuparem uma proporção maior da tela */
+  }
+
+  .card-image img {
+    height: auto;
+    /* Ajusta a altura da imagem para mantê-la proporcional */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .nl-text {
+    width: 90%;
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  .nl-text h1 {
+    font-size: 30px;
+  }
+
+}

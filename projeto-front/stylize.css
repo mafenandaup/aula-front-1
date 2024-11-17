@@ -269,6 +269,10 @@ perspective: 1000px; /* perspectiva pro 3D */
   transition: transform 0.6s ease-in-out;
 }
 
+.monthly-flip:hover{
+
+}
+
 .card-front, .card-back{
   width: 100%;
   height: 100%;
@@ -283,9 +287,13 @@ perspective: 1000px; /* perspectiva pro 3D */
 }
 
 .card-front{
-  padding: 10px;
+  padding: 14px;
+  color: #fff;
   background-color: blue;
   border-radius: 14px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
 }
 
 .card-back{
@@ -304,10 +312,11 @@ button.flip-button {
   align-self: flex-end;
   color: white;
   border: solid 2px #fff;
-  padding: 8px 12px;
+  padding: 6px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 button.flip-button:hover {

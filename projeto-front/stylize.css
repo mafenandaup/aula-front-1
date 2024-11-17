@@ -298,20 +298,6 @@ perspective: 1000px; /* perspectiva pro 3D */
 }
 
 
-.front-image {
-  width: 100%;
-  height: 70%; /* Adjust height as needed */
-  overflow: hidden;
-}
-
-.front-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image scales properly */
-  border-top-left-radius: 14px; /* Matches the card's border-radius */
-  border-top-right-radius: 14px;
-}
-
 .card-back{
   background-color: var(--greyish);
   color: #fff;

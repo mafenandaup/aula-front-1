@@ -16,9 +16,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-a {
+a, h1, h2, h3, h4, h5, h6 ,p {
   text-decoration: none; 
   color: inherit; 
+  filter:  drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+
 }
 
  button{

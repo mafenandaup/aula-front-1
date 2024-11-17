@@ -61,11 +61,17 @@ closePopup.addEventListener('click', () => {
     popupContainer.classList.remove('active');
 });
 
+
+// CODIGO : CARDS 3D 
 const cards = document.querySelectorAll('.flip-container');
 
+// seleciona a propriedade pra cada uma das cartas com o querySelector
 cards.forEach(card => {
   const flipArea = card.querySelector('.monthly-flip');
   const flipButtons = card.querySelectorAll('.flip-button');
+
+  // mesma coisa aqui pros botões, quando tem um evento de click, a carta muda
+  // o seu estado para flipped (ver propiedade no css)
   
   flipButtons.forEach(button => {
     button.addEventListener('click', () => {

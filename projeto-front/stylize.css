@@ -256,7 +256,7 @@ a, h1, h2, h3, h4, h5, h6 ,p {
 
 .flip-container{
 width: 220px;
-height: 140px;
+height: 160px;
 padding: 10px;
 perspective: 1000px; /* perspectiva pro 3D */
 }

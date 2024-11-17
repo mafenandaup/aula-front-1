@@ -312,6 +312,10 @@ gap: 2px;
   justify-content: space-around;
 }
 
+.card-front .flipbutton, h4 {
+z-index: 2;
+}
+
 .card-back {
   display: flex;
   flex-direction: column;

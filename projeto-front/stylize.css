@@ -313,10 +313,16 @@ gap: 2px;
 }
 
 .card-back {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   color: var(--greyish);
   transform: rotateY(180deg);
   cursor: pointer;
+  padding: 10px;
+}
+.card-back p {
+ font-size: 10px;
 }
 
 .flip-container.flipped .monthly-flip {

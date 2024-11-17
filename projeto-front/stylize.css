@@ -252,7 +252,6 @@ a, h1, h2, h3, h4, h5, h6 ,p {
   background-color: var(--vividyellow);
   border-radius: 15px;
   padding: 15px;
- justify-content: center;
 }
 
 .flip-container{
@@ -296,7 +295,6 @@ perspective: 1000px; /* perspectiva pro 3D */
   align-items: flex-end;
   justify-content: space-around;
 }
-
 
 .card-back{
   background-color: var(--greyish);

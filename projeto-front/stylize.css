@@ -460,13 +460,25 @@ p {
   height: 300px;
  background: linear-gradient(rgb(145, 143, 143), white );
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   
 }
 
 .timeline-section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+  background-color: var(--vividyellow);
+  /* vou tirar a cor e o border radius depois, é só p ter noção de espaço */
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 15px;
 
 }
 

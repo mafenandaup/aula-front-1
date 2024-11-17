@@ -201,9 +201,7 @@ button:hover {
 .newsletter-backdrop {
   width: 100%; /* Ensure it takes full width of its container */
   height: 250px;
-  background-image: 
-    linear-gradient(to top,rgb(145, 143, 143, 0.9)10%, rgba(0, 0, 0, 0)90%), /* Adjust gradient transparency as needed */
-    url('imgs/art-museum-bg.png');
+  background-image: url('imgs/art-museum-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +456,7 @@ p {
 .art-history {
   width: auto;
   height: 300px;
- background: linear-gradient(rgb(145, 143, 143), white );
+background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;

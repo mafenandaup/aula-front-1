@@ -497,26 +497,6 @@ background-color: #fff;
 
 }
 
-@keyframes zoomin {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.1);
-  }
-}
-
-@keyframes zoomout {
-  0% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 @media (max-width: 768px) {
   .nl-text {
     width: 80%;

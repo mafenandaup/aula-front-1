@@ -336,7 +336,7 @@ button:hover {
 }
 
 .card-back p {
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .flip-container.flipped .monthly-flip {
@@ -510,7 +510,7 @@ p {
 
   .about-us {
     height: 700px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .museum-cards {
@@ -568,6 +568,16 @@ p {
 
   .monthly-pieces {
     height: 200%;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .about-us{
+    height: 800px;
+  }
+  .monthly-pieces {
+    height: 250%;
   }
 
 }

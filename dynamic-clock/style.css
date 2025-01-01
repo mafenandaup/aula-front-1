@@ -1,4 +1,27 @@
 *{
     font-family: Montserrat, sans-serif;
     margin: 0;
+    padding:0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(109, 1, 109),rgb(109, 1, 109), #5139bb, #44009d);
+    background-size: 200% 400%;
+    animation: gradientAnimation 6s ease infinite;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

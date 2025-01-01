@@ -1,12 +1,12 @@
-*{
+* {
     font-family: Montserrat, sans-serif;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
-body{
+body {
     height: 100vh;
-    background: linear-gradient(45deg, rgb(109, 1, 109),rgb(109, 1, 109), #5139bb, #44009d);
+    background: linear-gradient(45deg, rgb(109, 1, 109), rgb(109, 1, 109), #5139bb, #44009d);
     background-size: 200% 400%;
     animation: gradientAnimation 6s ease infinite;
     display: flex;
@@ -29,21 +29,31 @@ body{
     }
 }
 
-.relogio{
+.relogio {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 15px;
-    background-color: brown;
+    background: transparent;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .7);
     width: 800px;
     height: 250px;
-    padding: 20px;
+    padding: 10px;
 }
 
-.hms{
+.hms {
     width: 200px;
-    height: 200px;
+    height: 180px;
     border-radius: 15px;
     padding: 20px;
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: white;
+    filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, .2));
+    margin: 15px;
+    text-align: center;
 }

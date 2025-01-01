@@ -9,6 +9,10 @@ body{
     background: linear-gradient(45deg, rgb(109, 1, 109),rgb(109, 1, 109), #5139bb, #44009d);
     background-size: 200% 400%;
     animation: gradientAnimation 6s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 

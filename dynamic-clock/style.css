@@ -57,11 +57,11 @@ body {
 
 .relogio span {
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .relogio span.tempo {
-font-size: 10px;
+font-size: 15px;
 }
 
 /* aqui ele tá fazendo as atribuições de acordo com a classe. tá deixando a fonte do tempo menor.*/

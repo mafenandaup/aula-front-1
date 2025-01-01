@@ -12,9 +12,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
 
+}
 
 @keyframes gradientAnimation {
     0% {
@@ -28,4 +27,23 @@ body{
     100% {
         background-position: 0% 50%;
     }
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: brown;
+    width: 800px;
+    height: 250px;
+    padding: 20px;
+}
+
+.hms{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: aliceblue;
 }

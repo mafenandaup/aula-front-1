@@ -73,14 +73,50 @@ h2 {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 908px) {
+    .relogio {
+        width: 750px;
+        height: 220px;
+        padding: 8px;
+    }
+    
+    .hms {
+        width: 160px;
+        height: 140px;
+        padding: 15px;
+    }
+    
+    .relogio span {
+        font-weight: bolder;
+        font-size: 70px;
+    }
+    
+    .relogio span.tempo {
+    font-size: 10px;
+    }
+    
   }
-  
-  
-  @media (max-width: 480px) {
-  }
-  
-  @media (max-width: 380px) {
 
-  }
-  
+  @media (max-width: 750px) {
+    .relogio {
+        width: 450px;
+        height: 400px;
+        padding: 8px;
+        flex-wrap: wrap;
+    }
+    
+    .hms {
+        width: 160px;
+        height: 140px;
+        padding: 15px;
+    }
+    
+    .relogio span {
+        font-weight: bolder;
+        font-size: 70px;
+    }
+    
+    .relogio span.tempo {
+    font-size: 10px;
+    }
+}
